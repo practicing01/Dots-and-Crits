@@ -1,4 +1,4 @@
-//-------------------------- 6/2/2013 -- 02:25:46 -----
+//-------------------------- 6/2/2013 -- 03:38:02 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -63,120 +63,6 @@ created Grab
 created Deathball
 Activating DirectInput...
 DirectInput joystick enabled.
-Teleport loaded
-loaded sinevolley projectiles
-loaded ScatterVolley ScatterVolleys
-loaded Volley projectiles
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-unloaded Teleport
-unloaded SineVolley
-unloaded ScatterVolley
-unloaded Volley
-Teleport loaded
-loaded sinevolley projectiles
-loaded ScatterVolley ScatterVolleys
-loaded Volley projectiles
-loaded Projectile projectiles
-loaded sinevolley projectiles
-loaded ScatterVolley ScatterVolleys
-loaded Volley projectiles
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-DirectInput deactivated.
-Activating DirectInput...
-DirectInput deactivated.
-Activating DirectInput...
-unloaded Teleport
-unloaded SineVolley
-unloaded ScatterVolley
-unloaded Volley
-unloaded Projectile
-DirectInput deactivated.
-Activating DirectInput...
-Teleport loaded
-loaded sinevolley projectiles
-loaded ScatterVolley ScatterVolleys
-loaded Volley projectiles
-loaded Projectile projectiles
-loaded sinevolley projectiles
-loaded ScatterVolley ScatterVolleys
-loaded Volley projectiles
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-DirectInput deactivated.
-Activating DirectInput...
-unloaded Teleport
-unloaded SineVolley
-unloaded ScatterVolley
-unloaded Volley
-unloaded Projectile
-DirectInput deactivated.
-Activating DirectInput...
-Teleport loaded
-loaded sinevolley projectiles
-loaded ScatterVolley ScatterVolleys
-loaded Volley projectiles
-loaded Projectile projectiles
-loaded sinevolley projectiles
-loaded ScatterVolley ScatterVolleys
-loaded Volley projectiles
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-DirectInput deactivated.
-Activating DirectInput...
-unloaded Teleport
-unloaded SineVolley
-unloaded ScatterVolley
-unloaded Volley
-unloaded Projectile
-Teleport loaded
-loaded sinevolley projectiles
-loaded ScatterVolley ScatterVolleys
-loaded Volley projectiles
-loaded Projectile projectiles
-loaded sinevolley projectiles
-loaded ScatterVolley ScatterVolleys
-loaded Volley projectiles
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-DirectInput deactivated.
-Activating DirectInput...
 DirectInput deactivated.
 goodbye world
 deleted Deathball
@@ -202,7 +88,7 @@ space destroy() called
 modules/levels/space/assets/scripts/space.cs (17): Unable to find object: '' attempting to call function 'delete'
 DotsandCrits: Created scene but no window available.
 deathballvalley destroy() called
-modules/levels/deathballvalley/assets/scripts/deathballvalley.cs (18): Unable to find object: '74619' attempting to call function 'delete'
+modules/levels/deathballvalley/assets/scripts/deathballvalley.cs (18): Unable to find object: '' attempting to call function 'delete'
 DotsandCrits: Created scene but no window available.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...
