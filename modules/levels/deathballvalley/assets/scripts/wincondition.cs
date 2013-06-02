@@ -1,3 +1,8 @@
+if (isObject($schedule_wincondition))
+{
+$schedule_wincondition.delete();
+}
+
 $schedule_wincondition=new SimObject()
 {
 player1score="0";

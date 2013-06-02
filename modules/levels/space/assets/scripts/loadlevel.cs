@@ -32,7 +32,21 @@ DotsandCritsscene.setGravity(0,$levelgravity);
 
 initskills();
 
+if (isObject(gui_spacescore))
+{
+gui_spacescore.delete();
+}
 DotsandCrits.add(TamlRead("./../gui/score.gui.taml"));
 Canvas.pushDialog(gui_spacescore);
+
+//init npc's
+for (%x=0;%x<DotsandCritsscene.getCount();%x++)
+{
+%obj=DotsandCritsscene.getObject(%x);
+if (%obj.SceneGroup==25)//npc
+{
+%obj.initialize();
+}
+}
 
 }

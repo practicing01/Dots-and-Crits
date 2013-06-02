@@ -19,6 +19,10 @@ for (%x=0;%x<$joypadbuttons.getCount();%x++)
 
 }
 
+if (isObject(gui_joypadconfig))
+{
+gui_joypadconfig.delete();
+}
 DotsandCrits.add(TamlRead("./joypadconfig.gui.taml"));
 
 function gui_mainmenu::configurejoypad()

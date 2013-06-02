@@ -16,11 +16,16 @@ function Projectile::onlevelload(%this)
 {
 echo("loaded Projectile projectiles");
 
+if (!$view)
+{
 Projectile.top_projectileass=AssetDatabase.acquireAsset("Projectile:image_topdown_projectile");
 Projectile.top_explosionass=AssetDatabase.acquireAsset("Projectile:image_topdown_explosion");
-
+}
+else
+{
 Projectile.side_projectileass=AssetDatabase.acquireAsset("Projectile:image_sideview_projectile");
 Projectile.side_explosionass=AssetDatabase.acquireAsset("Projectile:image_sideview_explosion");
+}
 
 }
 
@@ -38,11 +43,16 @@ function Projectile::unloadskill(%this)
 {
 echo("unloaded Projectile");
 
+if (!$view)
+{
 AssetDatabase.releaseAsset(Projectile.top_projectileass.getAssetId());
 AssetDatabase.releaseAsset(Projectile.top_explosionass.getAssetId());
-
+}
+else
+{
 AssetDatabase.releaseAsset(Projectile.side_projectileass.getAssetId());
 AssetDatabase.releaseAsset(Projectile.side_explosionass.getAssetId());
+}
 
 }
 

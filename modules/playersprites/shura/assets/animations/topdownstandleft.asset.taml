@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_topdownstandleft"
+    Image="@asset=shura:image_topdown"
+    AnimationFrames="9"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

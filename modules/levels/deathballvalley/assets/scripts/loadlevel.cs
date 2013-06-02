@@ -32,6 +32,10 @@ DotsandCritsscene.setGravity(0,$levelgravity);
 
 initskills();
 
+if (isObject(gui_deathballvalleyscore))
+{
+gui_deathballvalleyscore.delete();
+}
 DotsandCrits.add(TamlRead("./../gui/score.gui.taml"));
 Canvas.pushDialog(gui_deathballvalleyscore);
 

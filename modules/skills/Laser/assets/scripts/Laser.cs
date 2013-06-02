@@ -14,11 +14,16 @@ function Laser::onlevelload(%this)
 {
 echo("loaded Laser Lasers");
 
+if (!$view)
+{
 Laser.top_Laserass=AssetDatabase.acquireAsset("Laser:image_topdown_Laser");
 Laser.top_explosionass=AssetDatabase.acquireAsset("Laser:image_topdown_explosion");
-
+}
+else
+{
 Laser.side_Laserass=AssetDatabase.acquireAsset("Laser:image_sideview_Laser");
 Laser.side_explosionass=AssetDatabase.acquireAsset("Laser:image_sideview_explosion");
+}
 
 Laser.customplayerfields=new SimSet();
 
@@ -53,11 +58,16 @@ function Laser::unloadskill(%this)
 {
 echo("unloaded Laser");
 
+if (!$view)
+{
 AssetDatabase.releaseAsset(Laser.top_Laserass.getAssetId());
 AssetDatabase.releaseAsset(Laser.top_explosionass.getAssetId());
-
+}
+else
+{
 AssetDatabase.releaseAsset(Laser.side_Laserass.getAssetId());
 AssetDatabase.releaseAsset(Laser.side_explosionass.getAssetId());
+}
 
 for (%x=0;%x<$numofplayers;%x++)
 {

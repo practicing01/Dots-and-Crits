@@ -1,7 +1,17 @@
+if (isObject(scenewindow_player1))
+{
+scenewindow_player1.delete();
+}
+
 new SceneWindow(scenewindow_player1)
 {
 Profile=DotsandCritswindowprofile;
 };
+
+if (isObject(scenewindow_player2))
+{
+scenewindow_player2.delete();
+}
 
 new SceneWindow(scenewindow_player2)
 {

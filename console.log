@@ -1,4 +1,4 @@
-//-------------------------- 6/2/2013 -- 03:38:02 -----
+//-------------------------- 6/2/2013 -- 11:21:58 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -43,6 +43,7 @@ OpenAL Driver Init Success
 created deathballvalley
 created space
 created lidia
+created shura
 created intrepid
 created Pointforce
 created Laser
@@ -63,6 +64,15 @@ created Grab
 created Deathball
 Activating DirectInput...
 DirectInput joystick enabled.
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
 DirectInput deactivated.
 goodbye world
 deleted Deathball
@@ -83,12 +93,13 @@ deleted Teleport
 deleted Laser
 deleted Pointforce
 freed intrepid
+freed shura
 freed lidia
 space destroy() called
 modules/levels/space/assets/scripts/space.cs (17): Unable to find object: '' attempting to call function 'delete'
 DotsandCrits: Created scene but no window available.
 deathballvalley destroy() called
-modules/levels/deathballvalley/assets/scripts/deathballvalley.cs (18): Unable to find object: '' attempting to call function 'delete'
+modules/levels/deathballvalley/assets/scripts/deathballvalley.cs (18): Unable to find object: '1424' attempting to call function 'delete'
 DotsandCrits: Created scene but no window available.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...

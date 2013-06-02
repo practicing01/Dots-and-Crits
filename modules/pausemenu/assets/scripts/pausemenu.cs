@@ -15,6 +15,8 @@ unloadskills();
 $levelmoduleid.ScopeSet.sudodestroy();
 DotsandCritsscene.clear();
 
+AssetDatabase.purgeAssets();
+
 //set camera position to 0 0
 scenewindow_player1.setVisible(false);
 scenewindow_player2.setVisible(false);

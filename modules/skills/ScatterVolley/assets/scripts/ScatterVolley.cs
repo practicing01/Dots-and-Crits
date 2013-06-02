@@ -16,11 +16,16 @@ function ScatterVolley::onlevelload(%this)
 {
 echo("loaded ScatterVolley ScatterVolleys");
 
+if (!$view)
+{
 ScatterVolley.top_projectileass=AssetDatabase.acquireAsset("ScatterVolley:image_topdown_ScatterVolley");
 ScatterVolley.top_explosionass=AssetDatabase.acquireAsset("ScatterVolley:image_topdown_explosion");
-
+}
+else
+{
 ScatterVolley.side_projectileass=AssetDatabase.acquireAsset("ScatterVolley:image_sideview_ScatterVolley");
 ScatterVolley.side_explosionass=AssetDatabase.acquireAsset("ScatterVolley:image_sideview_explosion");
+}
 
 ScatterVolley.vectortable=new SimSet();
 
@@ -75,11 +80,16 @@ function ScatterVolley::unloadskill(%this)
 {
 echo("unloaded ScatterVolley");
 
+if (!$view)
+{
 AssetDatabase.releaseAsset(ScatterVolley.top_projectileass.getAssetId());
 AssetDatabase.releaseAsset(ScatterVolley.top_explosionass.getAssetId());
-
+}
+else
+{
 AssetDatabase.releaseAsset(ScatterVolley.side_projectileass.getAssetId());
 AssetDatabase.releaseAsset(ScatterVolley.side_explosionass.getAssetId());
+}
 
 ScatterVolley.vectortable.deleteObjects();
 ScatterVolley.vectortable.delete();

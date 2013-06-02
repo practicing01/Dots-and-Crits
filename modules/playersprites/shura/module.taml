@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="shura"
+	VersionId="1"
+	Description="shura"
+	Type="playersprite"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+	DestroyFunction="destroy">
+		<DeclaredAssets
+			Path="assets"
+			Extension="asset.taml"
+			Recurse="true"/>
+</ModuleDefinition>

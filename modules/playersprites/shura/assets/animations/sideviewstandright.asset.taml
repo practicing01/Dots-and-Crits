@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_sideviewstandright"
+    Image="@asset=shura:image_sideview"
+    AnimationFrames="27"
+    AnimationCycle="true"
+	AnimationTime="0.5" />
