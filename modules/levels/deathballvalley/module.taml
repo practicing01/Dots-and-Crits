@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="deathballvalley"
+	VersionId="1"
+	Description="Deathball Valley"
+	Type="level"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+	DestroyFunction="destroy">
+		<DeclaredAssets
+			Path="assets"
+			Extension="asset.taml"
+			Recurse="true"/>
+</ModuleDefinition>

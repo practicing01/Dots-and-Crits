@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_space"
+    ImageFile="space.jpg"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="1920"
+    CellHeight="1080"
+	OptimalResolution="1280 800"/>

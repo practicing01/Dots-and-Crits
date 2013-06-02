@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_flashlight"
+    Image="@asset=Flashlight:image_flashlight"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

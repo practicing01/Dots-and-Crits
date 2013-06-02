@@ -1,0 +1,210 @@
+//-------------------------- 6/2/2013 -- 02:25:46 -----
+Console trace is off.
+--------------------------------------------------------------------------------
+Video Initialization:
+--------------------------------------------------------------------------------
+Video initialization:
+   Accelerated OpenGL display device detected.
+
+Activating the OpenGL display device...
+Activating the OpenGL display device...
+Setting screen mode to 1280x800x32 (w)...
+Creating a new window...
+Acquiring a new device context...
+Pixel format set:
+  32 color bits, 24 depth bits, 8 stencil bits
+Creating a new rendering context...
+Making the new rendering context current...
+OpenGL driver information:
+  Vendor: NVIDIA Corporation
+  Renderer: GeForce GTS 450/PCIe/SSE2
+  Version: 4.2.0
+OpenGL Init: Enabled Extensions
+  ARB_multitexture (Max Texture Units: 4)
+  EXT_blend_color
+  EXT_blend_minmax
+  EXT_compiled_vertex_array
+  NV_vertex_array_range
+  EXT_texture_env_combine
+  EXT_packed_pixels
+  EXT_fog_coord
+  ARB_texture_compression
+  EXT_texture_compression_s3tc
+  (ARB|EXT)_texture_env_add
+  EXT_texture_filter_anisotropic (Max anisotropy: 16)
+  WGL_EXT_swap_control
+OpenGL Init: Disabled Extensions
+  EXT_paletted_texture
+  3DFX_texture_compression_FXT1
+
+Max Texture Size reported as: 16384
+OpenAL Driver Init
+OpenAL Driver Init Success
+created deathballvalley
+created space
+created lidia
+created intrepid
+created Pointforce
+created Laser
+created Teleport
+created Cloak
+created Heal
+created Projectile
+created SineVolley
+created ScatterVolley
+created Volley
+created Shield
+created Snare
+created Melee
+created Flashlight
+created Speedboof
+created Dot
+created Grab
+created Deathball
+Activating DirectInput...
+DirectInput joystick enabled.
+Teleport loaded
+loaded sinevolley projectiles
+loaded ScatterVolley ScatterVolleys
+loaded Volley projectiles
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+unloaded Teleport
+unloaded SineVolley
+unloaded ScatterVolley
+unloaded Volley
+Teleport loaded
+loaded sinevolley projectiles
+loaded ScatterVolley ScatterVolleys
+loaded Volley projectiles
+loaded Projectile projectiles
+loaded sinevolley projectiles
+loaded ScatterVolley ScatterVolleys
+loaded Volley projectiles
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+Activating DirectInput...
+unloaded Teleport
+unloaded SineVolley
+unloaded ScatterVolley
+unloaded Volley
+unloaded Projectile
+DirectInput deactivated.
+Activating DirectInput...
+Teleport loaded
+loaded sinevolley projectiles
+loaded ScatterVolley ScatterVolleys
+loaded Volley projectiles
+loaded Projectile projectiles
+loaded sinevolley projectiles
+loaded ScatterVolley ScatterVolleys
+loaded Volley projectiles
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+DirectInput deactivated.
+Activating DirectInput...
+unloaded Teleport
+unloaded SineVolley
+unloaded ScatterVolley
+unloaded Volley
+unloaded Projectile
+DirectInput deactivated.
+Activating DirectInput...
+Teleport loaded
+loaded sinevolley projectiles
+loaded ScatterVolley ScatterVolleys
+loaded Volley projectiles
+loaded Projectile projectiles
+loaded sinevolley projectiles
+loaded ScatterVolley ScatterVolleys
+loaded Volley projectiles
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+DirectInput deactivated.
+Activating DirectInput...
+unloaded Teleport
+unloaded SineVolley
+unloaded ScatterVolley
+unloaded Volley
+unloaded Projectile
+Teleport loaded
+loaded sinevolley projectiles
+loaded ScatterVolley ScatterVolleys
+loaded Volley projectiles
+loaded Projectile projectiles
+loaded sinevolley projectiles
+loaded ScatterVolley ScatterVolleys
+loaded Volley projectiles
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+DirectInput deactivated.
+Activating DirectInput...
+DirectInput deactivated.
+goodbye world
+deleted Deathball
+deleted Grab
+deleted Dot
+deleted Speedboof
+deleted Flashlight
+deleted Melee
+deleted Snare
+deleted Shield
+deleted Volley
+deleted ScatterVolley
+deleted SineVolley
+deleted Projectile
+deleted Heal
+deleted Cloak
+deleted Teleport
+deleted Laser
+deleted Pointforce
+freed intrepid
+freed lidia
+space destroy() called
+modules/levels/space/assets/scripts/space.cs (17): Unable to find object: '' attempting to call function 'delete'
+DotsandCrits: Created scene but no window available.
+deathballvalley destroy() called
+modules/levels/deathballvalley/assets/scripts/deathballvalley.cs (18): Unable to find object: '74619' attempting to call function 'delete'
+DotsandCrits: Created scene but no window available.
+Shutting down the OpenGL display device...
+Making the GL rendering context not current...
+Deleting the GL rendering context...
+Releasing the device context...

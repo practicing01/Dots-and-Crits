@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_nebula"
+    ImageFile="nebula.png"
+	CellCountX="8"
+    CellCountY="6"
+    CellWidth="256"
+    CellHeight="256"
+	OptimalResolution="1280 800"/>

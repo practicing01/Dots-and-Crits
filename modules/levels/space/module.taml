@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="space"
+	VersionId="1"
+	Description="Space"
+	Type="level"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+	DestroyFunction="destroy">
+		<DeclaredAssets
+			Path="assets"
+			Extension="asset.taml"
+			Recurse="true"/>
+</ModuleDefinition>

@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_noskillset"
+    Image="@asset=DotsandCrits:image_noskillset"
+    AnimationFrames="0 1"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

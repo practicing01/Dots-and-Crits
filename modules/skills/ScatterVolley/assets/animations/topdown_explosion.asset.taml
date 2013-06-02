@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_topdown_explosion"
+    Image="@asset=ScatterVolley:image_topdown_explosion"
+    AnimationFrames="0 3 7 8 12 9 10 13 14 1 4 5 2 6"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

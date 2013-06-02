@@ -1,0 +1,159 @@
+<Scene
+    cammovespeed="1"
+    objmovespeed="1">
+    <Sprite
+        SceneLayer="17"
+        Size="100 75"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=deathballvalley:upperLeftDesert"
+        Frame="0" />
+    <Sprite
+        SceneLayer="17"
+        Size="100 75"
+        Position="100 0"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=deathballvalley:upperRightDesert"
+        Frame="0" />
+    <Sprite
+        SceneLayer="17"
+        Size="100 75"
+        Position="100 -75"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=deathballvalley:lowerRightDesert"
+        Frame="0" />
+    <Sprite
+        SceneLayer="17"
+        Size="100 75"
+        Position="0 -75"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=deathballvalley:lowerLeftDesert"
+        Frame="0" />
+    <SceneObject
+        SceneGroup="30"
+        Size="10 150"
+        Position="-55 -37.5"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>5 -75</Point>
+                <Point>5 75</Point>
+                <Point>-5 75</Point>
+                <Point>-5 -75</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="200 10"
+        Position="50 42.5"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>100 -5</Point>
+                <Point>100 5</Point>
+                <Point>-100 5</Point>
+                <Point>-100 -5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="10 150"
+        Position="155 -37.5"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>5 -75</Point>
+                <Point>5 75</Point>
+                <Point>-5 75</Point>
+                <Point>-5 -75</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="200 10"
+        Position="50 -117.5"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>100 -5</Point>
+                <Point>100 5</Point>
+                <Point>-100 5</Point>
+                <Point>-100 -5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        class="class_portal_spawn_p1"
+        Size="10 10"
+        Position="-32 -38"
+        BodyType="Static"
+        GatherContacts="1" />
+    <SceneObject
+        class="class_portal_spawn_p2"
+        Size="10 10"
+        Position="125 -38"
+        BodyType="Static"
+        GatherContacts="1" />
+    <SceneObject
+        class="class_portal"
+        SceneGroup="27"
+        Size="10 10"
+        Position="0 25"
+        BodyType="Static"
+        GatherContacts="1"
+        topos="10 -25">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>-5 -5</Point>
+                <Point>5 -5</Point>
+                <Point>5 5</Point>
+                <Point>-5 5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        class="class_portal"
+        SceneGroup="27"
+        Size="10 10"
+        Position="0 -25"
+        BodyType="Static"
+        GatherContacts="1"
+        topos="10 25">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>-5 -5</Point>
+                <Point>5 -5</Point>
+                <Point>5 5</Point>
+                <Point>-5 5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <Sprite
+        class="class_bahamut"
+        SceneLayer="16"
+        SceneGroup="25"
+        Size="4.2188 4.5"
+        Position="41 -29"
+        CollisionCallback="1"
+		FixedAngle="true"
+        Animation="@asset=deathballvalley:anim_bahamut_stand_down">
+        <Sprite.CollisionShapes>
+            <Polygon>
+                <Point>2.1094 -2.25</Point>
+                <Point>2.1094 2.25</Point>
+                <Point>-2.1094 2.25</Point>
+                <Point>-2.1094 -2.25</Point>
+            </Polygon>
+        </Sprite.CollisionShapes>
+    </Sprite>
+</Scene>

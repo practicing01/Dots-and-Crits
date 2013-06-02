@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_sideviewrunright"
+    Image="@asset=intrepid:image_sideview"
+    AnimationFrames="6"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

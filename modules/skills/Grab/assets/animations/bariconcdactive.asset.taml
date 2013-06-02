@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_bariconcdactive"
+    Image="@asset=Grab:image_bariconcdactive"
+    AnimationFrames="0 1"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

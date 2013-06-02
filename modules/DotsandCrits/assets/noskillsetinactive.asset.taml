@@ -1,0 +1,7 @@
+<ImageAsset
+    AssetName="image_noskillsetinactive"
+    ImageFile="noskillsetinactive.png"
+	CellCountX="2"
+    CellCountY="1"
+    CellWidth="50"
+    CellHeight="50" />

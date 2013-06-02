@@ -1,0 +1,12 @@
+<ModuleDefinition
+	ModuleId="pausemenu"
+	VersionId="1"
+	Description="pause menu"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+	DestroyFunction="destroy">
+		<DeclaredAssets
+			Path="assets"
+			Extension="asset.taml"
+			Recurse="true"/>
+</ModuleDefinition>

@@ -1,0 +1,12 @@
+<ModuleDefinition
+	ModuleId="DotsandCrits"
+	VersionId="1"
+	Description="Dots and Crits"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+	DestroyFunction="destroy">
+		<DeclaredAssets
+			Path="assets"
+			Extension="asset.taml"
+			Recurse="true"/>
+</ModuleDefinition>

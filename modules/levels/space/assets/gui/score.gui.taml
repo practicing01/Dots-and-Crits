@@ -1,0 +1,84 @@
+<GuiControl
+    Name="gui_spacescore"
+    Profile="gui_profile_modalless"
+    HorizSizing="width"
+    VertSizing="height"
+    Position="0 0"
+    Extent="1280 800"
+    MinExtent="8 8"
+    Visible="1"
+	HelpTag="0">
+	
+	<!-- player 1 score -->
+	<GuiTextCtrl 
+		Name="gui_text_player1score"
+		Profile="GuiTextProfile"
+		Text="0"
+		canSaveDynamicFields="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="320 0"
+		Extent="32 32"
+		MinExtent="32 32"
+		canSave="0"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+		
+	<!-- player 2 score -->
+	<GuiTextCtrl 
+		Name="gui_text_player2score"
+		Profile="GuiTextProfile"
+		Text="0"
+		canSaveDynamicFields="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="960 0"
+		Extent="32 32"
+		MinExtent="32 32"
+		canSave="0"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+		
+	<!-- player 1 health -->
+	<GuiTextCtrl 
+		Name="gui_text_player1health"
+		Profile="GuiTextProfile"
+		Text="100"
+		canSaveDynamicFields="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="320 718"
+		Extent="32 32"
+		MinExtent="32 32"
+		canSave="0"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+		
+	<!-- player 2 health -->
+	<GuiTextCtrl 
+		Name="gui_text_player2health"
+		Profile="GuiTextProfile"
+		Text="100"
+		canSaveDynamicFields="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="960 718"
+		Extent="32 32"
+		MinExtent="32 32"
+		canSave="0"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+
+</GuiControl>

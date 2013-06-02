@@ -1,0 +1,4 @@
+<AudioAsset
+    AssetName="audio_mourningdove"
+    AssetAutoUnload="0"
+    AudioFile="mourningdove.wav" />

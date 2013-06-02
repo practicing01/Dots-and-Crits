@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_topdown_Laser"
+    ImageFile="topdown_Laser.png"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="8"
+    CellHeight="32"
+	OptimalResolution="1280 800"/>

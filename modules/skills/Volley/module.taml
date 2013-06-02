@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="Volley"
+	VersionId="1"
+	Description="Volley"
+	Type="skill"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+	DestroyFunction="destroy">
+		<DeclaredAssets
+			Path="assets"
+			Extension="asset.taml"
+			Recurse="true"/>
+</ModuleDefinition>

@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_projectile"
+    Image="@asset=SineVolley:image_projectile"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

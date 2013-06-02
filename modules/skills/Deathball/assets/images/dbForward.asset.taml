@@ -1,0 +1,9 @@
+<ImageAsset
+    AssetName="dbForward"
+    ImageFile="dbForward.png"
+    CellCountX="4"
+    CellCountY="4"
+    CellWidth="256"
+    CellHeight="256"
+	AutoUnload="false"
+	OptimalResolution="1280 800"/>

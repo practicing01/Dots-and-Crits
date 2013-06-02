@@ -1,0 +1,11 @@
+exec("./callskilltransform.cs");
+exec("./rotatecompositesprites.cs");
+exec("./keycleanup.cs");
+exec("./moveplayer.cs");
+exec("./skillslots.cs");
+exec("./skillkeypress.cs");
+exec("./bindkeys.cs");
+exec("./setskillanimation.cs");
+exec("./restartmove.cs");
+exec("./onupdate.cs");
+exec("./oncollision.cs");

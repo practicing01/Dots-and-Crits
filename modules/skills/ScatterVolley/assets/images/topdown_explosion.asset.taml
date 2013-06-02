@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_topdown_explosion"
+    ImageFile="topdown_explosion.png"
+	CellCountX="4"
+    CellCountY="4"
+    CellWidth="64"
+    CellHeight="64"
+	OptimalResolution="1280 800"/>

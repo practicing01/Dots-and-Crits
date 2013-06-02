@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_topdownstandright"
+    Image="@asset=lidia:image_topdown"
+    AnimationFrames="27"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

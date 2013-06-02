@@ -1,0 +1,75 @@
+<GuiControl
+    Name="gui_pausemenu"
+    Profile="GuiTransparentProfile"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="0 0"
+    Extent="1280 800"
+    MinExtent="1 1"
+    Visible="1"
+	HelpTag="0">
+	
+	<!-- exit game button -->
+	<GuiButtonCtrl
+		Name="gui_button_exitgame"
+		Profile="BlueButtonProfile"
+		Text="Exit"
+		ButtonType="PushButton"
+		command="gui_pausemenu.exitgame();"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="560 616"
+		Extent="160 32"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+		
+	<!-- return to main menu -->
+	<GuiButtonCtrl
+		Name="gui_button_returntomainmenu"
+		Profile="BlueButtonProfile"
+		Text="Return to main Menu"
+		ButtonType="PushButton"
+		command="gui_pausemenu.returntomainmenu();"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="560 384"
+		Extent="160 32"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+		
+	<!-- toggle music -->
+	<GuiButtonCtrl
+		Name="gui_button_togglemusic"
+		Profile="BlueButtonProfile"
+		Text="Toggle Music"
+		ButtonType="PushButton"
+		command="gui_pausemenu.togglemusic();"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="560 584"
+		Extent="160 32"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+
+</GuiControl>

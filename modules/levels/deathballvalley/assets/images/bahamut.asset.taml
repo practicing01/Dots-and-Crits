@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_bahamut"
+    ImageFile="bahamut.png"
+	CellCountX="24"
+    CellCountY="1"
+    CellWidth="54"
+    CellHeight="48"
+	OptimalResolution="1280 800"/>

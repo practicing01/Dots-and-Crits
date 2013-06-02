@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_bahamut_stand_left"
+    Image="@asset=deathballvalley:image_bahamut"
+    AnimationFrames="9 10 11"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

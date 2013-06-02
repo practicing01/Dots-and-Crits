@@ -1,0 +1,157 @@
+<Scene
+    UseBackgroundColor="1"
+    BackgroundColor="Black">
+    <Sprite
+        SceneLayer="16"
+        Size="150 101.25"
+        BodyType="Static"
+        Image="@asset=space:image_space"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="150 101.25"
+        Position="-150 0"
+        BodyType="Static"
+        Image="@asset=space:image_space"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="150 101.25"
+        Position="150 0"
+        BodyType="Static"
+        Image="@asset=space:image_space"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="150 101.25"
+        Position="0 101.25"
+        BodyType="Static"
+        Image="@asset=space:image_space"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="150 101.25"
+        Position="-150 101.25"
+        BodyType="Static"
+        Image="@asset=space:image_space"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="150 101.25"
+        Position="150 101.25"
+        BodyType="Static"
+        Image="@asset=space:image_space"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="150 101.25"
+        Position="0 -101.25"
+        BodyType="Static"
+        Image="@asset=space:image_space"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="150 101.25"
+        Position="150 -101.25"
+        BodyType="Static"
+        Image="@asset=space:image_space"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="150 101.25"
+        Position="-150 -101.25"
+        BodyType="Static"
+        Image="@asset=space:image_space"
+        Frame="0" />
+    <SceneObject
+        class="class_portal_spawn_p1"
+        Size="10 10"
+        Position="-68 -7"
+        BodyType="Static" />
+    <SceneObject
+        class="class_portal_spawn_p2"
+        Size="10 10"
+        Position="51 -6"
+        BodyType="Static" />
+    <SceneObject
+        SceneGroup="30"
+        Size="450 10"
+        Position="0 160"
+        BodyType="Static">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>225 -5</Point>
+                <Point>225 5</Point>
+                <Point>-225 5</Point>
+                <Point>-225 -5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="450 10"
+        Position="0 -160"
+        BodyType="Static">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>225 -5</Point>
+                <Point>225 5</Point>
+                <Point>-225 5</Point>
+                <Point>-225 -5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="10 303.75"
+        Position="-230 0"
+        BodyType="Static">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>5 -151.88</Point>
+                <Point>5 151.88</Point>
+                <Point>-5 151.88</Point>
+                <Point>-5 -151.88</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="10 303.75"
+        Position="230 0"
+        BodyType="Static">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>5 -151.88</Point>
+                <Point>5 151.88</Point>
+                <Point>-5 151.88</Point>
+                <Point>-5 -151.88</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <Sprite
+        Size="40 30"
+        Position="-1 41"
+        Awake="1"
+        SceneGroup="26"
+		SceneLayer="15"
+        Image="@asset=space:image_tardigrade"
+        Frame="0"
+		health="100"
+		Class="class_dynamicworldobject">
+        <Sprite.CollisionShapes>
+            <Polygon>
+                <Point>20 -15</Point>
+                <Point>20 15</Point>
+                <Point>-20 15</Point>
+                <Point>-20 -15</Point>
+            </Polygon>
+        </Sprite.CollisionShapes>
+    </Sprite>
+    <Sprite
+        Size="20 24"
+        Position="1 -74"
+        BodyType="Static"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=space:anim_nebula" />
+</Scene>

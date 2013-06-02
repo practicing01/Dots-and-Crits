@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_sideviewrunleft"
+    Image="@asset=lidia:image_sideview"
+    AnimationFrames="17 16 15 14 13 12 11 10"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

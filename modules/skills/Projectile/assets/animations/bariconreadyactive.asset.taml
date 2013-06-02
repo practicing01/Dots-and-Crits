@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_bariconreadyactive"
+    Image="@asset=Projectile:image_bariconreadyactive"
+    AnimationFrames="0 1"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_tardigrade"
+    ImageFile="tardigrade.png"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="512"
+    CellHeight="320"
+	OptimalResolution="1280 800"/>

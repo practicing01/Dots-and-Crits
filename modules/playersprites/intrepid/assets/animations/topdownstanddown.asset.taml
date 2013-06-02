@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_topdownstanddown"
+    Image="@asset=intrepid:image_topdown"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="0.5" />
