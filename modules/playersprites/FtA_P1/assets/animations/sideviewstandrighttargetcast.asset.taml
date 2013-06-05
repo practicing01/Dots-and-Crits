@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_sideviewstandrighttargetcast"
+    Image="@asset=FtA_P1:image_sideview"
+    AnimationFrames="48 47 46"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

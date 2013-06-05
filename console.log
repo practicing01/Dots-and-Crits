@@ -1,4 +1,4 @@
-//-------------------------- 6/2/2013 -- 11:21:58 -----
+//-------------------------- 6/5/2013 -- 01:59:09 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -42,6 +42,7 @@ OpenAL Driver Init
 OpenAL Driver Init Success
 created deathballvalley
 created space
+created intrepid
 created lidia
 created shura
 created intrepid
@@ -64,6 +65,10 @@ created Grab
 created Deathball
 Activating DirectInput...
 DirectInput joystick enabled.
+Heal loaded
+Dot loaded
+Melee loaded
+Melee loaded
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
@@ -95,11 +100,12 @@ deleted Pointforce
 freed intrepid
 freed shura
 freed lidia
+freed intrepid
 space destroy() called
 modules/levels/space/assets/scripts/space.cs (17): Unable to find object: '' attempting to call function 'delete'
 DotsandCrits: Created scene but no window available.
 deathballvalley destroy() called
-modules/levels/deathballvalley/assets/scripts/deathballvalley.cs (18): Unable to find object: '1424' attempting to call function 'delete'
+modules/levels/deathballvalley/assets/scripts/deathballvalley.cs (18): Unable to find object: '1433' attempting to call function 'delete'
 DotsandCrits: Created scene but no window available.
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...

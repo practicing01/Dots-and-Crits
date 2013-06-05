@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="FtA_P1"
+	VersionId="1"
+	Description="FtA_P1"
+	Type="playersprite"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+	DestroyFunction="destroy">
+		<DeclaredAssets
+			Path="assets"
+			Extension="asset.taml"
+			Recurse="true"/>
+</ModuleDefinition>

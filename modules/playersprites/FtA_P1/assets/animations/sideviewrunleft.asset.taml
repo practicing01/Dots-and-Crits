@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_sideviewrunleft"
+    Image="@asset=FtA_P1:image_sideview"
+    AnimationFrames="6 7 8 9"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

@@ -19,6 +19,7 @@ Image="Deathball:dbForward";
 class="class_deathball";
 CollisionCallback="true";
 SceneLayer=16;
+health=100;
 //DefaultDensity=0;
 //DefaultRestitution=1;
 };

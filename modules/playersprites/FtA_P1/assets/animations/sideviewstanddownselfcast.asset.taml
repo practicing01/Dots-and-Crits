@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_sideviewstanddownselfcast"
+    Image="@asset=FtA_P1:image_sideview"
+    AnimationFrames="40 41 42"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

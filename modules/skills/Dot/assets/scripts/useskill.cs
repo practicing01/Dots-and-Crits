@@ -7,7 +7,7 @@ if (%player.cancast&&!%barslot.skillstate)
 {
 %player.cancast=false;
 %barslot.skillstate=1;//set to cooldown  //need to setup a function to display timer and remove cd
-%player.skillanimtype=0;
+%player.skillanimtype=1;
 Dot.setskillbaricon(%barslot);
 %schedulehandle_Dot=new SimObject()
 {

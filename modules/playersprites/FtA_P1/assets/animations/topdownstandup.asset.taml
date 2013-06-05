@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_topdownstandup"
+    Image="@asset=FtA_P1:image_topdown"
+    AnimationFrames="15"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

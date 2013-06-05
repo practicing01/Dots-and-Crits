@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_sideview"
+    ImageFile="sideview.png"
+	CellCountX="20"
+    CellCountY="4"
+    CellWidth="30"
+    CellHeight="44"
+	OptimalResolution="1280 800"/>

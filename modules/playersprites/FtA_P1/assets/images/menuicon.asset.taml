@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_menuicon"
+    ImageFile="menuicon.png"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="200"
+    CellHeight="200"
+	OptimalResolution="1280 800"/>

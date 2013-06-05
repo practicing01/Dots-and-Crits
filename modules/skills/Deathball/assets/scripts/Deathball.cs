@@ -40,3 +40,9 @@ function Deathball::transformobjects(%this,%playerindex)
 {
 return;
 }
+
+function class_deathball::updatehealth(%this)
+{
+//if (%this.health<=0){%this.safeDelete();}
+return;//unkillable :)
+}

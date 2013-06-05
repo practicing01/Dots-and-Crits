@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_menuicon"
+    Image="@asset=FtA_P1:image_menuicon"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="0.5" />
