@@ -1,0 +1,544 @@
+<Scene
+    cammovespeed="1"
+    objmovespeed="0.1">
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="-150 75"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0000"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="-50 75"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0001"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="50 75"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0002"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="150 75"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0003"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="-150 0"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0004"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="-50 0"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0005"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="50 0"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0006"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="150 0"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0007"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="-150 -75"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0008"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="-50 -75"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0009"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="50 -75"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0010"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="150 -75"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0011"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="-150 -150"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0012"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="-50 -150"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0013"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="50 -150"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0014"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="100 75"
+        Position="150 -150"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=catacombs:image_cats0015"
+        Frame="0" />
+    <Sprite
+        SceneLayer="16"
+        Size="1.25 3"
+        Position="-156.2 -156.3"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <Sprite
+        SceneLayer="16"
+        Size="1.25 3"
+        Position="-155.4 -77.1"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <Sprite
+        SceneLayer="16"
+        Size="1.25 3"
+        Position="-154.3 -2.1"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <Sprite
+        SceneLayer="16"
+        Size="1.25 3"
+        Position="153.6 -154.9"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <Sprite
+        SceneLayer="16"
+        Size="1.25 3"
+        Position="152.8 -76.8"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <Sprite
+        SceneLayer="16"
+        Size="1.25 3"
+        Position="152.8 -2.8"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <Sprite
+        SceneLayer="16"
+        Size="1.25 3"
+        Position="153.6 74"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <Sprite
+        SceneLayer="16"
+        Size="1.25 3"
+        Position="0 74.2"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <Sprite
+        SceneLayer="16"
+        Size="1.25 3"
+        Position="-155.5 74.8"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <Sprite
+        class="class_dynamicworldobject"
+        SceneLayer="16"
+        SceneGroup="26"
+        Size="2.0313 4.3125"
+        Position="-15 -115"
+        BodyType="Static"
+        GatherContacts="1"
+        CollisionCallback="1"
+        Image="@asset=catacombs:image_statue"
+        Frame="0">
+        <Sprite.CollisionShapes>
+            <Polygon>
+                <Point>1.0157 -2.1563</Point>
+                <Point>1.0157 2.1563</Point>
+                <Point>-1.0157 2.1563</Point>
+                <Point>-1.0157 -2.1563</Point>
+            </Polygon>
+        </Sprite.CollisionShapes>
+    </Sprite>
+    <Sprite
+        SceneLayer="14"
+        Size="1.25 3"
+        Position="-14.5 -112.2"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <SceneObject
+        SceneGroup="30"
+        Size="400 10"
+        Position="0 111.7"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="0 0.5 0.5 1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>200 -5</Point>
+                <Point>200 5</Point>
+                <Point>-200 5</Point>
+                <Point>-200 -5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="400 10"
+        Position="0 -192"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="0 0.5 0.5 1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>200 -5</Point>
+                <Point>200 5</Point>
+                <Point>-200 5</Point>
+                <Point>-200 -5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="10 300"
+        Position="-205.2 -37.5"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="0 0.5 0.5 1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>5 -150</Point>
+                <Point>5 150</Point>
+                <Point>-5 150</Point>
+                <Point>-5 -150</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="10 300"
+        Position="205 -37.2"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="0 0.5 0.5 1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>5 -150</Point>
+                <Point>5 150</Point>
+                <Point>-5 150</Point>
+                <Point>-5 -150</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="100 10"
+        Position="-149.5 34.1"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>50 -5</Point>
+                <Point>50 5</Point>
+                <Point>-50 5</Point>
+                <Point>-50 -5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="100 10"
+        Position="-148.7 -41.3"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>50 -5</Point>
+                <Point>50 5</Point>
+                <Point>-50 5</Point>
+                <Point>-50 -5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="100 10"
+        Position="-148 -116.2"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>50 -5</Point>
+                <Point>50 5</Point>
+                <Point>-50 5</Point>
+                <Point>-50 -5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="100 10"
+        Position="148.5 35"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="0 0.5 0.5 1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>50 -5</Point>
+                <Point>50 5</Point>
+                <Point>-50 5</Point>
+                <Point>-50 -5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="100 10"
+        Position="148 -41"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="0 0.5 0.5 1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>50 -5</Point>
+                <Point>50 5</Point>
+                <Point>-50 5</Point>
+                <Point>-50 -5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="100 10"
+        Position="149 -116"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="0 0.5 0.5 1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>50 -5</Point>
+                <Point>50 5</Point>
+                <Point>-50 5</Point>
+                <Point>-50 -5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <Sprite
+        class="class_dynamicworldobject"
+        SceneLayer="16"
+        SceneGroup="26"
+        Size="2.0313 4.3125"
+        Position="15 -115"
+        BodyType="Static"
+        GatherContacts="1"
+        CollisionCallback="1"
+        Image="@asset=catacombs:image_statue"
+        Frame="0"
+        FlipX="1">
+        <Sprite.CollisionShapes>
+            <Polygon>
+                <Point>1.0157 -2.1563</Point>
+                <Point>1.0157 2.1563</Point>
+                <Point>-1.0157 2.1563</Point>
+                <Point>-1.0157 -2.1563</Point>
+            </Polygon>
+        </Sprite.CollisionShapes>
+    </Sprite>
+    <Sprite
+        SceneLayer="14"
+        Size="1.25 3"
+        Position="14.4 -112.3"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <Sprite
+        class="class_dynamicworldobject"
+        SceneLayer="16"
+        SceneGroup="26"
+        Size="2.0313 4.3125"
+        Position="-15 -40"
+        BodyType="Static"
+        GatherContacts="1"
+        CollisionCallback="1"
+        Image="@asset=catacombs:image_statue"
+        Frame="0">
+        <Sprite.CollisionShapes>
+            <Polygon>
+                <Point>1.0157 -2.1563</Point>
+                <Point>1.0157 2.1563</Point>
+                <Point>-1.0157 2.1563</Point>
+                <Point>-1.0157 -2.1563</Point>
+            </Polygon>
+        </Sprite.CollisionShapes>
+    </Sprite>
+    <Sprite
+        class="class_dynamicworldobject"
+        SceneLayer="16"
+        SceneGroup="26"
+        Size="2.0313 4.3125"
+        Position="-15 35"
+        BodyType="Static"
+        GatherContacts="1"
+        CollisionCallback="1"
+        Image="@asset=catacombs:image_statue"
+        Frame="0">
+        <Sprite.CollisionShapes>
+            <Polygon>
+                <Point>1.0157 -2.1563</Point>
+                <Point>1.0157 2.1563</Point>
+                <Point>-1.0157 2.1563</Point>
+                <Point>-1.0157 -2.1563</Point>
+            </Polygon>
+        </Sprite.CollisionShapes>
+    </Sprite>
+    <Sprite
+        class="class_dynamicworldobject"
+        SceneLayer="16"
+        SceneGroup="26"
+        Size="2.0313 4.3125"
+        Position="15 -40"
+        BodyType="Static"
+        GatherContacts="1"
+        CollisionCallback="1"
+        Image="@asset=catacombs:image_statue"
+        Frame="0"
+        FlipX="1">
+        <Sprite.CollisionShapes>
+            <Polygon>
+                <Point>1.0157 -2.1563</Point>
+                <Point>1.0157 2.1563</Point>
+                <Point>-1.0157 2.1563</Point>
+                <Point>-1.0157 -2.1563</Point>
+            </Polygon>
+        </Sprite.CollisionShapes>
+    </Sprite>
+    <Sprite
+        class="class_dynamicworldobject"
+        SceneLayer="16"
+        SceneGroup="26"
+        Size="2.0313 4.3125"
+        Position="15 35.1"
+        BodyType="Static"
+        GatherContacts="1"
+        CollisionCallback="1"
+        Image="@asset=catacombs:image_statue"
+        Frame="0"
+        FlipX="1">
+        <Sprite.CollisionShapes>
+            <Polygon>
+                <Point>1.0157 -2.1563</Point>
+                <Point>1.0157 2.1563</Point>
+                <Point>-1.0157 2.1563</Point>
+                <Point>-1.0157 -2.1563</Point>
+            </Polygon>
+        </Sprite.CollisionShapes>
+    </Sprite>
+    <Sprite
+        SceneLayer="14"
+        Size="1.25 3"
+        Position="-14.4 -37.4"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <Sprite
+        SceneLayer="14"
+        Size="1.25 3"
+        Position="14.3 -37.4"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <Sprite
+        SceneLayer="14"
+        Size="1.25 3"
+        Position="14.3 37.5"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <Sprite
+        SceneLayer="14"
+        Size="1.25 3"
+        Position="-14.5 37.7"
+        BodyType="Static"
+        GatherContacts="1"
+        BlendColor="1 1 1 0.5"
+        Animation="@asset=catacombs:anim_fire" />
+    <SceneObject
+        class="class_portal_spawn_p1"
+        Size="10 10"
+        Position="-14.3 -163.9"
+        BodyType="Static"
+        GatherContacts="1" />
+    <SceneObject
+        class="class_portal_spawn_p2"
+        Size="10 10"
+        Position="13.1 -163.5"
+        BodyType="Static"
+        GatherContacts="1" />
+</Scene>

@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_fire"
+    ImageFile="fire.png"
+	CellCountX="12"
+    CellCountY="1"
+    CellWidth="16"
+    CellHeight="32"
+	OptimalResolution="1280 800"/>

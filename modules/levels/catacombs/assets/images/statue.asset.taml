@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_statue"
+    ImageFile="statue.png"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="26"
+    CellHeight="46"
+	OptimalResolution="1280 800"/>
