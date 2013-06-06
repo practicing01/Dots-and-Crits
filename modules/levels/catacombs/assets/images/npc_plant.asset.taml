@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_npc_plant"
+    ImageFile="npc_plant.png"
+	CellCountX="8"
+    CellCountY="4"
+    CellWidth="44"
+    CellHeight="44"
+	OptimalResolution="1280 800"/>

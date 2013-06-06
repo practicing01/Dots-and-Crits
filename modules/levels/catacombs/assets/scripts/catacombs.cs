@@ -5,6 +5,7 @@ exec("./menuicon.cs");
 exec("./sudodestroy.cs");
 exec("./healthdisplay.cs");
 exec("./ai.cs");
+exec("./npcs.cs");
 
 function catacombs::create(%this)
 {

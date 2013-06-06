@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_npc_plant_rundown"
+    Image="@asset=catacombs:image_npc_plant"
+    AnimationFrames="8 9"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

@@ -541,4 +541,24 @@
         Position="13.1 -163.5"
         BodyType="Static"
         GatherContacts="1" />
+    <Sprite
+        class="class_plant"
+        SceneLayer="16"
+        SceneGroup="25"
+        Size="3.4375 4.125"
+        Position="-156.3 -155.7"
+        Awake="1"
+        GatherContacts="1"
+        CollisionCallback="1"
+		FixedAngle="1"
+        Animation="@asset=catacombs:anim_npc_plant_standdown">
+        <Sprite.CollisionShapes>
+            <Polygon>
+                <Point>-1.7188 -2.0625</Point>
+                <Point>1.7188 -2.0625</Point>
+                <Point>1.7188 2.0625</Point>
+                <Point>-1.7188 2.0625</Point>
+            </Polygon>
+        </Sprite.CollisionShapes>
+    </Sprite>
 </Scene>

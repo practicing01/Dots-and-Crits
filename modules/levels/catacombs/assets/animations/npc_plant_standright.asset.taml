@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_npc_plant_standright"
+    Image="@asset=catacombs:image_npc_plant"
+    AnimationFrames="3"
+    AnimationCycle="true"
+	AnimationTime="0.5" />
