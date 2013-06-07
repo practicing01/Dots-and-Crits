@@ -88,9 +88,13 @@ if (%targplayer.speed<0){%targplayer.speed=0;}
 restartmove(%targplayer);
 
 }
-else
+else if (%customfieldobj.targethandle.SceneGroup==25)//npcs
 {
-//npc/world object
+
+if (%customfieldobj.targethandle.speed>0){%customfieldobj.targethandle.speed-=%customfieldobj.targethandle.normalspeed;}
+if (%customfieldobj.targethandle.speed<0){%customfieldobj.targethandle.speed=0;}
+%customfieldobj.targethandle.cancelMoveTo();
+
 }
 
 }
@@ -110,9 +114,9 @@ if (%customfieldobj.targethandle.Class$="class_player")
 restartmove(%targplayer);
 
 }
-else
+else if (%customfieldobj.targethandle.SceneGroup==25)//npcs
 {
-//npc/world object
+%customfieldobj.targethandle.speed+=%customfieldobj.targethandle.normalspeed;
 }
 
 }

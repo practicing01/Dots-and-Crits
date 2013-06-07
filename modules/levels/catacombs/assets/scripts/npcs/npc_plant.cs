@@ -129,7 +129,10 @@ if (Vector2Distance(%plant.Position,%plant.target.Position)>Vector2Distance("0 0
 {%plant.target=-1;}
 else
 {
-%plant.moveTo(%plant.target.Position,5,true,false);
+if (%plant.speed!=0)
+{
+%plant.moveTo(%plant.target.Position,%plant.speed,true,false);
+}
 
 %xdist=mAbs(%plant.Position.X-%plant.target.Position.X);
 %ydist=mAbs(%plant.Position.Y-%plant.target.Position.Y);
@@ -185,5 +188,7 @@ function class_plant::initialize(%this)
 %this.health=100;
 %this.target=-1;
 %this.curdir=0;//0=up,1=down,2=left,3=right
+%this.normalspeed=5;
+%this.speed=5;
 %this.aischedule=schedule(1000,0,"plantai",%this);
 }
