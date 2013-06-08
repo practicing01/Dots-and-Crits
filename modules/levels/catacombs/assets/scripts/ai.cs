@@ -1,5 +1,6 @@
+//this is for player 2 ai
 //can have custom ai here
-function catacombs::ai(%this)
+function catacombs::ai(%this)//change catacombs to your module name
 {
 exec("./../../../../DotsandCrits/scripts/ai/ai.cs");
 

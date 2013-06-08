@@ -1,3 +1,4 @@
+<-- change catacombs to your module name -->
 <ModuleDefinition
 	ModuleId="catacombs"
 	VersionId="1"

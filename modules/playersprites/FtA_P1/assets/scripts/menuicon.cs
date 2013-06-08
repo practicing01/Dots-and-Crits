@@ -1,4 +1,4 @@
-function FtA_P1::setmenuiconvisible()
+function FtA_P1::setmenuiconvisible()//change FtA_P1 to your module's name
 {
 if (!$player_to_load)//player 1
 {
@@ -15,7 +15,7 @@ $player2menuiconsprite.safeDelete();
 }
 }
 
-%ass=AssetDatabase.acquireAsset("FtA_P1:image_menuicon");
+%ass=AssetDatabase.acquireAsset("FtA_P1:image_menuicon");//change FtA_P1 to your module's name
 
 if (!$player_to_load)//player 1
 {
@@ -29,14 +29,14 @@ $player1menuiconsprite=new Sprite()
 Position=ScalePositionVectorToCam(%pos);
 Size=ScaleAssSizeVectorToCam(%ass);
 BodyType="static";
-Image="FtA_P1:image_menuicon";
+Image="FtA_P1:image_menuicon";//change FtA_P1 to your module's name
 Visible="true";
 };
 DotsandCritsscene.add($player1menuiconsprite);
 
 AssetDatabase.releaseAsset(%ass.getAssetId());
 
-$player1menuiconsprite.playAnimation("FtA_P1:anim_menuicon");
+$player1menuiconsprite.playAnimation("FtA_P1:anim_menuicon");//change FtA_P1 to your module's name
 }
 else//player 2
 {
@@ -50,12 +50,12 @@ $player2menuiconsprite=new Sprite()
 Position=ScalePositionVectorToCam(%pos);
 Size=ScaleAssSizeVectorToCam(%ass);
 BodyType="static";
-Image="FtA_P1:image_menuicon";
+Image="FtA_P1:image_menuicon";//change FtA_P1 to your module's name
 Visible="true";
 };
 DotsandCritsscene.add($player2menuiconsprite);
 
-$player2menuiconsprite.playAnimation("FtA_P1:anim_menuicon");
+$player2menuiconsprite.playAnimation("FtA_P1:anim_menuicon");//change FtA_P1 to your module's name
 }
 
 }

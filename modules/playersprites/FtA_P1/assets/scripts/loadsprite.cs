@@ -1,4 +1,4 @@
-function FtA_P1::loadsprite(%this)
+function FtA_P1::loadsprite(%this)//change FtA_P1 to your module's name
 {
 %player=$players.getObject($player_to_load);
 
@@ -66,7 +66,7 @@ DotsandCritsscene.add(%player.sprite);
 
 if ($view==0)
 {
-%ass=AssetDatabase.acquireAsset("FtA_P1:image_topdown");
+%ass=AssetDatabase.acquireAsset("FtA_P1:image_topdown");//change FtA_P1 to your module's name
 
 %player.sprite.Position="0 0";
 %player.sprite.setFixedAngle(true);
@@ -76,11 +76,14 @@ if ($view==0)
 %player.spriteid=%player.sprite.addSprite();
 %player.sprite.setSpriteLocalPosition(0,0);
 %player.sprite.setSpriteSize(ScaleAssSizeVectorToCam(%ass));
-%player.sprite.setSpriteImage("FtA_P1:image_topdown",0);
+%player.sprite.setSpriteImage("FtA_P1:image_topdown",0);//change FtA_P1 to your module's name
 %player.sprite.SetSpriteDepth(1);
 
 AssetDatabase.releaseAsset(%ass.getAssetId());
 
+//if you kept the same naming convention, change FtA_P1 to your module's name
+//if not, change the strings to match your animation asset's names
+//the movement animations are required
 %player.anim_stand_up="FtA_P1:anim_topdownstandup";
 %player.anim_stand_down="FtA_P1:anim_topdownstanddown";
 %player.anim_stand_left="FtA_P1:anim_topdownstandleft";
@@ -97,11 +100,23 @@ AssetDatabase.releaseAsset(%ass.getAssetId());
 %player.sprite.setUpdateCallback(true);
 
 ///////////////////////////////////////////////////////
+//create animation simobjects to hold animation references:
+
 //when a skill is called, it can choose which animation to run
-//if the animation index doesn't exist, the skill should choose a random anim
-//create animation simobjects to hold animation references
+//if the animation index or name doesn't exist, the skill should choose a random anim
 
 //need an object for each animation, add each object to the anim set
+
+//you can create as many animations as you want for each gesture
+//if you don't want to deal with this you can assign the required animations to these
+//(the movement animations)
+
+//the gestures are as follow:
+//self-cast, target-cast, melee, emote
+//each gesture needs an animation for each direction (up, down, left, right)
+//and for both standing/running
+//4 gestures * 4 directions * 2 (standing/running) = 32 unique animations
+//+ 2 (standing/running) * 4 directions for movement = 40 unique animations.
 %animobj=new ScriptObject()
 {
 anim="FtA_P1:anim_topdownstandupselfcast";
@@ -328,7 +343,7 @@ animname="anim_topdownstandright";
 
 ///////////////////////////////////////////////////////
 }
-else
+else//the following is the same as above but for sideview camera
 {
 
 %ass=AssetDatabase.acquireAsset("FtA_P1:image_sideview");
@@ -594,7 +609,12 @@ animname="anim_sideviewstandright";
 }
 
 ///////////////////////////////////////////////////////
-//set projectile origins
+//set projectile origins:
+
+//here you can set the vector where projectiles launch from
+//each direction (up,down,left,right) has a simset containing
+//the vectors.  projectile skills can randomly choose which
+//vector to use or specify one
 
 for (%y=0;%y<%player.projectileorigindirset.getCount();%y++)
 {

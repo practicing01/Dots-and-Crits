@@ -1,4 +1,4 @@
-function catacombs::loadplayerclass()
+function catacombs::loadplayerclass()//change catacombs to your module name
 {
 //the following can be level-specific for different key input behaviour
 exec("./../../../../DotsandCrits/scripts/playerscripts/loadplayerclass.cs");

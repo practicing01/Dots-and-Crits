@@ -56,7 +56,7 @@ if (%anim!$="catacombs:anim_npc_plant_attackright")
 
 }
 
-function class_plant::updatehealth(%this)
+function class_plant::updatehealth(%this)//updatehealth function required by all npc's
 {
 if (%this.health<=0)
 {

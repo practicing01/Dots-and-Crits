@@ -1,3 +1,1 @@
-exec("./assets/scripts/catacombs.cs");
-
-//space level
+exec("./assets/scripts/catacombs.cs");//change catacombs to your module name

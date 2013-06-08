@@ -7,7 +7,7 @@ exec("./healthdisplay.cs");
 exec("./ai.cs");
 exec("./npcs.cs");
 
-function catacombs::create(%this)
+function catacombs::create(%this)//change catacombs to your module name
 {
 echo("created catacombs");
 }

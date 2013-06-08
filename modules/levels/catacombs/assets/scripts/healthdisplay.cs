@@ -1,4 +1,5 @@
-function catacombs::healthdisplay(%this,%playerindex,%health)
+//can have custom health display code
+function catacombs::healthdisplay(%this,%playerindex,%health)//change catacombs to your module name
 {
 if (isObject(gui_text_player1health))
 {

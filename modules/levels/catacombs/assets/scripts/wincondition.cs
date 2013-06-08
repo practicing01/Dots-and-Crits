@@ -1,3 +1,6 @@
+//change catacombs to your module name
+//you can code different win conditions here
+
 if (isObject($schedule_wincondition))
 {
 $schedule_wincondition.delete();

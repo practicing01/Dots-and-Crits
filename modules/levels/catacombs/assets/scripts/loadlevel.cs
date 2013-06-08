@@ -1,4 +1,4 @@
-function catacombs::loadlevel(%this)
+function catacombs::loadlevel(%this)//change catacombs to your module name
 {
 cancelallschedules();
 DotsandCritsscene.clear();
@@ -26,7 +26,7 @@ DotsandCritsscene.setGravity(0,0);
 }
 else
 {
-$levelgravity=-20;
+$levelgravity=-20;//can set to a custom number
 DotsandCritsscene.setGravity(0,$levelgravity);
 }
 
