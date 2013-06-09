@@ -1,0 +1,14 @@
+<-- change Lelur to your module's name -->
+<ModuleDefinition
+	ModuleId="Lelur"
+	VersionId="1"
+	Description="Lelur"
+	Type="playersprite"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+	DestroyFunction="destroy">
+		<DeclaredAssets
+			Path="assets"
+			Extension="asset.taml"
+			Recurse="true"/>
+</ModuleDefinition>

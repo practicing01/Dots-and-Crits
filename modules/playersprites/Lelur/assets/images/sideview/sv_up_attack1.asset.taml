@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_sv_up_attack1"
+    ImageFile="attack1up.png"
+	CellCountX="16"
+    CellCountY="1"
+    CellWidth="128"
+    CellHeight="128"
+	OptimalResolution="1280 800"/>
