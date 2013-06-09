@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_bariconreadyactive"
+    Image="@asset=Bombermine:image_bariconreadyactive"
+    AnimationFrames="0 1 2 3"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

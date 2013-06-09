@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_Bombermine"
+    ImageFile="Bombermine.png"
+	CellCountX="9"
+    CellCountY="1"
+    CellWidth="32"
+    CellHeight="40"
+	OptimalResolution="1280 800"/>

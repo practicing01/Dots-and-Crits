@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_idle"
+    Image="@asset=Bombermine:image_Bombermine"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="0.5" />
