@@ -28,6 +28,7 @@ CollisionCallback=true;
 SceneGroup=28+%user;//28=p1 projectiles 29=p2 projectiles
 CollisionGroups=%collisiongroups;
 FixedAngle=true;
+SleepingAllowed=false;
 };
 DotsandCritsscene.add(%shield);
 %shield.setBlendAlpha(0.25);
@@ -52,6 +53,7 @@ CollisionCallback=true;
 SceneGroup=28+%user;//28=p1 projectiles 29=p2 projectiles
 CollisionGroups=%collisiongroups;
 FixedAngle=true;
+SleepingAllowed=false;
 };
 DotsandCritsscene.add(%shield);
 %shield.setBlendAlpha(0.25);
@@ -74,6 +76,7 @@ CollisionCallback=true;
 SceneGroup=28+%user;//28=p1 projectiles 29=p2 projectiles
 CollisionGroups=%collisiongroups;
 FixedAngle=true;
+SleepingAllowed=false;
 };
 DotsandCritsscene.add(%shield);
 %shield.setBlendAlpha(0.25);
@@ -95,6 +98,7 @@ CollisionCallback=true;
 SceneGroup=28+%user;//28=p1 projectiles 29=p2 projectiles
 CollisionGroups=%collisiongroups;
 FixedAngle=true;
+SleepingAllowed=false;
 };
 DotsandCritsscene.add(%shield);
 %shield.setBlendAlpha(0.25);

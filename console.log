@@ -1,4 +1,4 @@
-//-------------------------- 6/9/2013 -- 10:09:28 -----
+//-------------------------- 6/15/2013 -- 05:50:27 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -52,6 +52,7 @@ created Pointforce
 created Laser
 created Teleport
 created Cloak
+created Lightsaber
 created Heal
 created Projectile
 created Bombermine
@@ -70,8 +71,19 @@ Activating DirectInput...
 DirectInput joystick enabled.
 DirectInput deactivated.
 Activating DirectInput...
+Lightsaber loaded
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+unloaded Lightsaber
 Teleport loaded
-loaded Bombermine Bombermines
+Lightsaber loaded
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
@@ -97,6 +109,7 @@ deleted SineVolley
 deleted Bombermine
 deleted Projectile
 deleted Heal
+deleted Lightsaber
 deleted Cloak
 deleted Teleport
 deleted Laser
@@ -110,7 +123,7 @@ space destroy() called
 modules/levels/space/assets/scripts/space.cs (17): Unable to find object: '' attempting to call function 'delete'
 DotsandCrits: Created scene but no window available.
 catacombs destroy() called
-modules/levels/catacombs/assets/scripts/catacombs.cs (18): Unable to find object: '1439' attempting to call function 'delete'
+modules/levels/catacombs/assets/scripts/catacombs.cs (18): Unable to find object: '1700' attempting to call function 'delete'
 DotsandCrits: Created scene but no window available.
 deathballvalley destroy() called
 modules/levels/deathballvalley/assets/scripts/deathballvalley.cs (18): Unable to find object: '' attempting to call function 'delete'

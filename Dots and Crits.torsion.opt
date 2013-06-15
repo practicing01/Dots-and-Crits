@@ -3,15 +3,7 @@
 <Password>password</Password>
 <Port>6060</Port>
 <LastConfig>Release</LastConfig>
-<Breakpoints>
-<Breakpoint>
-<File>modules\skills\Bombermine\assets\scripts\Bombermine.cs</File>
-<Line>2</Line>
-<Pass>0</Pass>
-<Condition/>
-<Enabled/>
-</Breakpoint>
-</Breakpoints>
+<Breakpoints/>
 <Bookmarks/>
 <OpenFiles/>
 </TorsionProjectOptions>
