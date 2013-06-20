@@ -3,7 +3,7 @@ function catacombs::loadplayerclass()//change catacombs to your module name
 //the following can be level-specific for different key input behaviour
 exec("./../../../../DotsandCrits/scripts/playerscripts/loadplayerclass.cs");
 exec("./../../../../DotsandCrits/scripts/playerscripts/splitcamera.cs");
-//exec("./../../../../DotsandCrits/scripts/playerscripts/joycursor.cs");
+exec("./../../../../DotsandCrits/scripts/playerscripts/joycursor/joycursor.cs");
 
 exec("./../../../../DotsandCrits/scripts/playerscripts/resetstats.cs");
 resetstats();

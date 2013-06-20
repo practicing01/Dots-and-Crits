@@ -14,6 +14,9 @@ echo("created space");
 function space::destroy(%this)
 {
 echo("space destroy() called");
+if (isObject(%this.loadedscene))
+{
 %this.loadedscene.delete();
+}
 createDotsandCritsscene();
 }

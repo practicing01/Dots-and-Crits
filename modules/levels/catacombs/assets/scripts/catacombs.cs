@@ -15,6 +15,9 @@ echo("created catacombs");
 function catacombs::destroy(%this)
 {
 echo("catacombs destroy() called");
+if (isObject(%this.loadedscene))
+{
 %this.loadedscene.delete();
+}
 createDotsandCritsscene();
 }

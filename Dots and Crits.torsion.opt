@@ -5,5 +5,9 @@
 <LastConfig>Release</LastConfig>
 <Breakpoints/>
 <Bookmarks/>
-<OpenFiles/>
+<OpenFiles>
+<File ScrollX="0" ScrollY="0" Active="true">modules\DotsandCrits\scripts\playerscripts\joycursor\joycursor.cs</File>
+<File ScrollX="0" ScrollY="58">modules\DotsandCrits\scripts\playerscripts\joycursor\bindjoystick.cs</File>
+<File ScrollX="0" ScrollY="45">modules\DotsandCrits\scripts\playerscripts\joycursor\movejoycursor.cs</File>
+</OpenFiles>
 </TorsionProjectOptions>

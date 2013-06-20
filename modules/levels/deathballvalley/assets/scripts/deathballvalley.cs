@@ -15,6 +15,9 @@ echo("created deathballvalley");
 function deathballvalley::destroy(%this)
 {
 echo("deathballvalley destroy() called");
+if (isObject(%this.loadedscene))
+{
 %this.loadedscene.delete();
+}
 createDotsandCritsscene();
 }

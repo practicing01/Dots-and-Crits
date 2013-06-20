@@ -67,6 +67,8 @@ DotsandCritswindow.mount(%player1.sprite,"0 0",0,true,false);
 
 %player2=$players.getObject(1);
 %player2.sprite.safeDelete();
+
+$joyobject.cursorgui.Visible=false;
 }
 
 //alxStop($menumusic);
