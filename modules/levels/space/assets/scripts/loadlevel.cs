@@ -30,8 +30,6 @@ $levelgravity=-20;
 DotsandCritsscene.setGravity(0,$levelgravity);
 }
 
-initskills();
-
 if (isObject(gui_spacescore))
 {
 gui_spacescore.delete();

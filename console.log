@@ -1,4 +1,4 @@
-//-------------------------- 6/20/2013 -- 11:30:00 -----
+//-------------------------- 6/21/2013 -- 12:00:13 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -78,6 +78,29 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
+Lightsaber loaded
+Lightsaber loaded
+player 2 scored!
+player 1 scored!
+player 2 scored!
+player 1 scored!
+player 2 scored!
+player 2 scored!
+player 1 scored!
+player 2 scored!
+DirectInput deactivated.
+Activating DirectInput...
+player 1 scored!
+player 2 scored!
+player 1 scored!
+player 2 scored!
+player 1 scored!
+player 2 scored!
+player 2 scored!
+player 1 scored!
+player 2 scored!
+player 2 won!
+unloaded Lightsaber
 DirectInput deactivated.
 goodbye world
 deleted Deathball

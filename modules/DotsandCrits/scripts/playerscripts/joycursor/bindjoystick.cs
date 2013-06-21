@@ -13,8 +13,7 @@ $joyobject.axisstate.Y=-1;
 movejoycursor(1,$joyobject.axisstate,true);
 }
 }
-
-if (%value==1)
+else if (%value==1)
 {
 if ($joyobject.axisstate.Y!=1)
 {
@@ -24,13 +23,7 @@ $joyobject.axisstate.Y=1;
 movejoycursor(1,$joyobject.axisstate,true);
 }
 }
-
-if (%value<0&&%value>-1)
-{
-//echo("nothing pressed");
-}
-
-if (%value>0&&%value<1)
+else if (%value>0&&%value<1)
 {
 if ($joyobject.axisstate.Y!=0)
 {
@@ -40,6 +33,11 @@ $joyobject.axisstate.Y=0;
 movejoycursor(1,$joyobject.axisstate,true);
 }
 }
+
+/*if (%value<0&&%value>-1)
+{
+//echo("nothing pressed");
+}*/
 
 }
 
@@ -56,8 +54,7 @@ $joyobject.axisstate.X=-1;
 movejoycursor(0,$joyobject.axisstate,true);
 }
 }
-
-if (%value==1)
+else if (%value==1)
 {
 if ($joyobject.axisstate.X!=1)
 {
@@ -67,13 +64,7 @@ $joyobject.axisstate.X=1;
 movejoycursor(0,$joyobject.axisstate,true);
 }
 }
-
-if (%value<0&&%value>-1)
-{
-//echo("nothing pressed");
-}
-
-if (%value>0&&%value<1)
+else if (%value>0&&%value<1)
 {
 if ($joyobject.axisstate.X!=0)
 {
@@ -83,6 +74,11 @@ $joyobject.axisstate.X=0;
 movejoycursor(0,$joyobject.axisstate,true);
 }
 }
+
+/*if (%value<0&&%value>-1)
+{
+//echo("nothing pressed");
+}*/
 
 }
 

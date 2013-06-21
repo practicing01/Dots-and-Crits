@@ -85,4 +85,5 @@ AssetDatabase.releaseAsset(%ass.getAssetId());
 //$joycursor.playAnimation("DotsandCrits:anim_joycursor");
 
 exec("./bindjoystick.cs");
+exec("./joycallback.cs");
 exec("./movejoycursor.cs");

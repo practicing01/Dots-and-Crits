@@ -57,6 +57,8 @@ if ($levelp1spawnportals.getCount())
 }
 else{%player2.sprite.setPosition(0,0);}
 
+initskills();
+
 exec("./wincondition.cs");
 
 }

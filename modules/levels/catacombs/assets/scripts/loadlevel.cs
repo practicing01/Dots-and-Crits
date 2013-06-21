@@ -30,8 +30,6 @@ $levelgravity=-20;//can set to a custom number
 DotsandCritsscene.setGravity(0,$levelgravity);
 }
 
-initskills();
-
 if (isObject(gui_catacombsscore))
 {
 gui_catacombsscore.delete();

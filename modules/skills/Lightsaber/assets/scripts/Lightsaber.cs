@@ -4,6 +4,7 @@ exec("./useskill.cs");
 exec("./ai.cs");
 exec("./oncollision.cs");
 exec("./mousemovement.cs");
+exec("./joymovement.cs");
 
 function Lightsaber::displayskilldescription(%this,%skilllist,%slot)
 {
@@ -130,9 +131,17 @@ else//player 1 casted
 DotsandCritsscene.add(%fields.Lightsabersprite);
 %fields.Lightsabersprite.createPolygonBoxCollisionShape(ScaleAssSizeVectorToCam(Lightsaber.Lightsaberass));
 
+//player 1 uses mouse player 2 uses joystick
+if (!%x)//player 0 casted
+{
 %fields.Lightsabersprite.setUseInputEvents(true);
 
 DotsandCritswindow.addInputListener(%fields.Lightsabersprite);
+}
+else
+{
+$joycallbackobjlist.add(%fields.Lightsabersprite);
+}
 
 Lightsaber.customplayerfields.add(%fields);
 }
