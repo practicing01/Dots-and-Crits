@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_projectilein"
+    Image="@asset=Portalgun:image_projectilein"
+    AnimationFrames="2 1 0"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_portalin"
+    ImageFile="portalin.png"
+	CellCountX="1"
+    CellCountY="9"
+    CellWidth="60"
+    CellHeight="18"
+	OptimalResolution="1280 800"/>

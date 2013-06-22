@@ -5,11 +5,5 @@
 <LastConfig>Release</LastConfig>
 <Breakpoints/>
 <Bookmarks/>
-<OpenFiles>
-<File ScrollX="0" ScrollY="58">modules\DotsandCrits\scripts\playerscripts\joycursor\joycursor.cs</File>
-<File ScrollX="0" ScrollY="57" Active="true">modules\DotsandCrits\scripts\playerscripts\joycursor\bindjoystick.cs</File>
-<File ScrollX="0" ScrollY="51">modules\DotsandCrits\scripts\playerscripts\joycursor\movejoycursor.cs</File>
-<File ScrollX="0" ScrollY="0">modules\DotsandCrits\scripts\playerscripts\joycursor\joycallback.cs</File>
-<File ScrollX="0" ScrollY="30">modules\skills\Lightsaber\assets\scripts\joymovement.cs</File>
-</OpenFiles>
+<OpenFiles/>
 </TorsionProjectOptions>

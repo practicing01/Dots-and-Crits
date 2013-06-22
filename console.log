@@ -1,4 +1,4 @@
-//-------------------------- 6/21/2013 -- 12:00:13 -----
+//-------------------------- 6/22/2013 -- 12:04:00 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -48,6 +48,7 @@ created lidia
 created Lelur
 created shura
 created intrepid
+created Portalgun
 created Pointforce
 created Laser
 created Teleport
@@ -69,6 +70,8 @@ created Grab
 created Deathball
 Activating DirectInput...
 DirectInput joystick enabled.
+DirectInput deactivated.
+Activating DirectInput...
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
@@ -78,29 +81,10 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-Lightsaber loaded
-Lightsaber loaded
-player 2 scored!
-player 1 scored!
-player 2 scored!
-player 1 scored!
-player 2 scored!
-player 2 scored!
-player 1 scored!
-player 2 scored!
+Teleport loaded
+Portalgun loaded
 DirectInput deactivated.
 Activating DirectInput...
-player 1 scored!
-player 2 scored!
-player 1 scored!
-player 2 scored!
-player 1 scored!
-player 2 scored!
-player 2 scored!
-player 1 scored!
-player 2 scored!
-player 2 won!
-unloaded Lightsaber
 DirectInput deactivated.
 goodbye world
 deleted Deathball
@@ -122,6 +106,7 @@ deleted Cloak
 deleted Teleport
 deleted Laser
 deleted Pointforce
+deleted Portalgun
 freed intrepid
 freed shura
 freed Lelur

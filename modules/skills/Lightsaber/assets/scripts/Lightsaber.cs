@@ -137,6 +137,7 @@ if (!%x)//player 0 casted
 %fields.Lightsabersprite.setUseInputEvents(true);
 
 DotsandCritswindow.addInputListener(%fields.Lightsabersprite);
+scenewindow_player1.addInputListener(%fields.Lightsabersprite);
 }
 else
 {

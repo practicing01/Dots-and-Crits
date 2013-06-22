@@ -10,14 +10,13 @@ DotsandCritswindow.Profile=DotsandCritswindowprofile;
 Canvas.setContent(DotsandCritswindow);
 }
 
-%allBits="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31";
 DotsandCritswindow.stopCameraMove();
 DotsandCritswindow.dismount();
 DotsandCritswindow.setViewLimitOff();
-DotsandCritswindow.setRenderGroups(%allBits);
-DotsandCritswindow.setRenderLayers(%allBits);
-DotsandCritswindow.setObjectInputEventGroupFilter(%allBits);
-DotsandCritswindow.setObjectInputEventLayerFilter(%allBits);
+DotsandCritswindow.setRenderGroups($allBits);
+DotsandCritswindow.setRenderLayers($allBits);
+DotsandCritswindow.setObjectInputEventGroupFilter($allBits);
+DotsandCritswindow.setObjectInputEventLayerFilter($allBits);
 DotsandCritswindow.setLockMouse(true);
 DotsandCritswindow.setCameraPosition(0,0);
 
@@ -65,14 +64,13 @@ return;
 
 DotsandCritswindow.setScene(DotsandCritsscene);
 
-%allBits="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31";
 DotsandCritswindow.stopCameraMove();
 DotsandCritswindow.dismount();
 DotsandCritswindow.setViewLimitOff();
-DotsandCritswindow.setRenderGroups(%allBits);
-DotsandCritswindow.setRenderLayers(%allBits);
-DotsandCritswindow.setObjectInputEventGroupFilter(%allBits);
-DotsandCritswindow.setObjectInputEventLayerFilter(%allBits);
+DotsandCritswindow.setRenderGroups($allBits);
+DotsandCritswindow.setRenderLayers($allBits);
+DotsandCritswindow.setObjectInputEventGroupFilter($allBits);
+DotsandCritswindow.setObjectInputEventLayerFilter($allBits);
 DotsandCritswindow.setLockMouse(true);
 DotsandCritswindow.setCameraPosition(0,0);
 

@@ -5,5 +5,4 @@
     CellCountY="1"
     CellWidth="256"
     CellHeight="256"
-	AutoUnload="false"
 	OptimalResolution="1280 800"/>

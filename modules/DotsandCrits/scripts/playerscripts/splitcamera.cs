@@ -51,6 +51,12 @@ scenewindow_player1.setBackgroundColor(Black);
 scenewindow_player2.setBackgroundColor(Black);
 scenewindow_player1.setVisible(false);
 scenewindow_player2.setVisible(false);
+scenewindow_player1.setObjectInputEventGroupFilter($allBits);
+scenewindow_player1.setObjectInputEventLayerFilter($allBits);
+scenewindow_player2.setObjectInputEventGroupFilter($allBits);
+scenewindow_player2.setObjectInputEventLayerFilter($allBits);
+scenewindow_player1.setLockMouse(true);
+scenewindow_player2.setLockMouse(true);
 
 if (isObject($schedule_checkforsplit))
 {

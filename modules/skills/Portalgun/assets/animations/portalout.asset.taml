@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_portalout"
+    Image="@asset=Portalgun:image_portalout"
+    AnimationFrames="8 7 6 5 4 3 2 1 0"
+    AnimationCycle="false"
+	AnimationTime="0.5" />
