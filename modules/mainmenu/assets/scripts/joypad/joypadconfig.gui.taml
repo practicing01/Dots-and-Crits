@@ -208,6 +208,27 @@
 		hovertime="1000"
 		groupNum="-1"
 		useMouseEvents="1" />
+
+		
+	<GuiButtonCtrl
+		Name="gui_button_stickclick"
+		Profile="BlueButtonProfile"
+		Text="Stick Click"
+		ButtonType="PushButton"
+		command="mapjoybutton(10);"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="432 42"
+		Extent="160 32"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
 		
 	<GuiMLTextCtrl
 		Name="gui_text_configinstructions"

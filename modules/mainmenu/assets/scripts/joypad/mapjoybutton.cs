@@ -75,7 +75,13 @@ echo("mapped "@%buttonpressed.name@" to toggle skill bar nibble");
 }
 else if (%buttonindex==9)//tool skill
 {
-//GlobalActionMap.bindCmd(joystick,%buttonpressed,"toggleskillnibble(1);","");
+echo("not defined yet :)");
+}
+else if (%buttonindex==10)//stick click
+{
+GlobalActionMap.bindCmd(joystick,%buttonpressed.name,"stickclick(1);","stickclick(0);");
+%buttonpressed.map=10;
+echo("mapped "@%buttonpressed.name@" to stick click");
 }
 
 }
