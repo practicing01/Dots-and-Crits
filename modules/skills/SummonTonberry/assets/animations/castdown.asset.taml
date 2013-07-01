@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_castdown"
+    Image="@asset=SummonTonberry:image_tonberry"
+    AnimationFrames="36 37"
+    AnimationCycle="false"
+	AnimationTime="0.5" />

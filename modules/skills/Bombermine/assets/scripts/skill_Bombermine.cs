@@ -28,6 +28,7 @@ class="class_Bombermine";
 parenthandle=0;
 CollisionCallback="true";
 SceneLayer=16;
+health=100;
 };
 
 %Bomberminesprite.playAnimation("Bombermine:anim_idle");
@@ -35,12 +36,12 @@ SceneLayer=16;
 if (!%player.sprite.SceneGroup)//player 0 casted
 {
 %Bomberminesprite.SceneGroup=28;//player 0 Bombermines
-%Bomberminesprite.setCollisionGroups(1,25,26,29,30);//1=player 2, 29=player 2 Bombermines, 30=walls, 26=world objects
+%Bomberminesprite.setCollisionGroups(1,25,26,27,29,30);//1=player 2, 29=player 2 Bombermines, 30=walls, 26=world objects, 27=portals
 }
 else//player 1 casted
 {
 %Bomberminesprite.SceneGroup=29;//player 1 Bombermines
-%Bomberminesprite.setCollisionGroups(0,25,26,28,30);//0=player 1, 28=player 1 Bombermines, 30=walls, 26=world objects
+%Bomberminesprite.setCollisionGroups(0,25,26,27,28,30);//0=player 1, 28=player 1 Bombermines, 30=walls, 26=world objects, 27=portals
 }
 
 DotsandCritsscene.add(%Bomberminesprite);

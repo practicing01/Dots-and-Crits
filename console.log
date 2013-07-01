@@ -1,4 +1,4 @@
-//-------------------------- 6/23/2013 -- 01:32:53 -----
+//-------------------------- 7/1/2013 -- 10:19:04 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -61,6 +61,7 @@ created SineVolley
 created ScatterVolley
 created Volley
 created Shield
+created SummonTonberry
 created Snare
 created Melee
 created Flashlight
@@ -80,8 +81,17 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-Teleport loaded
-Portalgun loaded
+SummonTonberry loaded
+SceneObject::moveTo() - Speed '0.000000' is invalid.
+SceneObject::moveTo() - Speed '0.000000' is invalid.
+SceneObject::moveTo() - Speed '0.000000' is invalid.
+SceneObject::moveTo() - Speed '0.000000' is invalid.
+SceneObject::moveTo() - Speed '0.000000' is invalid.
+SceneObject::moveTo() - Speed '0.000000' is invalid.
+SceneObject::moveTo() - Speed '0.000000' is invalid.
+SceneObject::moveTo() - Speed '0.000000' is invalid.
+SceneObject::moveTo() - Speed '0.000000' is invalid.
+SceneObject::moveTo() - Speed '0.000000' is invalid.
 DirectInput deactivated.
 goodbye world
 deleted Deathball
@@ -91,6 +101,7 @@ deleted Speedboof
 deleted Flashlight
 deleted Melee
 deleted Snare
+deleted SummonTonberry
 deleted Shield
 deleted Volley
 deleted ScatterVolley

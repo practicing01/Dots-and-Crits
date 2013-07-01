@@ -47,7 +47,7 @@ if (Vector2Distance(%bahamut.Position,%bahamut.target.Position)>Vector2Distance(
 {%bahamut.target=-1;}
 else
 {
-%bahamut.moveTo(%bahamut.target.Position,5,true,false);
+%bahamut.moveTo(%bahamut.target.Position,%bahamut.speed,true,false);
 }
 }
 
@@ -61,4 +61,6 @@ function class_bahamut::initialize(%this)
 %this.health=100;
 %this.target=-1;
 %this.aischedule=schedule(1000,0,"bahamutai",%this);
+%this.speed=5;
+%this.normalspeed=5;
 }

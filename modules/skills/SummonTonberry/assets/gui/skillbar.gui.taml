@@ -1,0 +1,96 @@
+<GuiControl
+	Name="gui_tonberry_skillbar"
+    Profile="GuiTransparentProfile"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="0 0"
+    Extent="100 50"
+    MinExtent="1 1"
+    Visible="1"
+	HelpTag="0">
+	
+	<!-- move button -->
+	<GuiButtonCtrl
+		Name="movebutt"
+		Profile="BlueButtonProfile"
+		Text="Move"
+		ButtonType="PushButton"
+		command="gui_tonberry_skillbar.move();"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="0 0"
+		Extent="50 25"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+		
+	<!-- follow button -->
+	<GuiButtonCtrl
+		Name="followbutt"
+		Profile="BlueButtonProfile"
+		Text="Follow"
+		ButtonType="PushButton"
+		command="gui_tonberry_skillbar.follow();"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="50 0"
+		Extent="50 25"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+		
+	<!-- snare button -->
+	<GuiButtonCtrl
+		Name="snarebutt"
+		Profile="BlueButtonProfile"
+		Text="Snare"
+		ButtonType="PushButton"
+		command="gui_tonberry_skillbar.snare();"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="0 25"
+		Extent="50 25"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+		
+		<!-- shank button -->
+	<GuiButtonCtrl
+		Name="shankbutt"
+		Profile="BlueButtonProfile"
+		Text="Shank"
+		ButtonType="PushButton"
+		command="gui_tonberry_skillbar.shank();"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="50 25"
+		Extent="50 25"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+
+</GuiControl>

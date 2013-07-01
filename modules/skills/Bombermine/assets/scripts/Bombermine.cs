@@ -41,3 +41,8 @@ function Bombermine::transformobjects(%this,%playerindex)
 {
 return;
 }
+
+function class_Bombermine::updatehealth(%this)
+{
+if (%this.health<=0){%this.playAnimation("Bombermine:anim_explode");}
+}

@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_shankright"
+    Image="@asset=SummonTonberry:image_tonberry"
+    AnimationFrames="15 14 13 12"
+    AnimationCycle="false"
+	AnimationTime="0.5" />

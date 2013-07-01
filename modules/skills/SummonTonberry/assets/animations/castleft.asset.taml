@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_castleft"
+    Image="@asset=SummonTonberry:image_tonberry"
+    AnimationFrames="34 35"
+    AnimationCycle="false"
+	AnimationTime="0.5" />

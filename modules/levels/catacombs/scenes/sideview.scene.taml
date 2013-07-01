@@ -3,6 +3,7 @@
     objmovespeed="0.1">
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="-150 75"
         BodyType="Static"
@@ -11,6 +12,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="-50 75"
         BodyType="Static"
@@ -19,6 +21,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="50 75"
         BodyType="Static"
@@ -27,6 +30,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="150 75"
         BodyType="Static"
@@ -35,6 +39,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="-150 0"
         BodyType="Static"
@@ -43,6 +48,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="-50 0"
         BodyType="Static"
@@ -51,6 +57,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="50 0"
         BodyType="Static"
@@ -59,6 +66,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="150 0"
         BodyType="Static"
@@ -67,6 +75,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="-150 -75"
         BodyType="Static"
@@ -75,6 +84,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="-50 -75"
         BodyType="Static"
@@ -83,6 +93,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="50 -75"
         BodyType="Static"
@@ -91,6 +102,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="150 -75"
         BodyType="Static"
@@ -99,6 +111,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="-150 -150"
         BodyType="Static"
@@ -107,6 +120,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="-50 -150"
         BodyType="Static"
@@ -115,6 +129,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="50 -150"
         BodyType="Static"
@@ -123,6 +138,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="100 75"
         Position="150 -150"
         BodyType="Static"
@@ -131,6 +147,7 @@
         Frame="0" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="1.25 3"
         Position="-156.2 -156.3"
         BodyType="Static"
@@ -139,6 +156,7 @@
         Animation="@asset=catacombs:anim_fire" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="1.25 3"
         Position="-155.4 -77.1"
         BodyType="Static"
@@ -147,6 +165,7 @@
         Animation="@asset=catacombs:anim_fire" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="1.25 3"
         Position="-154.3 -2.1"
         BodyType="Static"
@@ -155,6 +174,7 @@
         Animation="@asset=catacombs:anim_fire" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="1.25 3"
         Position="153.6 -154.9"
         BodyType="Static"
@@ -163,6 +183,7 @@
         Animation="@asset=catacombs:anim_fire" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="1.25 3"
         Position="152.8 -76.8"
         BodyType="Static"
@@ -171,6 +192,7 @@
         Animation="@asset=catacombs:anim_fire" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="1.25 3"
         Position="152.8 -2.8"
         BodyType="Static"
@@ -179,6 +201,7 @@
         Animation="@asset=catacombs:anim_fire" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="1.25 3"
         Position="153.6 74"
         BodyType="Static"
@@ -187,6 +210,7 @@
         Animation="@asset=catacombs:anim_fire" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="1.25 3"
         Position="0 74.2"
         BodyType="Static"
@@ -195,6 +219,7 @@
         Animation="@asset=catacombs:anim_fire" />
     <Sprite
         SceneLayer="16"
+		SceneGroup="2"
         Size="1.25 3"
         Position="-155.5 74.8"
         BodyType="Static"
@@ -223,6 +248,7 @@
     </Sprite>
     <Sprite
         SceneLayer="14"
+		SceneGroup="2"
         Size="1.25 3"
         Position="-14.5 -112.2"
         BodyType="Static"
@@ -409,6 +435,7 @@
     </Sprite>
     <Sprite
         SceneLayer="14"
+		SceneGroup="2"
         Size="1.25 3"
         Position="14.4 -112.3"
         BodyType="Static"
@@ -499,6 +526,7 @@
     </Sprite>
     <Sprite
         SceneLayer="14"
+		SceneGroup="2"
         Size="1.25 3"
         Position="-14.4 -37.4"
         BodyType="Static"
@@ -507,6 +535,7 @@
         Animation="@asset=catacombs:anim_fire" />
     <Sprite
         SceneLayer="14"
+		SceneGroup="2"
         Size="1.25 3"
         Position="14.3 -37.4"
         BodyType="Static"
@@ -515,6 +544,7 @@
         Animation="@asset=catacombs:anim_fire" />
     <Sprite
         SceneLayer="14"
+		SceneGroup="2"
         Size="1.25 3"
         Position="14.3 37.5"
         BodyType="Static"
@@ -523,6 +553,7 @@
         Animation="@asset=catacombs:anim_fire" />
     <Sprite
         SceneLayer="14"
+		SceneGroup="2"
         Size="1.25 3"
         Position="-14.5 37.7"
         BodyType="Static"
@@ -551,6 +582,8 @@
         GatherContacts="1"
         CollisionCallback="1"
 		FixedAngle="1"
+		speed="10"
+		normalspeed="10"
         Animation="@asset=catacombs:anim_npc_plant_standdown">
         <Sprite.CollisionShapes>
             <Polygon>

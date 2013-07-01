@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_shankleft"
+    Image="@asset=SummonTonberry:image_tonberry"
+    AnimationFrames="8 9 10 11"
+    AnimationCycle="false"
+	AnimationTime="0.5" />

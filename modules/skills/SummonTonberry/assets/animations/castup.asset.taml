@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_castup"
+    Image="@asset=SummonTonberry:image_tonberry"
+    AnimationFrames="32 33"
+    AnimationCycle="false"
+	AnimationTime="0.5" />

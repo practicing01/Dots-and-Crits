@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_standdown"
+    Image="@asset=SummonTonberry:image_tonberry"
+    AnimationFrames="21"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

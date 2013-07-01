@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_tonberry"
+    ImageFile="tonberry.png"
+	CellCountX="4"
+    CellCountY="10"
+    CellWidth="24"
+    CellHeight="24"
+	OptimalResolution="1280 800"/>
