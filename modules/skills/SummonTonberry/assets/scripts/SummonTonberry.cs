@@ -11,6 +11,7 @@ exec("./../gui/gui_tonberry_skillbar.cs");
 exec("./onmovetocomplete.cs");
 exec("./ondelete.cs");
 exec("./onanimationend.cs");
+exec("./reattachgui.cs");
 
 function SummonTonberry::displayskilldescription(%this,%skilllist,%slot)
 {

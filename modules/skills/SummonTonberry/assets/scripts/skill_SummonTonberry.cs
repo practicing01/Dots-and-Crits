@@ -21,7 +21,7 @@ health=100;
 CollisionCallback=true;
 SceneGroup=25;//npc
 FixedAngle=true;
-gui_skillbar=0;
+handle_attached_gui=0;
 //if listeners are true, the tonberry will wait for a click
 listen4move=false;
 listen4follow=false;
@@ -39,8 +39,10 @@ schedule_shank=0;
 normalspeed=10;
 speed=10;
 snareiteration=0;
+summoner=%user;
 };
 DotsandCritsscene.add(%tonberry);
+$guisplitobjlist.add(%tonberry);
 %tonberry.createPolygonBoxCollisionShape(ScaleAssSizeVectorToCam(SummonTonberry.tonberryass));
 
 if (!%user)//player 0 casted
@@ -55,16 +57,33 @@ else
 $joycallbackobjlist.add(%tonberry);
 }
 
-%tonberry.gui_skillbar=createtonberryskillbar();
+%tonberry.handle_attached_gui=createtonberryskillbar();
 
 gui_tonberry_skillbar.setName("");
 
-Canvas.pushDialog(%tonberry.gui_skillbar);
-%tonberry.attachGui(%tonberry.gui_skillbar,DotsandCritswindow,false,"0 -50");//have to deal with other windows
+Canvas.pushDialog(%tonberry.handle_attached_gui);
 
-for (%x=0;%x<%tonberry.gui_skillbar.getCount();%x++)
+if (DotsandCritswindow.Visible)
 {
-%butt=%tonberry.gui_skillbar.getObject(%x);
+%tonberry.attachGui(%tonberry.handle_attached_gui,DotsandCritswindow,false,"0" SPC -((%tonberry.handle_attached_gui.getExtent().W/2)+50));
+}
+else
+{
+
+if (!%user)//player 0 casted
+{
+%tonberry.attachGui(%tonberry.handle_attached_gui,scenewindow_player1,false,"0" SPC -((%tonberry.handle_attached_gui.getExtent().W/2)+50));
+}
+else
+{
+%tonberry.attachGui(%tonberry.handle_attached_gui,scenewindow_player2,false,"0" SPC -((%tonberry.handle_attached_gui.getExtent().W/2)+50));
+}
+
+}
+
+for (%x=0;%x<%tonberry.handle_attached_gui.getCount();%x++)
+{
+%butt=%tonberry.handle_attached_gui.getObject(%x);
 if (%butt.getName()$="movebutt")
 {
 %butt.command="movebutt("@%tonberry@",0);";

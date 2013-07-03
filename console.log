@@ -1,4 +1,4 @@
-//-------------------------- 7/1/2013 -- 10:19:04 -----
+//-------------------------- 7/3/2013 -- 10:50:23 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -82,16 +82,14 @@ mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
 SummonTonberry loaded
-SceneObject::moveTo() - Speed '0.000000' is invalid.
-SceneObject::moveTo() - Speed '0.000000' is invalid.
-SceneObject::moveTo() - Speed '0.000000' is invalid.
-SceneObject::moveTo() - Speed '0.000000' is invalid.
-SceneObject::moveTo() - Speed '0.000000' is invalid.
-SceneObject::moveTo() - Speed '0.000000' is invalid.
-SceneObject::moveTo() - Speed '0.000000' is invalid.
-SceneObject::moveTo() - Speed '0.000000' is invalid.
-SceneObject::moveTo() - Speed '0.000000' is invalid.
-SceneObject::moveTo() - Speed '0.000000' is invalid.
+Teleport loaded
+SummonTonberry loaded
+scenewindow_player2
+scenewindow_player1
+reattach DotsandCritswindow
+reattach DotsandCritswindow
+reattach scenewindow_player2
+reattach scenewindow_player1
 DirectInput deactivated.
 goodbye world
 deleted Deathball

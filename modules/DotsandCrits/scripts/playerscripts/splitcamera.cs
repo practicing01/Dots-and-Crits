@@ -1,3 +1,5 @@
+exec("./guisplitupdate.cs");
+
 if (isObject(scenewindow_player1))
 {
 scenewindow_player1.delete();
@@ -121,6 +123,8 @@ scenewindow_player2.setVisible(false);
 DotsandCritswindow.setVisible(true);
 DotsandCritswindow.dismount();
 
+guisplitupdate(0);
+
 $schedule_centralizecamera.schedulehandle=schedule(1,0,"centralizecamera");
 }
 }
@@ -136,6 +140,8 @@ repositionskillbar();
 scenewindow_player1.setVisible(true);
 scenewindow_player2.setVisible(true);
 DotsandCritswindow.setVisible(false);
+
+guisplitupdate(1);
 
 scenewindow_player1.mount(%player1.sprite,"0 0",0,true,false);
 scenewindow_player2.mount(%player2.sprite,"0 0",0,true,false);

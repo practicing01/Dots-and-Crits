@@ -6,15 +6,7 @@
 <Breakpoints/>
 <Bookmarks/>
 <OpenFiles>
-<File ScrollX="0" ScrollY="45" Active="true">modules\skills\SummonTonberry\assets\scripts\skill_SummonTonberry.cs</File>
-<File ScrollX="0" ScrollY="35">modules\skills\SummonTonberry\assets\scripts\SummonTonberry.cs</File>
-<File ScrollX="0" ScrollY="0">modules\skills\SummonTonberry\assets\scripts\movebutt.cs</File>
-<File ScrollX="0" ScrollY="9">modules\skills\SummonTonberry\assets\scripts\followbutt.cs</File>
-<File ScrollX="0" ScrollY="0">modules\skills\SummonTonberry\assets\scripts\snarebutt.cs</File>
-<File ScrollX="0" ScrollY="118">modules\skills\SummonTonberry\assets\scripts\shankbutt.cs</File>
-<File ScrollX="0" ScrollY="6">modules\skills\SummonTonberry\assets\scripts\ontouchdown.cs</File>
-<File ScrollX="0" ScrollY="19">modules\skills\SummonTonberry\assets\scripts\onmovetocomplete.cs</File>
-<File ScrollX="0" ScrollY="0">modules\skills\SummonTonberry\assets\scripts\ondelete.cs</File>
-<File ScrollX="0" ScrollY="4">modules\skills\SummonTonberry\assets\scripts\onanimationend.cs</File>
+<File ScrollX="0" ScrollY="62" Active="true">modules\skills\SummonTonberry\assets\scripts\skill_SummonTonberry.cs</File>
+<File ScrollX="0" ScrollY="0">modules\skills\SummonTonberry\assets\scripts\SummonTonberry.cs</File>
 </OpenFiles>
 </TorsionProjectOptions>

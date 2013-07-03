@@ -4,11 +4,12 @@ function createtonberryskillbar()
 %tonberryskillbar=new GuiControl(gui_tonberry_skillbar) {
    canSaveDynamicFields = "0";
    isContainer = "1";
-   Profile = "GuiTransparentProfile";
+   Profile = "gui_profile_modalless";
    HorizSizing = "relative";
    VertSizing = "relative";
    Position = "0 0";
-   Extent = "100 50";
+   //Extent = "100 50";
+   Extent = "1280 800";
    MinExtent = "1 1";
    canSave = "1";
    Visible = "1";
@@ -22,7 +23,7 @@ function createtonberryskillbar()
       Profile = "BlueButtonProfile";
       HorizSizing = "relative";
       VertSizing = "relative";
-      Position = "0 0";
+      Position = "590 375";
       Extent = "50 25";
       MinExtent = "1 1";
       canSave = "1";
@@ -42,7 +43,7 @@ function createtonberryskillbar()
       Profile = "BlueButtonProfile";
       HorizSizing = "relative";
       VertSizing = "relative";
-      Position = "50 0";
+      Position = "640 375";
       Extent = "50 25";
       MinExtent = "1 1";
       canSave = "1";
@@ -62,7 +63,7 @@ function createtonberryskillbar()
       Profile = "BlueButtonProfile";
       HorizSizing = "relative";
       VertSizing = "relative";
-      Position = "0 25";
+      Position = "590 400";
       Extent = "50 25";
       MinExtent = "1 1";
       canSave = "1";
@@ -82,7 +83,7 @@ function createtonberryskillbar()
       Profile = "BlueButtonProfile";
       HorizSizing = "relative";
       VertSizing = "relative";
-      Position = "50 25";
+      Position = "640 400";
       Extent = "50 25";
       MinExtent = "1 1";
       canSave = "1";
