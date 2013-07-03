@@ -1,4 +1,4 @@
-//-------------------------- 7/3/2013 -- 10:50:23 -----
+//-------------------------- 7/3/2013 -- 11:13:42 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -82,14 +82,6 @@ mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
 SummonTonberry loaded
-Teleport loaded
-SummonTonberry loaded
-scenewindow_player2
-scenewindow_player1
-reattach DotsandCritswindow
-reattach DotsandCritswindow
-reattach scenewindow_player2
-reattach scenewindow_player1
 DirectInput deactivated.
 goodbye world
 deleted Deathball

@@ -28,7 +28,7 @@ listen4follow=false;
 listen4snare=false;
 listen4shank=false;
 prevmousepos=DotsandCritswindow.getMousePosition();
-curmousepos="0 0";
+curmousepos=DotsandCritswindow.getMousePosition();
 curdir=0;
 obj2follow=0;
 schedule_follow=0;
@@ -66,6 +66,8 @@ Canvas.pushDialog(%tonberry.handle_attached_gui);
 if (DotsandCritswindow.Visible)
 {
 %tonberry.attachGui(%tonberry.handle_attached_gui,DotsandCritswindow,false,"0" SPC -((%tonberry.handle_attached_gui.getExtent().W/2)+50));
+%tonberry.prevmousepos=DotsandCritswindow.getMousePosition();
+%tonberry.curmousepos=DotsandCritswindow.getMousePosition();
 }
 else
 {
@@ -73,10 +75,14 @@ else
 if (!%user)//player 0 casted
 {
 %tonberry.attachGui(%tonberry.handle_attached_gui,scenewindow_player1,false,"0" SPC -((%tonberry.handle_attached_gui.getExtent().W/2)+50));
+%tonberry.prevmousepos=scenewindow_player1.getMousePosition();
+%tonberry.curmousepos=scenewindow_player1.getMousePosition();
 }
 else
 {
 %tonberry.attachGui(%tonberry.handle_attached_gui,scenewindow_player2,false,"0" SPC -((%tonberry.handle_attached_gui.getExtent().W/2)+50));
+%tonberry.prevmousepos=scenewindow_player2.getMousePosition();
+%tonberry.curmousepos=scenewindow_player2.getMousePosition();
 }
 
 }

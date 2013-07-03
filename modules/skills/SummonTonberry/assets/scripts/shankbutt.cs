@@ -80,6 +80,9 @@ else
 
 }
 
+cancel(%tonberry.schedule_follow);
+%tonberry.obj2follow=0;
+
 %tonberry.moveTo(%dest,10,1,0);
 
 %tonberry.listen4shank=false;
