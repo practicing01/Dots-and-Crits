@@ -46,6 +46,7 @@ Position="0 0";
 Visible="false";
 Active="false";
 class="class_Portalgun";
+BodyType="static";
 };
 DotsandCritsscene.add(%fields.mousecaptureobj);
 

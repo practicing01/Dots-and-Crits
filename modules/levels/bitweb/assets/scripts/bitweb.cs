@@ -6,6 +6,7 @@ exec("./loadlevel.cs");
 exec("./menuicon.cs");
 exec("./sudodestroy.cs");
 exec("./dynamicworldobjects/gates/gates.cs");
+exec("./mouseinput/mouseinput.cs");
 
 function bitweb::create(%this)
 {

@@ -7,15 +7,16 @@
 <Bookmarks/>
 <OpenFiles>
 <File ScrollX="0" ScrollY="0">modules\levels\bitweb\assets\scripts\bitweb.cs</File>
-<File ScrollX="0" ScrollY="71">modules\levels\bitweb\assets\scripts\loadlevel.cs</File>
+<File ScrollX="0" ScrollY="91">modules\levels\bitweb\assets\scripts\loadlevel.cs</File>
 <File ScrollX="0" ScrollY="0">modules\levels\bitweb\assets\scripts\audio.cs</File>
 <File ScrollX="0" ScrollY="0">modules\levels\bitweb\assets\scripts\sudodestroy.cs</File>
-<File ScrollX="0" ScrollY="0">modules\levels\bitweb\assets\scripts\loadplayerclass.cs</File>
-<File ScrollX="0" ScrollY="0">modules\levels\bitweb\assets\scripts\spawnplayers.cs</File>
 <File ScrollX="0" ScrollY="0">modules\levels\bitweb\assets\scripts\dynamicworldobjects\gates\gates.cs</File>
-<File ScrollX="0" ScrollY="0">modules\mainmenu\assets\scripts\newgame.cs</File>
 <File ScrollX="0" ScrollY="0">modules\levels\bitweb\assets\scripts\dynamicworldobjects\gates\loadgates.cs</File>
 <File ScrollX="0" ScrollY="0">modules\levels\bitweb\assets\scripts\dynamicworldobjects\gates\unloadgates.cs</File>
-<File ScrollX="0" ScrollY="83" Active="true">modules\levels\bitweb\assets\scripts\dynamicworldobjects\gates\shufflegates.cs</File>
+<File ScrollX="0" ScrollY="86">modules\levels\bitweb\assets\scripts\dynamicworldobjects\gates\shufflegates.cs</File>
+<File ScrollX="0" ScrollY="0">modules\levels\bitweb\assets\scripts\mouseinput\mouseinput.cs</File>
+<File ScrollX="0" ScrollY="8">modules\levels\bitweb\assets\scripts\mouseinput\ontouchdown.cs</File>
+<File ScrollX="0" ScrollY="0" Active="true">modules\levels\bitweb\assets\scripts\dynamicworldobjects\gates\xoroutergates.cs</File>
+<File ScrollX="0" ScrollY="0">modules\levels\bitweb\assets\scripts\dynamicworldobjects\gates\xorinnergates.cs</File>
 </OpenFiles>
 </TorsionProjectOptions>

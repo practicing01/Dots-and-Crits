@@ -1,6 +1,9 @@
 function bitweb::shufflegates(%this)
 {
 
+Audiere_Reset(%this.sound_gatemovement);
+Audiere_Play(%this.sound_gatemovement,0,1.0);
+
 //make a simset containing all of the numbers
 //randomly pick and remove from that set and add to a seperate set
 //that seperate set will contain the chosen gates
@@ -45,13 +48,13 @@ if (getRandom(0,1))//open
 {
 %gate.leftgate.state=true;
 %gate.leftgate.setCollisionSuppress(true);
-%gate.leftgate.frame=0;
+%gate.leftgate.playAnimation("bitweb:anim_beam_open");
 }
 else//close
 {
 %gate.leftgate.state=false;
 %gate.leftgate.setCollisionSuppress(false);
-%gate.leftgate.frame=2;
+%gate.leftgate.playAnimation("bitweb:anim_beam_close");
 }
 }
 else//right
@@ -60,13 +63,13 @@ if (getRandom(0,1))//open
 {
 %gate.rightgate.state=true;
 %gate.rightgate.setCollisionSuppress(true);
-%gate.rightgate.frame=0;
+%gate.rightgate.playAnimation("bitweb:anim_beam_open");
 }
 else//close
 {
 %gate.rightgate.state=false;
 %gate.rightgate.setCollisionSuppress(false);
-%gate.rightgate.frame=2;
+%gate.rightgate.playAnimation("bitweb:anim_beam_close");
 }
 }
 
@@ -83,13 +86,13 @@ if (getRandom(0,1))//open
 {
 %gate.upgate.state=true;
 %gate.upgate.setCollisionSuppress(true);
-%gate.upgate.frame=0;
+%gate.upgate.playAnimation("bitweb:anim_beam_open");
 }
 else//close
 {
 %gate.upgate.state=false;
 %gate.upgate.setCollisionSuppress(false);
-%gate.upgate.frame=2;
+%gate.upgate.playAnimation("bitweb:anim_beam_close");
 }
 }
 else//down
@@ -98,13 +101,13 @@ if (getRandom(0,1))//open
 {
 %gate.downgate.state=true;
 %gate.downgate.setCollisionSuppress(true);
-%gate.downgate.frame=0;
+%gate.downgate.playAnimation("bitweb:anim_beam_open");
 }
 else//close
 {
 %gate.downgate.state=false;
 %gate.downgate.setCollisionSuppress(false);
-%gate.downgate.frame=2;
+%gate.downgate.playAnimation("bitweb:anim_beam_close");
 }
 }
 

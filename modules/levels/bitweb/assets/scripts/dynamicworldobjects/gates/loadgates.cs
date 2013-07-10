@@ -107,7 +107,7 @@ size=ScaleVectorToCam("50 50");
 Position=ScalePositionVectorToCam((%x+25)+15 SPC %y+25);
 GravityScale=0;
 SceneLayer=17;
-SceneGroup=2;
+SceneGroup=3;
 BodyType="static";
 class="class_tile";
 upgate=%upgate;
@@ -115,6 +115,7 @@ downgate=%downgate;
 leftgate=%leftgate;
 rightgate=%rightgate;
 };
+DotsandCritsscene.add(%tile);
 
 %this.simset_gates.add(%tile);
 
