@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_goal_idle"
+    Image="@asset=bitweb:image_goal"
+    AnimationFrames="0 1 2 3 4"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

@@ -30,6 +30,70 @@ $levelgravity=-20;//can set to a custom number
 DotsandCritsscene.setGravity(0,$levelgravity);
 }
 
+$player_to_load=0;
+if (gui_list_player1.getSelectedItem()!=-1)
+{
+%moduleid=simset_list_playersprites.getObject(gui_list_player1.getSelectedItem());
+%moduleid.ScopeSet.loadsprite();
+}
+else
+{
+%moduleid=simset_list_playersprites.getObject(getRandom(0,gui_list_player1.getItemCount()-1));
+%moduleid.ScopeSet.loadsprite();
+}
+
+$player_to_load=1;
+if (gui_list_player2.getSelectedItem()!=-1)
+{
+%moduleid=simset_list_playersprites.getObject(gui_list_player2.getSelectedItem());
+%moduleid.ScopeSet.loadsprite();
+}
+else
+{
+%moduleid=simset_list_playersprites.getObject(getRandom(0,gui_list_player2.getItemCount()-1));
+%moduleid.ScopeSet.loadsprite();
+}
+
+$levelmoduleid.ScopeSet.loadplayerclass();
+
+if (!$singleplayer)
+{
+if ($aiopponent)
+{
+//start ai function
+$levelmoduleid.ScopeSet.ai();
+}
+}
+else
+{
+
+cancel($schedule_centralizecamera.schedulehandle);
+cancel($schedule_checkforsplit.schedulehandle);
+
+%player1=$players.getObject(0);
+
+$playerssplit=false;
+repositionskillbar();
+if (isObject(scenewindow_player1))
+{
+scenewindow_player1.setVisible(false);
+}
+if (isObject(scenewindow_player2))
+{
+scenewindow_player2.setVisible(false);
+}
+DotsandCritswindow.setVisible(true);
+DotsandCritswindow.mount(%player1.sprite,"0 0",0,true,false);
+
+%player2=$players.getObject(1);
+if (isObject(%player2.sprite))
+{
+%player2.sprite.safeDelete();
+}
+
+$joyobject.cursorgui.Visible=false;
+}
+
 if (isObject(gui_catacombsscore))
 {
 gui_catacombsscore.delete();

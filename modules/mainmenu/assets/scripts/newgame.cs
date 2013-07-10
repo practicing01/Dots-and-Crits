@@ -16,61 +16,6 @@ $levelmoduleid=simset_list_levels.getObject(getRandom(0,gui_list_level.getItemCo
 $levelmoduleid.ScopeSet.loadlevel();
 }
 
-$player_to_load=0;
-if (gui_list_player1.getSelectedItem()!=-1)
-{
-%moduleid=simset_list_playersprites.getObject(gui_list_player1.getSelectedItem());
-%moduleid.ScopeSet.loadsprite();
-}
-else
-{
-%moduleid=simset_list_playersprites.getObject(getRandom(0,gui_list_player1.getItemCount()-1));
-%moduleid.ScopeSet.loadsprite();
-}
-
-$player_to_load=1;
-if (gui_list_player2.getSelectedItem()!=-1)
-{
-%moduleid=simset_list_playersprites.getObject(gui_list_player2.getSelectedItem());
-%moduleid.ScopeSet.loadsprite();
-}
-else
-{
-%moduleid=simset_list_playersprites.getObject(getRandom(0,gui_list_player2.getItemCount()-1));
-%moduleid.ScopeSet.loadsprite();
-}
-
-$levelmoduleid.ScopeSet.loadplayerclass();
-
-if (!$singleplayer)
-{
-if ($aiopponent)
-{
-//start ai function
-$levelmoduleid.ScopeSet.ai();
-}
-}
-else
-{
-
-cancel($schedule_centralizecamera.schedulehandle);
-cancel($schedule_checkforsplit.schedulehandle);
-
-%player1=$players.getObject(0);
-
-$playerssplit=false;
-repositionskillbar();
-scenewindow_player1.setVisible(false);
-scenewindow_player2.setVisible(false);
-DotsandCritswindow.setVisible(true);
-DotsandCritswindow.mount(%player1.sprite,"0 0",0,true,false);
-
-%player2=$players.getObject(1);
-%player2.sprite.safeDelete();
-
-$joyobject.cursorgui.Visible=false;
-}
-
 //alxStop($menumusic);
 
 //DotsandCritsscene.setDebugOn("joints");

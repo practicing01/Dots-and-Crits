@@ -26,6 +26,7 @@ Canvas.UseBackgroundColor=true;
 exec("./gui/guiProfiles.cs");
 
 initializeOpenAL();
+InitAudiere();
 
 exec("./scripts/variables.cs");
 exec("./scripts/initfunctions.cs");
@@ -56,19 +57,6 @@ Image="DotsandCrits:CannotRender";
 DotsandCrits.add(CannotRenderProxy);
 
 $camsize=DotsandCritswindow.getCameraSize();
-
-
-//DotsandCritsscene.setDebugOn("joints");
-//DotsandCritsscene.setDebugOn("metrics");
-//DotsandCritsscene.setDebugOn("fps");
-//DotsandCritsscene.setDebugOn("wireframe");
-//DotsandCritsscene.setDebugOn("aabb");
-//DotsandCritsscene.setDebugOn("oobb");
-//DotsandCritsscene.setDebugOn("sleep");
-//DotsandCritsscene.setDebugOn("collision");
-//DotsandCritsscene.setDebugOn("position");
-//DotsandCritsscene.setDebugOn("sort");
-
 
 ModuleDatabase.LoadExplicit("splashes");
 

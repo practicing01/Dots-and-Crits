@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_bitspider"
+    ImageFile="bitspider.png"
+	CellCountX="10"
+    CellCountY="4"
+    CellWidth="50"
+    CellHeight="50"
+	OptimalResolution="1280 800"/>

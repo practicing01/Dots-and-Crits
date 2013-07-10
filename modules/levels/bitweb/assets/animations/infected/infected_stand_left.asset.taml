@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_infected_stand_left"
+    Image="@asset=bitweb:image_infected"
+    AnimationFrames="17"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

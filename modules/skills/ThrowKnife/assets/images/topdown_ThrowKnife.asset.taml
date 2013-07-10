@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_topdown_ThrowKnife"
+    ImageFile="topdown_ThrowKnife.png"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="16"
+    CellHeight="16"
+	OptimalResolution="1280 800"/>

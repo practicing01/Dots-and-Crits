@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_beam_open"
+    Image="@asset=bitweb:image_beam"
+    AnimationFrames="2 1 0"
+    AnimationCycle="false"
+	AnimationTime="0.5" />

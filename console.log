@@ -1,4 +1,4 @@
-//-------------------------- 7/3/2013 -- 11:13:42 -----
+//-------------------------- 7/10/2013 -- 02:38:40 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -41,6 +41,7 @@ Max Texture Size reported as: 16384
 OpenAL Driver Init
 OpenAL Driver Init Success
 created deathballvalley
+created bitweb
 created catacombs
 created space
 created FtA_P1
@@ -55,6 +56,7 @@ created Teleport
 created Cloak
 created Lightsaber
 created Heal
+created ThrowKnife
 created Projectile
 created Bombermine
 created SineVolley
@@ -81,7 +83,6 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-SummonTonberry loaded
 DirectInput deactivated.
 goodbye world
 deleted Deathball
@@ -98,6 +99,7 @@ deleted ScatterVolley
 deleted SineVolley
 deleted Bombermine
 deleted Projectile
+deleted ThrowKnife
 deleted Heal
 deleted Lightsaber
 deleted Cloak
@@ -113,6 +115,8 @@ freed FtA_P1
 space destroy() called
 DotsandCrits: Created scene but no window available.
 catacombs destroy() called
+DotsandCrits: Created scene but no window available.
+bitweb destroy() called
 DotsandCrits: Created scene but no window available.
 deathballvalley destroy() called
 DotsandCrits: Created scene but no window available.

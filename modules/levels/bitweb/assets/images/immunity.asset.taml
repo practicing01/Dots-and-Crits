@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_immunity"
+    ImageFile="immunity.png"
+	CellCountX="24"
+    CellCountY="1"
+    CellWidth="25"
+    CellHeight="25"
+	OptimalResolution="1280 800"/>

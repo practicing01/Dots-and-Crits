@@ -1,6 +1,6 @@
 exec("./portals.cs");
-exec("./loadlevel.cs");
 exec("./loadplayerclass.cs");
+exec("./loadlevel.cs");
 exec("./menuicon.cs");
 exec("./sudodestroy.cs");
 exec("./healthdisplay.cs");

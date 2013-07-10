@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_spider_run_left"
+    Image="@asset=bitweb:image_spider"
+    AnimationFrames="28 27 26 25 24 23 22 21 20"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

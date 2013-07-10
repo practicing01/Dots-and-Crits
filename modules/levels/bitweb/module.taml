@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="bitweb"
+	VersionId="1"
+	Description="bitweb"
+	Type="level"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+	DestroyFunction="destroy">
+		<DeclaredAssets
+			Path="assets"
+			Extension="asset.taml"
+			Recurse="true"/>
+</ModuleDefinition>

@@ -1,0 +1,70 @@
+<Scene>
+    <Sprite
+        SceneLayer="16"
+        SceneGroup="2"
+        Size="100 62.5"
+        BodyType="Static"
+        GatherContacts="1"
+        Image="@asset=bitweb:image_bitweb"
+        Frame="0" />
+    <SceneObject
+        SceneGroup="30"
+        Size="100 10"
+        Position="0 36.25"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>-50 -5</Point>
+                <Point>50 -5</Point>
+                <Point>50 5</Point>
+                <Point>-50 5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="100 10"
+        Position="0 -36.25"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>-50 -5</Point>
+                <Point>50 -5</Point>
+                <Point>50 5</Point>
+                <Point>-50 5</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="10 62.5"
+        Position="55 0"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>-5 -31.25</Point>
+                <Point>5 -31.25</Point>
+                <Point>5 31.25</Point>
+                <Point>-5 31.25</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+    <SceneObject
+        SceneGroup="30"
+        Size="10 62.5"
+        Position="-55 0"
+        BodyType="Static"
+        GatherContacts="1">
+        <SceneObject.CollisionShapes>
+            <Polygon>
+                <Point>-5 -31.25</Point>
+                <Point>5 -31.25</Point>
+                <Point>5 31.25</Point>
+                <Point>-5 31.25</Point>
+            </Polygon>
+        </SceneObject.CollisionShapes>
+    </SceneObject>
+</Scene>

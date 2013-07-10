@@ -18,8 +18,14 @@ DotsandCritsscene.clear();
 AssetDatabase.purgeAssets();
 
 //set camera position to 0 0
+if (isObject(scenewindow_player1))
+{
 scenewindow_player1.setVisible(false);
+}
+if (isObject(scenewindow_player2))
+{
 scenewindow_player2.setVisible(false);
+}
 DotsandCritswindow.dismount();
 DotsandCritswindow.setVisible(true);
 DotsandCritswindow.setCameraPosition(0,0);

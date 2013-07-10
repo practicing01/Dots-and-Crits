@@ -1,3 +1,5 @@
+Thanks for downloading ~practicing01
+
 keys:
 esc: menu
 wasd: move

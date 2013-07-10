@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_topdown_projectile"
+    Image="@asset=ThrowKnife:image_topdown_projectile"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="0.5" />
