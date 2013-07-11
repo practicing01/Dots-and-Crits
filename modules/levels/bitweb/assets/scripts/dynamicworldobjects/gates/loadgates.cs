@@ -1,5 +1,6 @@
 function bitweb::loadgates(%this)
 {
+%gatecolboxsize=ScaleVectorToCam("50 1");
 
 %this.gateass=AssetDatabase.acquireAsset("bitweb:image_beam");
 
@@ -29,7 +30,7 @@ DotsandCritsscene.add(%upgate);
 
 %localpoint=%upgate.getLocalPoint(%upgate.Position.X,
 %upgate.Position.Y-ScaleVectorToCam("0 20").Y);
-%upgate.createPolygonBoxCollisionShape(ScaleVectorToCam("50 5"),
+%upgate.createPolygonBoxCollisionShape(%gatecolboxsize,
 %localpoint.X,%localpoint.Y);
 
 %upgate.setAngle(180);
@@ -52,7 +53,7 @@ DotsandCritsscene.add(%downgate);
 
 %localpoint=%downgate.getLocalPoint(%downgate.Position.X,
 %downgate.Position.Y-ScaleVectorToCam("0 20").Y);
-%downgate.createPolygonBoxCollisionShape(ScaleVectorToCam("50 5"),
+%downgate.createPolygonBoxCollisionShape(%gatecolboxsize,
 %localpoint.X,%localpoint.Y);
 
 %leftgate=new Sprite()
@@ -73,10 +74,10 @@ DotsandCritsscene.add(%leftgate);
 
 %localpoint=%leftgate.getLocalPoint(%leftgate.Position.X,
 %leftgate.Position.Y-ScaleVectorToCam("0 20").Y);
-%leftgate.createPolygonBoxCollisionShape(ScaleVectorToCam("50 5"),
+%leftgate.createPolygonBoxCollisionShape(%gatecolboxsize,
 %localpoint.X,%localpoint.Y);
 
-%leftgate.setAngle(90);
+%leftgate.setAngle(270);
 
 %rightgate=new Sprite()
 {
@@ -96,10 +97,10 @@ DotsandCritsscene.add(%rightgate);
 
 %localpoint=%rightgate.getLocalPoint(%rightgate.Position.X,
 %rightgate.Position.Y-ScaleVectorToCam("0 20").Y);
-%rightgate.createPolygonBoxCollisionShape(ScaleVectorToCam("50 5"),
+%rightgate.createPolygonBoxCollisionShape(%gatecolboxsize,
 %localpoint.X,%localpoint.Y);
 
-%rightgate.setAngle(270);
+%rightgate.setAngle(90);
 
 %tile=new SceneObject()
 {

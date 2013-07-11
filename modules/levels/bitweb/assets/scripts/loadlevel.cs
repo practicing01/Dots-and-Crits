@@ -110,11 +110,11 @@ $cancellableschedules.add(%this.schedule_shuffle);
 ///////////////////////////////////////////////////////////////////////////
 
 %this.loadaudioass();
-
+/*
 Audiere_Stop(%this.sound_levelmusic);
 Audiere_Reset(%this.sound_levelmusic);
 Audiere_Play(%this.sound_levelmusic,1,1.0);
-
+*/
 ///////////////////////////////////////////////////////////////////////////
 
 %this.initmouseinput();
