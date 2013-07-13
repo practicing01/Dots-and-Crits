@@ -323,5 +323,8 @@ break;
 
 }
 
+Audiere_Reset(%this.sound_bitspiderfootsteps);
+Audiere_Play(%this.sound_bitspiderfootsteps,0,1.0);
+
 %this.schedule_movespiders.schedulehandle=schedule(5000,0,"bitweb::movespiders",%this);
 }

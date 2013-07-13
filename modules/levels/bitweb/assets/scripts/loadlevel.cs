@@ -136,7 +136,7 @@ gui_text_player2score.setText("Score: "@%this.score);
 
 ///////////////////////////////////////////////////////////////////////////
 
-bitweb.loadspider();
+%this.loadspider();
 
 //spawn spiders
 for (%x=0;%x<5;%x++)
@@ -151,6 +151,30 @@ schedulehandle=0;
 $cancellableschedules.add(%this.schedule_movespiders);
 
 %this.schedule_movespiders.schedulehandle=schedule(5000,0,"bitweb::movespiders",%this);
+
+%this.schedule_respawnspiders=new ScriptObject()
+{
+schedulehandle=0;
+};
+$cancellableschedules.add(%this.schedule_respawnspiders);
+
+%this.schedule_respawnspiders.schedulehandle=schedule(20000,0,"bitweb::respawnspiders",%this);
+
+///////////////////////////////////////////////////////////////////////////
+
+%player=$players.getObject(0);
+%player.sprite.isimmune=false;
+%player.sprite.immunityfadeschedule=0;
+
+%this.loadimmunity();
+
+%this.schedule_respawnimmunity=new ScriptObject()
+{
+schedulehandle=0;
+};
+$cancellableschedules.add(%this.schedule_respawnimmunity);
+
+%this.schedule_respawnimmunity.schedulehandle=schedule(20000,0,"class_immunity::respawn",%this.immunity);
 
 ///////////////////////////////////////////////////////////////////////////
 

@@ -12,7 +12,7 @@
 	<!-- player 1 score -->
 	<GuiTextCtrl 
 		Name="gui_text_player1score"
-		Profile="GuiTextProfile"
+		Profile="gui_profile_modalless"
 		Text="0"
 		canSaveDynamicFields="0"
 		HorizSizing="relative"
@@ -30,7 +30,7 @@
 	<!-- player 2 score -->
 	<GuiTextCtrl 
 		Name="gui_text_player2score"
-		Profile="GuiTextProfile"
+		Profile="gui_profile_modalless"
 		Text="0"
 		canSaveDynamicFields="0"
 		HorizSizing="relative"

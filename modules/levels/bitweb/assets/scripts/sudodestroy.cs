@@ -5,6 +5,10 @@ function bitweb::sudodestroy(%this)
 
 %this.unloadaudioass();
 
+%this.unloadgoal();
+
+%this.unloadspider();
+
 if (isObject(gui_bitwebscore))
 {
 gui_bitwebscore.delete();
