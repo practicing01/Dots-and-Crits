@@ -111,11 +111,14 @@ if (%playeruptile.downgate.state!=%oldstate)
 {
 if (%playeruptile.downgate.state)//open
 {
+%playeruptile.downgate.clearCollisionShapes();
 %playeruptile.downgate.setCollisionSuppress(true);
 %playeruptile.downgate.playAnimation("bitweb:anim_beam_open");
 }
 else
 {
+%playeruptile.downgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%playeruptile.downgate.localpoint.X,%playeruptile.downgate.localpoint.Y);
 %playeruptile.downgate.setCollisionSuppress(false);
 %playeruptile.downgate.playAnimation("bitweb:anim_beam_close");
 }
@@ -127,11 +130,14 @@ if (%mouseuptile.downgate.state!=%oldstate)
 {
 if (%mouseuptile.downgate.state)//open
 {
+%mouseuptile.downgate.clearCollisionShapes();
 %mouseuptile.downgate.setCollisionSuppress(true);
 %mouseuptile.downgate.playAnimation("bitweb:anim_beam_open");
 }
 else
 {
+%mouseuptile.downgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%mouseuptile.downgate.localpoint.X,%mouseuptile.downgate.localpoint.Y);
 %mouseuptile.downgate.setCollisionSuppress(false);
 %mouseuptile.downgate.playAnimation("bitweb:anim_beam_close");
 }
@@ -150,11 +156,14 @@ if (%playerdowntile.upgate.state!=%oldstate)
 {
 if (%playerdowntile.upgate.state)//open
 {
+%playerdowntile.upgate.clearCollisionShapes();
 %playerdowntile.upgate.setCollisionSuppress(true);
 %playerdowntile.upgate.playAnimation("bitweb:anim_beam_open");
 }
 else
 {
+%playerdowntile.upgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%playerdowntile.upgate.localpoint.X,%playerdowntile.upgate.localpoint.Y);
 %playerdowntile.upgate.setCollisionSuppress(false);
 %playerdowntile.upgate.playAnimation("bitweb:anim_beam_close");
 }
@@ -166,11 +175,14 @@ if (%mousedowntile.upgate.state!=%oldstate)
 {
 if (%mousedowntile.upgate.state)//open
 {
+%mousedowntile.upgate.clearCollisionShapes();
 %mousedowntile.upgate.setCollisionSuppress(true);
 %mousedowntile.upgate.playAnimation("bitweb:anim_beam_open");
 }
 else
 {
+%mousedowntile.upgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%mousedowntile.upgate.localpoint.X,%mousedowntile.upgate.localpoint.Y);
 %mousedowntile.upgate.setCollisionSuppress(false);
 %mousedowntile.upgate.playAnimation("bitweb:anim_beam_close");
 }
@@ -189,11 +201,14 @@ if (%playerlefttile.rightgate.state!=%oldstate)
 {
 if (%playerlefttile.rightgate.state)//open
 {
+%playerlefttile.rightgate.clearCollisionShapes();
 %playerlefttile.rightgate.setCollisionSuppress(true);
 %playerlefttile.rightgate.playAnimation("bitweb:anim_beam_open");
 }
 else
 {
+%playerlefttile.rightgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%playerlefttile.rightgate.localpoint.X,%playerlefttile.rightgate.localpoint.Y);
 %playerlefttile.rightgate.setCollisionSuppress(false);
 %playerlefttile.rightgate.playAnimation("bitweb:anim_beam_close");
 }
@@ -205,11 +220,14 @@ if (%mouselefttile.rightgate.state!=%oldstate)
 {
 if (%mouselefttile.rightgate.state)//open
 {
+%mouselefttile.rightgate.clearCollisionShapes();
 %mouselefttile.rightgate.setCollisionSuppress(true);
 %mouselefttile.rightgate.playAnimation("bitweb:anim_beam_open");
 }
 else
 {
+%mouselefttile.rightgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%mouselefttile.rightgate.localpoint.X,%mouselefttile.rightgate.localpoint.Y);
 %mouselefttile.rightgate.setCollisionSuppress(false);
 %mouselefttile.rightgate.playAnimation("bitweb:anim_beam_close");
 }
@@ -228,11 +246,14 @@ if (%playerrighttile.leftgate.state!=%oldstate)
 {
 if (%playerrighttile.leftgate.state)//open
 {
+%playerrighttile.leftgate.clearCollisionShapes();
 %playerrighttile.leftgate.setCollisionSuppress(true);
 %playerrighttile.leftgate.playAnimation("bitweb:anim_beam_open");
 }
 else
 {
+%playerrighttile.leftgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%playerrighttile.leftgate.localpoint.X,%playerrighttile.leftgate.localpoint.Y);
 %playerrighttile.leftgate.setCollisionSuppress(false);
 %playerrighttile.leftgate.playAnimation("bitweb:anim_beam_close");
 }
@@ -244,11 +265,14 @@ if (%mouserighttile.leftgate.state!=%oldstate)
 {
 if (%mouserighttile.leftgate.state)//open
 {
+%mouserighttile.leftgate.clearCollisionShapes();
 %mouserighttile.leftgate.setCollisionSuppress(true);
 %mouserighttile.leftgate.playAnimation("bitweb:anim_beam_open");
 }
 else
 {
+%mouserighttile.leftgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%mouserighttile.leftgate.localpoint.X,%mouserighttile.leftgate.localpoint.Y);
 %mouserighttile.leftgate.setCollisionSuppress(false);
 %mouserighttile.leftgate.playAnimation("bitweb:anim_beam_close");
 }

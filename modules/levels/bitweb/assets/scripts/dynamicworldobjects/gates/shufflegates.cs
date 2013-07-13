@@ -44,30 +44,36 @@ for (%x=0;%x<%xchosengates.getCount();%x++)
 
 if (getRandom(0,1))//left
 {
-if (getRandom(0,1))//open
+if (getRandom(0,1)&&!%gate.leftgate.state)//open, also check if not already open
 {
 %gate.leftgate.state=true;
+%gate.leftgate.clearCollisionShapes();
 %gate.leftgate.setCollisionSuppress(true);
 %gate.leftgate.playAnimation("bitweb:anim_beam_open");
 }
-else//close
+else if (%gate.leftgate.state)//close, also check if not already closed
 {
 %gate.leftgate.state=false;
+%gate.leftgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%gate.leftgate.localpoint.X,%gate.leftgate.localpoint.Y);
 %gate.leftgate.setCollisionSuppress(false);
 %gate.leftgate.playAnimation("bitweb:anim_beam_close");
 }
 }
 else//right
 {
-if (getRandom(0,1))//open
+if (getRandom(0,1)&&!%gate.rightgate.state)//open
 {
 %gate.rightgate.state=true;
+%gate.rightgate.clearCollisionShapes();
 %gate.rightgate.setCollisionSuppress(true);
 %gate.rightgate.playAnimation("bitweb:anim_beam_open");
 }
-else//close
+else if (%gate.rightgate.state)//close
 {
 %gate.rightgate.state=false;
+%gate.rightgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%gate.rightgate.localpoint.X,%gate.rightgate.localpoint.Y);
 %gate.rightgate.setCollisionSuppress(false);
 %gate.rightgate.playAnimation("bitweb:anim_beam_close");
 }
@@ -82,30 +88,36 @@ for (%x=0;%x<%ychosengates.getCount();%x++)
 
 if (getRandom(0,1))//up
 {
-if (getRandom(0,1))//open
+if (getRandom(0,1)&&!%gate.upgate.state)//open
 {
 %gate.upgate.state=true;
+%gate.upgate.clearCollisionShapes();
 %gate.upgate.setCollisionSuppress(true);
 %gate.upgate.playAnimation("bitweb:anim_beam_open");
 }
-else//close
+else if (%gate.upgate.state)//close
 {
 %gate.upgate.state=false;
+%gate.upgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%gate.upgate.localpoint.X,%gate.upgate.localpoint.Y);
 %gate.upgate.setCollisionSuppress(false);
 %gate.upgate.playAnimation("bitweb:anim_beam_close");
 }
 }
 else//down
 {
-if (getRandom(0,1))//open
+if (getRandom(0,1)&&!%gate.downgate.state)//open
 {
 %gate.downgate.state=true;
+%gate.downgate.clearCollisionShapes();
 %gate.downgate.setCollisionSuppress(true);
 %gate.downgate.playAnimation("bitweb:anim_beam_open");
 }
-else//close
+else if (%gate.downgate.state)//close
 {
 %gate.downgate.state=false;
+%gate.downgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%gate.downgate.localpoint.X,%gate.downgate.localpoint.Y);
 %gate.downgate.setCollisionSuppress(false);
 %gate.downgate.playAnimation("bitweb:anim_beam_close");
 }

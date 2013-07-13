@@ -1,6 +1,6 @@
 function bitweb::loadgates(%this)
 {
-%gatecolboxsize=ScaleVectorToCam("50 1");
+%this.gatecolboxsize=ScaleVectorToCam("50 4");
 
 %this.gateass=AssetDatabase.acquireAsset("bitweb:image_beam");
 
@@ -22,16 +22,18 @@ GravityScale=0;
 SceneGroup=26;
 BodyType="static";
 Frame=2;
+class="class_gate";
 state=0;//closed
+localpoint=0;
 };
+%upgate.localpoint=%upgate.getLocalPoint(%upgate.Position.X,
+%upgate.Position.Y-ScaleVectorToCam("0 20").Y);
 
-%upgate.setCollisionGroups(0,1,25,26,28,29);//0/1 players, 28/29 projectiles, 25=npcs, 26=world objects
+%upgate.setCollisionGroups(0,1);//0/1 players
 DotsandCritsscene.add(%upgate);
 
-%localpoint=%upgate.getLocalPoint(%upgate.Position.X,
-%upgate.Position.Y-ScaleVectorToCam("0 20").Y);
-%upgate.createPolygonBoxCollisionShape(%gatecolboxsize,
-%localpoint.X,%localpoint.Y);
+%upgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%upgate.localpoint.X,%upgate.localpoint.Y);
 
 %upgate.setAngle(180);
 
@@ -45,16 +47,18 @@ GravityScale=0;
 SceneGroup=26;
 BodyType="static";
 Frame=2;
+class="class_gate";
 state=0;//closed
+localpoint=0;
 };
+%downgate.localpoint=%downgate.getLocalPoint(%downgate.Position.X,
+%downgate.Position.Y-ScaleVectorToCam("0 20").Y);
 
-%downgate.setCollisionGroups(0,1,25,26,28,29);//0/1 players, 28/29 projectiles, 25=npcs, 26=world objects
+%downgate.setCollisionGroups(0,1);//0/1 players
 DotsandCritsscene.add(%downgate);
 
-%localpoint=%downgate.getLocalPoint(%downgate.Position.X,
-%downgate.Position.Y-ScaleVectorToCam("0 20").Y);
-%downgate.createPolygonBoxCollisionShape(%gatecolboxsize,
-%localpoint.X,%localpoint.Y);
+%downgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%downgate.localpoint.X,%downgate.localpoint.Y);
 
 %leftgate=new Sprite()
 {
@@ -66,16 +70,18 @@ GravityScale=0;
 SceneGroup=26;
 BodyType="static";
 Frame=2;
+class="class_gate";
 state=0;//closed
+localpoint=0;
 };
+%leftgate.localpoint=%leftgate.getLocalPoint(%leftgate.Position.X,
+%leftgate.Position.Y-ScaleVectorToCam("0 20").Y);
 
-%leftgate.setCollisionGroups(0,1,25,26,28,29);//0/1 players, 28/29 projectiles, 25=npcs, 26=world objects
+%leftgate.setCollisionGroups(0,1);//0/1 players
 DotsandCritsscene.add(%leftgate);
 
-%localpoint=%leftgate.getLocalPoint(%leftgate.Position.X,
-%leftgate.Position.Y-ScaleVectorToCam("0 20").Y);
-%leftgate.createPolygonBoxCollisionShape(%gatecolboxsize,
-%localpoint.X,%localpoint.Y);
+%leftgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%leftgate.localpoint.X,%leftgate.localpoint.Y);
 
 %leftgate.setAngle(270);
 
@@ -89,16 +95,18 @@ GravityScale=0;
 SceneGroup=26;
 BodyType="static";
 Frame=2;
+class="class_gate";
 state=0;//closed
+localpoint=0;
 };
+%rightgate.localpoint=%rightgate.getLocalPoint(%rightgate.Position.X,
+%rightgate.Position.Y-ScaleVectorToCam("0 20").Y);
 
-%rightgate.setCollisionGroups(0,1,25,26,28,29);//0/1 players, 28/29 projectiles, 25=npcs, 26=world objects
+%rightgate.setCollisionGroups(0,1);//0/1 players
 DotsandCritsscene.add(%rightgate);
 
-%localpoint=%rightgate.getLocalPoint(%rightgate.Position.X,
-%rightgate.Position.Y-ScaleVectorToCam("0 20").Y);
-%rightgate.createPolygonBoxCollisionShape(%gatecolboxsize,
-%localpoint.X,%localpoint.Y);
+%rightgate.createPolygonBoxCollisionShape(%this.gatecolboxsize,
+%rightgate.localpoint.X,%rightgate.localpoint.Y);
 
 %rightgate.setAngle(90);
 

@@ -1,6 +1,6 @@
 <AnimationAsset
     AssetName="anim_spider_stand_down"
-    Image="@asset=bitweb:image_spider"
+    Image="@asset=bitweb:image_bitspider"
     AnimationFrames="10"
     AnimationCycle="true"
 	AnimationTime="0.5" />

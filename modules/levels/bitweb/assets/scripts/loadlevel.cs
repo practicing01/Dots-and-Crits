@@ -109,6 +109,10 @@ $cancellableschedules.add(%this.schedule_shuffle);
 
 ///////////////////////////////////////////////////////////////////////////
 
+%this.loadgoal();
+
+///////////////////////////////////////////////////////////////////////////
+
 %this.loadaudioass();
 /*
 Audiere_Stop(%this.sound_levelmusic);
@@ -118,6 +122,35 @@ Audiere_Play(%this.sound_levelmusic,1,1.0);
 ///////////////////////////////////////////////////////////////////////////
 
 %this.initmouseinput();
+
+///////////////////////////////////////////////////////////////////////////
+
+%topscorefile=new FileObject();
+%topscorefile.OpenForRead("./../../topscore.txt");
+%this.topscore=%topscorefile.readline();
+%topscorefile.close();
+%topscorefile.delete();
+gui_text_player1score.setText("Topscore: "@%this.topscore);
+%this.score=0;
+gui_text_player2score.setText("Score: "@%this.score);
+
+///////////////////////////////////////////////////////////////////////////
+
+bitweb.loadspider();
+
+//spawn spiders
+for (%x=0;%x<5;%x++)
+{
+%this.spawnspider();
+}
+
+%this.schedule_movespiders=new ScriptObject()
+{
+schedulehandle=0;
+};
+$cancellableschedules.add(%this.schedule_movespiders);
+
+%this.schedule_movespiders.schedulehandle=schedule(5000,0,"bitweb::movespiders",%this);
 
 ///////////////////////////////////////////////////////////////////////////
 

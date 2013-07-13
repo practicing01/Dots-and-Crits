@@ -7,6 +7,8 @@ exec("./menuicon.cs");
 exec("./sudodestroy.cs");
 exec("./dynamicworldobjects/gates/gates.cs");
 exec("./mouseinput/mouseinput.cs");
+exec("./dynamicworldobjects/goal/goal.cs");
+exec("./npcs/spider/spider.cs");
 
 function bitweb::create(%this)
 {

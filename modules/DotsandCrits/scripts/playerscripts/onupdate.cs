@@ -31,6 +31,7 @@ restartmove(%player);
 
 }//end not colliding
 }
+
 //$processplayerschedule=schedule(250,0,"processplayercollision");
 
 }//end re-establish linear velocity
