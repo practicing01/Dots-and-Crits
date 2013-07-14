@@ -10,7 +10,8 @@ exec("./mouseinput/mouseinput.cs");
 exec("./dynamicworldobjects/goal/goal.cs");
 exec("./npcs/spider/spider.cs");
 exec("./dynamicworldobjects/immunity/immunity.cs");
-
+exec("./dynamicworldobjects/survivor/survivor.cs");
+exec("./npcs/infected/infected.cs");
 
 function bitweb::create(%this)
 {

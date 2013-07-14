@@ -1,6 +1,6 @@
 <AnimationAsset
     AssetName="anim_infected_run_left"
     Image="@asset=bitweb:image_infected"
-    AnimationFrames="16 15 14 13 12 11 10 9"
+    AnimationFrames="9 10 11 12 13 14 15 16"
     AnimationCycle="true"
 	AnimationTime="0.5" />

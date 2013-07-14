@@ -1,4 +1,4 @@
-function class_bitspider::onCollision(%this,%object,%collisionDetails)
+function class_infected::onCollision(%this,%object,%collisionDetails)
 {
 
 if (%object.class$="class_player"&&!%object.isimmune)//check for immunity

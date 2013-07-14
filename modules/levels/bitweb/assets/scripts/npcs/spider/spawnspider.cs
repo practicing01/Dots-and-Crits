@@ -17,6 +17,7 @@ curdir=1;//0=up,1=down,2=left,3=right
 schedule_moveto=0;
 FixedAngle=true;
 ismoving=false;
+CollisionCallback=true;
 };
 
 %spider.playAnimation("bitweb:anim_spider_stand_down");

@@ -178,5 +178,29 @@ $cancellableschedules.add(%this.schedule_respawnimmunity);
 
 ///////////////////////////////////////////////////////////////////////////
 
+%this.loadsurvivor();
+
+%this.schedule_respawnsurvivor=new ScriptObject()
+{
+schedulehandle=0;
+};
+$cancellableschedules.add(%this.schedule_respawnsurvivor);
+
+%this.schedule_respawnsurvivor.schedulehandle=schedule(20000,0,"class_survivor::respawn",%this.survivor);
+
+///////////////////////////////////////////////////////////////////////////
+
+%this.loadinfected();
+
+%this.schedule_moveinfected=new ScriptObject()
+{
+schedulehandle=0;
+};
+$cancellableschedules.add(%this.schedule_moveinfected);
+
+%this.schedule_moveinfected.schedulehandle=schedule(5000,0,"bitweb::moveinfected",%this);
+
+///////////////////////////////////////////////////////////////////////////
+
 %this.schedule_shuffle.schedulehandle=schedule(20000,0,"bitweb::shufflegates",%this);
 }

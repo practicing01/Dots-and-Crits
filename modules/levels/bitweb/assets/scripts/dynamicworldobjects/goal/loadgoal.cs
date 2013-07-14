@@ -14,6 +14,7 @@ SceneGroup=26;
 BodyType="static";
 class="class_goal";
 parentbitweb=%this;
+CollisionCallback=true;
 };
 
 %goal.playAnimation("bitweb:anim_goal_idle");
@@ -21,6 +22,7 @@ parentbitweb=%this;
 
 %goal.createPolygonBoxCollisionShape(%goal.Size);
 %goal.setCollisionGroups(0,1);//0/1 players
+%goal.setCollisionShapeIsSensor(0,true);
 
 DotsandCritsscene.add(%goal);
 %this.goal=%goal;

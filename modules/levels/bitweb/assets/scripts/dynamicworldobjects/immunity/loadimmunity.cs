@@ -14,6 +14,8 @@ SceneGroup=26;
 BodyType="static";
 class="class_immunity";
 parentbitweb=%this;
+CollisionCallback=true;
+used=false;
 };
 
 %immunity.playAnimation("bitweb:anim_immunity_idle");

@@ -1,13 +1,17 @@
 function bitweb::sudodestroy(%this)
 {
 
-%this.unloadgates();
+%this.unloadgates(%this);
 
-%this.unloadaudioass();
+%this.unloadaudioass(%this);
 
-%this.unloadgoal();
+%this.unloadgoal(%this);
 
-%this.unloadspider();
+%this.unloadspider(%this);
+
+%this.unloadimmunity(%this);
+
+%this.unloadsurvivor(%this);
 
 if (isObject(gui_bitwebscore))
 {

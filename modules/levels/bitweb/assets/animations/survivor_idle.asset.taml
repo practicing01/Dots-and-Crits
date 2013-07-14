@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_survivor_idle"
+    Image="@asset=bitweb:image_survivor"
+    AnimationFrames="18"
+    AnimationCycle="true"
+	AnimationTime="1.0" />

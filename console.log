@@ -1,4 +1,4 @@
-//-------------------------- 7/13/2013 -- 13:04:49 -----
+//-------------------------- 7/14/2013 -- 12:24:02 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -73,6 +73,8 @@ created Grab
 created Deathball
 Activating DirectInput...
 DirectInput joystick enabled.
+DirectInput deactivated.
+Activating DirectInput...
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
