@@ -4,7 +4,7 @@ function bitweb::moveinfected(%this)
 
 %objlist=DotsandCritsscene.pickPoint(
 %player1.sprite.Position,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 %playertile=0;
 
@@ -26,7 +26,7 @@ for (%x=0;%x<%this.simset_infected.getCount();%x++)
 
 %objlist=DotsandCritsscene.pickPoint(
 %infected.Position,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 %infectedtile=0;
 
@@ -49,7 +49,7 @@ if (%infectedtile.rightgate.state)//open, check if right gate is open
 
 %objlist=DotsandCritsscene.pickPoint(
 %infected.Position.X+%offset.X SPC %infected.Position.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 %infectedrighttile=0;
 
@@ -117,7 +117,7 @@ if (%infectedtile.leftgate.state)//open, check if left gate is open
 
 %objlist=DotsandCritsscene.pickPoint(
 %infected.Position.X-%offset.X SPC %infected.Position.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 %infectedlefttile=0;
 
@@ -190,7 +190,7 @@ if (%infectedtile.upgate.state)//open, check if up gate is open
 
 %objlist=DotsandCritsscene.pickPoint(
 %infected.Position.X SPC %infected.Position.Y+%offset.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 %infecteduptile=0;
 
@@ -258,7 +258,7 @@ if (%infectedtile.downgate.state)//open, check if down gate is open
 
 %objlist=DotsandCritsscene.pickPoint(
 %infected.Position.X SPC %infected.Position.Y-%offset.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 %infecteddowntile=0;
 

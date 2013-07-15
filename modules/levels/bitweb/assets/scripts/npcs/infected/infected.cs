@@ -5,3 +5,4 @@ exec("./infectedmoveto.cs");
 exec("./moveinfected.cs");
 exec("./oncollision.cs");
 exec("./unloadinfected.cs");
+exec("./updatehealth.cs");

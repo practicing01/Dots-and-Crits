@@ -12,6 +12,7 @@ exec("./npcs/spider/spider.cs");
 exec("./dynamicworldobjects/immunity/immunity.cs");
 exec("./dynamicworldobjects/survivor/survivor.cs");
 exec("./npcs/infected/infected.cs");
+exec("./dynamicworldobjects/projectile/projectile.cs");
 
 function bitweb::create(%this)
 {

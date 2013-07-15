@@ -22,9 +22,9 @@ CollisionCallback=true;
 
 %infected.playAnimation("bitweb:anim_infected_stand_down");
 
-%infected.createPolygonBoxCollisionShape(%infected.Size);
+%colshapeindex=%infected.createPolygonBoxCollisionShape(%infected.Size);
 %infected.setCollisionGroups(0,1,28,29);//0/1 players, 28/29 projectiles
-%infected.setCollisionShapeIsSensor(0,true);
+%infected.setCollisionShapeIsSensor(%colshapeindex,true);
 
 DotsandCritsscene.add(%infected);
 

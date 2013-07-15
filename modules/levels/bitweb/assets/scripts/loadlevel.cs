@@ -2,6 +2,8 @@ function bitweb::loadlevel(%this)
 {
 ///////////////////////////////////////////////////////////////////////////
 
+$bitwebhandle=%this;
+
 cancelallschedules();
 DotsandCritsscene.clear();
 
@@ -114,11 +116,11 @@ $cancellableschedules.add(%this.schedule_shuffle);
 ///////////////////////////////////////////////////////////////////////////
 
 %this.loadaudioass();
-/*
+
 Audiere_Stop(%this.sound_levelmusic);
 Audiere_Reset(%this.sound_levelmusic);
 Audiere_Play(%this.sound_levelmusic,1,1.0);
-*/
+
 ///////////////////////////////////////////////////////////////////////////
 
 %this.initmouseinput();
@@ -199,6 +201,21 @@ schedulehandle=0;
 $cancellableschedules.add(%this.schedule_moveinfected);
 
 %this.schedule_moveinfected.schedulehandle=schedule(5000,0,"bitweb::moveinfected",%this);
+
+///////////////////////////////////////////////////////////////////////////
+
+%player=$players.getObject(0);
+%player.sprite.ammo=0;
+
+%this.loadprojectile();
+
+%this.schedule_respawnprojectile=new ScriptObject()
+{
+schedulehandle=0;
+};
+$cancellableschedules.add(%this.schedule_respawnprojectile);
+
+%this.schedule_respawnprojectile.schedulehandle=schedule(20000,0,"class_bitwebprojectile::respawn",%this.projectile);
 
 ///////////////////////////////////////////////////////////////////////////
 

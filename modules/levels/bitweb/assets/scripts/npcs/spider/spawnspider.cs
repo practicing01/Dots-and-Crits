@@ -37,9 +37,9 @@ else{if (%spider.Position!=%player1.sprite.Position){break;}}
 
 }
 
-%spider.createPolygonBoxCollisionShape(%spider.Size);
+%colshapeindex=%spider.createPolygonBoxCollisionShape(%spider.Size);
 %spider.setCollisionGroups(0,1,28,29);//0/1 players, 28/29 projectiles
-%spider.setCollisionShapeIsSensor(0,true);
+%spider.setCollisionShapeIsSensor(%colshapeindex,true);
 
 DotsandCritsscene.add(%spider);
 

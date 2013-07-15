@@ -1,4 +1,4 @@
-//-------------------------- 7/14/2013 -- 12:24:02 -----
+//-------------------------- 7/15/2013 -- 11:54:27 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -73,6 +73,42 @@ created Grab
 created Deathball
 Activating DirectInput...
 DirectInput joystick enabled.
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped button11 to stick click
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+loaded ThrowKnife ThrowKnifes
+unloaded ThrowKnife
+modules/levels/bitweb/assets/scripts/dynamicworldobjects/gates/unloadgates.cs (4): Unable to find object: '1588' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/levels/bitweb/assets/scripts/dynamicworldobjects/gates/unloadgates.cs (6): Unable to find object: '1589' attempting to call function 'getCount'
+modules/levels/bitweb/assets/scripts/dynamicworldobjects/gates/unloadgates.cs (15): Unable to find object: '1589' attempting to call function 'deleteObjects'
+modules/levels/bitweb/assets/scripts/dynamicworldobjects/gates/unloadgates.cs (16): Unable to find object: '1589' attempting to call function 'delete'
+modules/levels/bitweb/assets/scripts/dynamicworldobjects/goal/unloadgoal.cs (4): Unable to find object: '3994' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/levels/bitweb/assets/scripts/npcs/spider/unloadspider.cs (4): Unable to find object: '4012' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/levels/bitweb/assets/scripts/npcs/infected/unloadinfected.cs (4): Unable to find object: '4030' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/levels/bitweb/assets/scripts/dynamicworldobjects/immunity/unloadimmunity.cs (4): Unable to find object: '4022' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/levels/bitweb/assets/scripts/dynamicworldobjects/survivor/unloadsurvivor.cs (4): Unable to find object: '4026' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+unloaded ThrowKnife
+modules/skills/ThrowKnife/assets/scripts/ThrowKnife.cs (48): Unable to find object: '4033' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/skills/ThrowKnife/assets/scripts/ThrowKnife.cs (49): Unable to find object: '4034' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/levels/bitweb/assets/scripts/dynamicworldobjects/projectile/unloadprojectile.cs (6): Unable to find object: '4035' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+DirectInput deactivated.
+Activating DirectInput...
 DirectInput deactivated.
 Activating DirectInput...
 mapped button0 to skill 0 & 4
@@ -85,26 +121,7 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
+loaded ThrowKnife ThrowKnifes
 DirectInput deactivated.
 goodbye world
 deleted Deathball

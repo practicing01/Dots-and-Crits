@@ -3,7 +3,7 @@ function class_bitwebmousecaptureobj::onTouchDown(%this,%touchID,%worldPosition,
 
 %objlist=DotsandCritsscene.pickPoint(
 %worldPosition,
-bit(3),"","oobb");//3=tiles that hold the gates
+bit(4),"","oobb");//4=tiles that hold the gates, specific to this game
 
 %mousetile=0;
 
@@ -19,7 +19,7 @@ else {return;}
 
 %objlist=DotsandCritsscene.pickPoint(
 %player.sprite.Position,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 if (getWordCount(%objlist))
 {
@@ -40,11 +40,11 @@ function class_bitwebmousecaptureobj::onRightMouseDown(%this,%touchID,%worldPosi
 
 }
 
-function class_bitwebmousecaptureobj::onMiddleMouseDown(%this,%touchID,%worldPosition,%mouseClicks)
+/*function class_bitwebmousecaptureobj::onMiddleMouseDown(%this,%touchID,%worldPosition,%mouseClicks)
 {
 
 %player=$players.getObject(0);
 
 //%this.parentbitweb.throwknife(%worldPosition,%player.sprite.Position);
 
-}
+}*/

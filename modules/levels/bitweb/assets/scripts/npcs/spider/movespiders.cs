@@ -4,7 +4,7 @@ function bitweb::movespiders(%this)
 
 %objlist=DotsandCritsscene.pickPoint(
 %player1.sprite.Position,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 %playertile=0;
 
@@ -26,7 +26,7 @@ for (%x=0;%x<%this.simset_spiders.getCount();%x++)
 
 %objlist=DotsandCritsscene.pickPoint(
 %spider.Position,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 %spidertile=0;
 
@@ -49,7 +49,7 @@ if (%spidertile.rightgate.state)//open, check if right gate is open
 
 %objlist=DotsandCritsscene.pickPoint(
 %spider.Position.X+%offset.X SPC %spider.Position.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 %spiderrighttile=0;
 
@@ -117,7 +117,7 @@ if (%spidertile.leftgate.state)//open, check if left gate is open
 
 %objlist=DotsandCritsscene.pickPoint(
 %spider.Position.X-%offset.X SPC %spider.Position.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 %spiderlefttile=0;
 
@@ -190,7 +190,7 @@ if (%spidertile.upgate.state)//open, check if up gate is open
 
 %objlist=DotsandCritsscene.pickPoint(
 %spider.Position.X SPC %spider.Position.Y+%offset.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 %spideruptile=0;
 
@@ -258,7 +258,7 @@ if (%spidertile.downgate.state)//open, check if down gate is open
 
 %objlist=DotsandCritsscene.pickPoint(
 %spider.Position.X SPC %spider.Position.Y-%offset.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 %spiderdowntile=0;
 

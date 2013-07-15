@@ -6,3 +6,4 @@ exec("./movespiders.cs");
 exec("./oncollision.cs");
 exec("./respawnspiders.cs");
 exec("./unloadspider.cs");
+exec("./updatehealth.cs");

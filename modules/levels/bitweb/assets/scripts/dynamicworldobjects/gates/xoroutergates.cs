@@ -11,7 +11,7 @@ function bitweb::xoroutergates(%this,%mousepos,%playerpos)
 
 %objlist=DotsandCritsscene.pickPoint(
 %mousepos.X SPC %mousepos.Y+%offset.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 if (getWordCount(%objlist))
 {
@@ -22,7 +22,7 @@ if (getWordCount(%objlist))
 
 %objlist=DotsandCritsscene.pickPoint(
 %mousepos.X SPC %mousepos.Y-%offset.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 if (getWordCount(%objlist))
 {
@@ -33,7 +33,7 @@ if (getWordCount(%objlist))
 
 %objlist=DotsandCritsscene.pickPoint(
 %mousepos.X-%offset.X SPC %mousepos.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 if (getWordCount(%objlist))
 {
@@ -44,7 +44,7 @@ if (getWordCount(%objlist))
 
 %objlist=DotsandCritsscene.pickPoint(
 %mousepos.X+%offset.X SPC %mousepos.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 if (getWordCount(%objlist))
 {
@@ -60,7 +60,7 @@ if (getWordCount(%objlist))
 
 %objlist=DotsandCritsscene.pickPoint(
 %playerpos.X SPC %playerpos.Y+%offset.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 if (getWordCount(%objlist))
 {
@@ -71,7 +71,7 @@ if (getWordCount(%objlist))
 
 %objlist=DotsandCritsscene.pickPoint(
 %playerpos.X SPC %playerpos.Y-%offset.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 if (getWordCount(%objlist))
 {
@@ -82,7 +82,7 @@ if (getWordCount(%objlist))
 
 %objlist=DotsandCritsscene.pickPoint(
 %playerpos.X-%offset.X SPC %playerpos.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 if (getWordCount(%objlist))
 {
@@ -93,7 +93,7 @@ if (getWordCount(%objlist))
 
 %objlist=DotsandCritsscene.pickPoint(
 %playerpos.X+%offset.X SPC %playerpos.Y,
-bit(3),"","oobb");
+bit(4),"","oobb");
 
 if (getWordCount(%objlist))
 {
