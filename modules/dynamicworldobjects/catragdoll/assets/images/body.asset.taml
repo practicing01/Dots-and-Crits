@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_body"
+    ImageFile="body.png"
+	CellCountX="2"
+    CellCountY="1"
+    CellWidth="20"
+    CellHeight="16"
+	OptimalResolution="1280 800"/>

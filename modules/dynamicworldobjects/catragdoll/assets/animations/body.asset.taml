@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_body"
+    Image="@asset=catragdoll:image_body"
+    AnimationFrames="0 1"
+    AnimationCycle="true"
+	AnimationTime="2.0" />

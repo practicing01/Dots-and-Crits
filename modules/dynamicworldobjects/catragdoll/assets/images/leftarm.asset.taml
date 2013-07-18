@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_leftarm"
+    ImageFile="leftarm.png"
+	CellCountX="2"
+    CellCountY="1"
+    CellWidth="14"
+    CellHeight="8"
+	OptimalResolution="1280 800"/>

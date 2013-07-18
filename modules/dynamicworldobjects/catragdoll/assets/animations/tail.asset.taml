@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_tail"
+    Image="@asset=catragdoll:image_tail"
+    AnimationFrames="0 1"
+    AnimationCycle="true"
+	AnimationTime="2.0" />

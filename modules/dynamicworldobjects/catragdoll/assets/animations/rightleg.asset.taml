@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_rightleg"
+    Image="@asset=catragdoll:image_rightleg"
+    AnimationFrames="0 1"
+    AnimationCycle="true"
+	AnimationTime="2.0" />

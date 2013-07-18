@@ -75,6 +75,7 @@ function pausemenu::create(%this)
 {
 DotsandCrits.add(TamlRead("./../gui/pausemenu.gui.taml"));
 gui_pausemenu.resize(0,0,$resolution.X,$resolution.Y);
+exec("./listmenus.cs");
 }
 
 function pausemenu::destroy(%this)

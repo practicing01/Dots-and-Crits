@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_tail"
+    ImageFile="tail.png"
+	CellCountX="2"
+    CellCountY="1"
+    CellWidth="6"
+    CellHeight="10"
+	OptimalResolution="1280 800"/>

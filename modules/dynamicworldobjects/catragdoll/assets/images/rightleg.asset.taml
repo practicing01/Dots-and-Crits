@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_rightleg"
+    ImageFile="rightleg.png"
+	CellCountX="2"
+    CellCountY="1"
+    CellWidth="8"
+    CellHeight="14"
+	OptimalResolution="1280 800"/>

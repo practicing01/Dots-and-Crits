@@ -72,4 +72,128 @@
 		groupNum="-1"
 		useMouseEvents="1" />
 
+		<!-- dynamic world object list box -->
+	<GuiScrollCtrl
+			Name="gui_scroller_dwolistscroller"
+			canSaveDynamicFields="1"
+			isContainer="1"
+			Profile="GuiLightScrollProfile"
+			HorizSizing="relative"
+			VertSizing="relative"
+			Position="0 400"
+			Extent="200 200"
+			MinExtent="1 1"
+			canSave="1"
+			Visible="1"
+			Active="1"
+			hovertime="1000"
+			willFirstRespond="1"
+			hScrollBar="dynamic"
+			vScrollBar="dynamic"
+			constantThumbHeight="0"
+			childMargin="2 3" >
+			
+				<GuiListBoxCtrl
+					Name="gui_list_dwo"
+					Profile="gui_list_profile_colored"
+					command="gui_pausemenu.dwoselect();"
+					isContainer="0"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="0 400"
+					Extent="200 200"
+					MinExtent="1 1"
+					canSave="1"
+					Visible="1"
+					Active="1"
+					hovertime="1000"
+					groupNum="-1"
+					useMouseEvents="1"
+					fitParentWidth="0"
+					AllowMultipleSelections="0"/>
+	</GuiScrollCtrl>
+		
+	<!-- npc list box -->
+	<GuiScrollCtrl
+			Name="gui_scroller_npclistscroller"
+			canSaveDynamicFields="1"
+			isContainer="1"
+			Profile="GuiLightScrollProfile"
+			HorizSizing="relative"
+			VertSizing="relative"
+			Position="1080 400"
+			Extent="200 200"
+			MinExtent="1 1"
+			canSave="1"
+			Visible="1"
+			Active="1"
+			hovertime="1000"
+			willFirstRespond="1"
+			hScrollBar="dynamic"
+			vScrollBar="dynamic"
+			constantThumbHeight="0"
+			childMargin="2 3" >
+			
+				<GuiListBoxCtrl
+					Name="gui_list_npc"
+					Profile="gui_list_profile_colored"
+					command="gui_pausemenu.npcselect();"
+					isContainer="0"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="1080 400"
+					Extent="200 200"
+					MinExtent="1 1"
+					canSave="1"
+					Visible="1"
+					Active="1"
+					hovertime="1000"
+					groupNum="-1"
+					useMouseEvents="1"
+					fitParentWidth="0"
+					AllowMultipleSelections="0"/>
+	</GuiScrollCtrl>
+		
+	<!-- dynamic world object select -->
+	<GuiButtonCtrl
+		Name="gui_button_dwoselect"
+		Profile="BlueButtonProfile"
+		Text="Select Object"
+		ButtonType="PushButton"
+		command="gui_pausemenu.dwoselect();"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="64 600"
+		Extent="128 24"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+		
+	<!-- npc select -->
+	<GuiButtonCtrl
+		Name="gui_button_npcselect"
+		Profile="BlueButtonProfile"
+		Text="Select NPC"
+		ButtonType="PushButton"
+		command="gui_pausemenu.npcselect();"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="1088 600"
+		Extent="128 24"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+		
 </GuiControl>
