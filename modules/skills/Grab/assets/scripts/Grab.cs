@@ -2,6 +2,7 @@ exec("./skill_Grab.cs");
 exec("./setskillbaricon.cs");
 exec("./useskill.cs");
 exec("./ai.cs");
+exec("./ontouchdown.cs");
 
 function Grab::displayskilldescription(%this,%skilllist,%slot)
 {
@@ -21,9 +22,35 @@ for (%x=0;%x<$numofplayers;%x++)//one simobject per player, containing all custo
 {
 schedulehandle=0;
 grabbedobject=0;
+mousecaptureobj=0;
 };
 
 Grab.customplayerfields.add(%fields);
+
+%fields.mousecaptureobj=new SceneObject()
+{
+size="1 1";
+Position="0 0";
+Visible="false";
+Active="true";
+class="class_grabmousecaptureobj";
+BodyType="static";
+};
+DotsandCritsscene.add(%fields.mousecaptureobj);
+
+if (!%x)//player 0 casted
+{
+%fields.mousecaptureobj.setUseInputEvents(true);
+
+DotsandCritswindow.addInputListener(%fields.mousecaptureobj);
+scenewindow_player1.addInputListener(%fields.mousecaptureobj);
+scenewindow_player2.addInputListener(%fields.mousecaptureobj);
+}
+else
+{
+$joycallbackobjlist.add(%fields.mousecaptureobj);
+}
+
 }
 
 }
@@ -45,6 +72,7 @@ echo("unloaded Grab");
 for (%x=0;%x<$numofplayers;%x++)
 {
 %customfieldobj=Grab.customplayerfields.getObject(%x);
+%customfieldobj.mousecaptureobj.safeDelete();
 cancel(%customfieldobj.schedulehandle);
 }
 

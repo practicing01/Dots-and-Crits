@@ -17,6 +17,7 @@ health=100;
 SceneGroup=26;//dynamic world object
 //FixedAngle=true;
 SceneLayer=15;
+Bullet=true;
 };
 DotsandCritsscene.add(%head);
 %head.createPolygonBoxCollisionShape(ScaleAssSizeVectorToCam(%headass));
@@ -58,6 +59,7 @@ health=100;
 SceneGroup=26;//dynamic world object
 //FixedAngle=true;
 SceneLayer=16;
+Bullet=true;
 };
 DotsandCritsscene.add(%body);
 %body.createPolygonBoxCollisionShape(ScaleAssSizeVectorToCam(%bodyass));
@@ -99,6 +101,7 @@ health=100;
 SceneGroup=26;//dynamic world object
 //FixedAngle=true;
 SceneLayer=15;
+Bullet=true;
 };
 DotsandCritsscene.add(%leftarm);
 %leftarm.createPolygonBoxCollisionShape(ScaleAssSizeVectorToCam(%leftarmass));
@@ -140,6 +143,7 @@ health=100;
 SceneGroup=26;//dynamic world object
 //FixedAngle=true;
 SceneLayer=15;
+Bullet=true;
 };
 DotsandCritsscene.add(%leftleg);
 %leftleg.createPolygonBoxCollisionShape(ScaleAssSizeVectorToCam(%leftlegass));
@@ -181,6 +185,7 @@ health=100;
 SceneGroup=26;//dynamic world object
 //FixedAngle=true;
 SceneLayer=15;
+Bullet=true;
 };
 DotsandCritsscene.add(%rightarm);
 %rightarm.createPolygonBoxCollisionShape(ScaleAssSizeVectorToCam(%rightarmass));
@@ -222,6 +227,7 @@ health=100;
 SceneGroup=26;//dynamic world object
 //FixedAngle=true;
 SceneLayer=15;
+Bullet=true;
 };
 DotsandCritsscene.add(%rightleg);
 %rightleg.createPolygonBoxCollisionShape(ScaleAssSizeVectorToCam(%rightlegass));
@@ -263,6 +269,7 @@ health=100;
 SceneGroup=26;//dynamic world object
 //FixedAngle=true;
 SceneLayer=15;
+Bullet=true;
 };
 DotsandCritsscene.add(%tail);
 %tail.createPolygonBoxCollisionShape(ScaleAssSizeVectorToCam(%tailass));
@@ -321,6 +328,24 @@ DotsandCritsscene.createDistanceJoint(%rightarm,%body,
 
 DotsandCritsscene.createDistanceJoint(%rightleg,%body,
 %rightleg.getLocalPoint(%body.Position),"0 0",0.1,3,0.0,false);
+
+/*DotsandCritsscene.createRopeJoint(%head,%body,
+%head.getLocalPoint(%body.Position),"0 0",0.1,false);
+
+DotsandCritsscene.createRopeJoint(%tail,%body,
+%tail.getLocalPoint(%body.Position),"0 0",0.1,false);
+
+DotsandCritsscene.createRopeJoint(%leftarm,%body,
+%leftarm.getLocalPoint(%body.Position),"0 0",0.1,false);
+
+DotsandCritsscene.createRopeJoint(%leftleg,%body,
+%leftleg.getLocalPoint(%body.Position),"0 0",0.1,false);
+
+DotsandCritsscene.createRopeJoint(%rightarm,%body,
+%rightarm.getLocalPoint(%body.Position),"0 0",0.1,false);
+
+DotsandCritsscene.createRopeJoint(%rightleg,%body,
+%rightleg.getLocalPoint(%body.Position),"0 0",0.1,false);*/
 
 /*%headjoint=DotsandCritsscene.createRevoluteJoint(%head,%body,
 %head.getLocalPoint(%body.Position),"0 0",false);
