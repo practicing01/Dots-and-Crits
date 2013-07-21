@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_bariconreadyinactive"
+    Image="@asset=Wave:image_bariconreadyinactive"
+    AnimationFrames="0 1"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

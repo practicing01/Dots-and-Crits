@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_topdown_Wave"
+    Image="@asset=Wave:image_topdown_Wave"
+    AnimationFrames="9 6 3 0 10 7 4 1 11 8 5 2"
+    AnimationCycle="false"
+	AnimationTime="1.0" />

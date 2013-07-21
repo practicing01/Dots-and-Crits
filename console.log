@@ -1,4 +1,4 @@
-//-------------------------- 7/19/2013 -- 12:53:05 -----
+//-------------------------- 7/21/2013 -- 11:06:14 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -69,6 +69,7 @@ created Melee
 created Flashlight
 created Speedboof
 created Dot
+created Wave
 created Grab
 created Deathball
 created catragdoll
@@ -84,27 +85,16 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-Grab loaded
-Deathball loaded
-unloaded Grab
-unloaded Deathball
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-Grab loaded
-Deathball loaded
-DirectInput deactivated.
+loaded Wave Waves
+Teleport loaded
+loaded Wave Waves
+player 1 scored!
+player 1 scored!
 goodbye world
 freed catragdoll
 deleted Deathball
 deleted Grab
+deleted Wave
 deleted Dot
 deleted Speedboof
 deleted Flashlight

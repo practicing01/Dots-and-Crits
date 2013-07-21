@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_sideview_Wave"
+    ImageFile="Wave.png"
+	CellCountX="3"
+    CellCountY="4"
+    CellWidth="72"
+    CellHeight="114"
+	OptimalResolution="1280 800"/>
