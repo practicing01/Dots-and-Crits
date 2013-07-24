@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_bariconreadyactive"
+    Image="@asset=M4Carbine:image_bariconreadyactive"
+    AnimationFrames="0 1"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

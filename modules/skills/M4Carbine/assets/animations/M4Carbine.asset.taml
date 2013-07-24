@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_M4Carbine"
+    Image="@asset=M4Carbine:image_M4Carbine"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

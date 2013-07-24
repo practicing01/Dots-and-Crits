@@ -31,6 +31,8 @@ if (%idobj.spriteid!=%player.spriteid&&%idobj.rotates)
 
 %localposition="0 0";
 
+%player.sprite.setSpriteFlipX(false);
+
 if (%player.curdir==0)
 {
 %localposition.Y+=%idobj.centeroffset;
@@ -41,6 +43,7 @@ else if (%player.curdir==1)
 }
 else if (%player.curdir==2)
 {
+%player.sprite.setSpriteFlipX(true);
 %localposition.X-=%idobj.centeroffset;
 }
 else if (%player.curdir==3)

@@ -1,4 +1,4 @@
-//-------------------------- 7/21/2013 -- 11:06:14 -----
+//-------------------------- 7/24/2013 -- 11:51:41 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -62,6 +62,7 @@ created Bombermine
 created SineVolley
 created ScatterVolley
 created Volley
+created M4Carbine
 created Shield
 created SummonTonberry
 created Snare
@@ -75,6 +76,8 @@ created Deathball
 created catragdoll
 Activating DirectInput...
 DirectInput joystick enabled.
+DirectInput deactivated.
+Activating DirectInput...
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
@@ -85,11 +88,32 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-loaded Wave Waves
-Teleport loaded
-loaded Wave Waves
-player 1 scored!
-player 1 scored!
+loaded ThrowKnife ThrowKnifes
+unloaded ThrowKnife
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped button11 to stick click
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+loaded ThrowKnife ThrowKnifes
+unloaded ThrowKnife
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped button11 to stick click
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+M4Carbine loaded
+DirectInput deactivated.
 goodbye world
 freed catragdoll
 deleted Deathball
@@ -102,6 +126,7 @@ deleted Melee
 deleted Snare
 deleted SummonTonberry
 deleted Shield
+deleted M4Carbine
 deleted Volley
 deleted ScatterVolley
 deleted SineVolley

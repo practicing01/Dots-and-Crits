@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_bariconcdinactive"
+    Image="@asset=M4Carbine:image_bariconcdinactive"
+    AnimationFrames="0 1"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

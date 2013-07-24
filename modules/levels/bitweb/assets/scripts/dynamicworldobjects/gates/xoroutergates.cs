@@ -282,6 +282,7 @@ else
 
 //////////////////////////////
 
+Audiere_Stop(%this.sound_gatemovement);
 Audiere_Reset(%this.sound_gatemovement);
 Audiere_Play(%this.sound_gatemovement,0,1.0);
 

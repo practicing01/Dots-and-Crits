@@ -5,5 +5,8 @@
 <LastConfig>Release</LastConfig>
 <Breakpoints/>
 <Bookmarks/>
-<OpenFiles/>
+<OpenFiles>
+<File ScrollX="0" ScrollY="0" Active="true">modules\skills\M4Carbine\assets\scripts\ontouchdown.cs</File>
+<File ScrollX="0" ScrollY="67">modules\skills\M4Carbine\assets\scripts\M4Carbine.cs</File>
+</OpenFiles>
 </TorsionProjectOptions>
