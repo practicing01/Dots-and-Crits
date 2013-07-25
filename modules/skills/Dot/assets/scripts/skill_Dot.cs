@@ -19,6 +19,8 @@ setskillanimation(%player,%player.skillanimtype);//animtype: 0:selfcast 1:target
 //pickray
 //store handle
 
+%customfieldobj.targethandle=-1;
+
 %dest=%player.sprite.Position;
 
 if (%player.curdir==0)//up

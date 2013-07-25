@@ -46,7 +46,6 @@ if (!%x)//player 0 casted
 
 DotsandCritswindow.addInputListener(%fields.mousecaptureobj);
 scenewindow_player1.addInputListener(%fields.mousecaptureobj);
-scenewindow_player2.addInputListener(%fields.mousecaptureobj);
 }
 else
 {
@@ -88,10 +87,10 @@ Audiere_Stop(%customfieldobj.sound_m4_reload);
 
 %customfieldobj.mousecaptureobj.safeDelete();
 
+}
+
 M4Carbine.customplayerfields.deleteObjects();
 M4Carbine.customplayerfields.delete();
-
-}
 
 }
 
