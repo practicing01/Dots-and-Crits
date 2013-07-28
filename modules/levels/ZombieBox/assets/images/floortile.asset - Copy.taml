@@ -1,0 +1,14 @@
+<ImageAsset
+    AssetName="image_floortile"
+    ImageFile="floortile.png"
+	OptimalResolution="1280 800"
+	SceneLayer="30"
+	SceneGroup="2"
+	CollisionGroups=""
+	Class=""
+	CollisionCallback="false"
+	CreateCollisionShape="false"
+	Animation=""
+	IsSensor="false"
+	BlendColor="1 1 1 1"
+	Type="floortile"/>

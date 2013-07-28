@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_floortile"
+    Image="@asset=ZombieBox:image_floortile"
+    AnimationFrames="0"
+    AnimationCycle="false"
+	AnimationTime="1" />

@@ -1,4 +1,4 @@
-//-------------------------- 7/25/2013 -- 09:47:49 -----
+//-------------------------- 7/28/2013 -- 07:10:38 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -43,6 +43,7 @@ OpenAL Driver Init Success
 created deathballvalley
 created bitweb
 created catacombs
+created ZombieBox
 created space
 created FtA_P1
 created lidia
@@ -86,12 +87,16 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-M4Carbine loaded
-M4Carbine loaded
-player 1 scored!
-player 2 scored!
-player 1 scored!
-player 2 scored!
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped button11 to stick click
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
 DirectInput deactivated.
 goodbye world
 freed catragdoll
@@ -125,6 +130,8 @@ freed Lelur
 freed lidia
 freed FtA_P1
 space destroy() called
+DotsandCrits: Created scene but no window available.
+ZombieBox destroy() called
 DotsandCrits: Created scene but no window available.
 catacombs destroy() called
 DotsandCrits: Created scene but no window available.

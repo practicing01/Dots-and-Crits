@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_npc_plant_runup"
+    Image="@asset=ZombieBox:image_npc_plant"
+    AnimationFrames="14 15"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

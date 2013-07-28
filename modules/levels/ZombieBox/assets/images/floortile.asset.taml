@@ -1,0 +1,12 @@
+<ImageAsset
+    AssetName="image_floortile"
+    ImageFile="floortile.png"
+	OptimalResolution="1280 800"
+	SceneLayer="30"
+	SceneGroup="2"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="320"
+    CellHeight="320"
+	Animation="ZombieBox:anim_floortile"
+	AssetCategory="floortile"/>

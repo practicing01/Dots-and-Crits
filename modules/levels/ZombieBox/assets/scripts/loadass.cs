@@ -1,0 +1,4 @@
+function ZombieBox::loadass(%this)
+{
+
+}

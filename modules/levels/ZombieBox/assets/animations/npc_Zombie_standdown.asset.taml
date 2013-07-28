@@ -1,6 +1,6 @@
 <AnimationAsset
-    AssetName="anim_topdown_projectile"
-    Image="@asset=Laser:image_topdown_projectile"
+    AssetName="anim_npc_plant_standdown"
+    Image="@asset=ZombieBox:image_npc_plant"
     AnimationFrames="0"
     AnimationCycle="true"
 	AnimationTime="0.5" />

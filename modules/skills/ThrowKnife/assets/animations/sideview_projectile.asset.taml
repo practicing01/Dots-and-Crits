@@ -1,6 +1,0 @@
-<AnimationAsset
-    AssetName="anim_sideview_projectile"
-    Image="@asset=ThrowKnife:image_sideview_projectile"
-    AnimationFrames="0"
-    AnimationCycle="true"
-	AnimationTime="0.5" />
