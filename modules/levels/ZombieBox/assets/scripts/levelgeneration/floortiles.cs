@@ -17,7 +17,7 @@ AssetDatabase.releaseAsset(%ass.getAssetId());
 %this.simset_ass_floortiles=new SimSet();
 
 %assquery=new AssetQuery();
-AssetDatabase.findAssetCategory(%assquery,"floortile",false);
+AssetDatabase.findAssetCategory(%assquery,"ground",false);
 for (%x=0;%x<%assquery.getCount();%x++)
 {
 %assid=%assquery.getAsset(%x);
@@ -60,13 +60,17 @@ for (%x=%xmin+(%xstep/2);%x<%xmax;%x+=%xstep)
 {
 Position=%x SPC %y;
 Size=%tilesize;
-Image=%randomtileass.Image;
+Image=%this.getName()@":"@%randomtileass.AssetName;
 SceneLayer=%randomtileass.SceneLayer;
 SceneGroup=%randomtileass.SceneGroup;
-Animation=%randomtileass.Animation;
 BodyType="static";
 };
 DotsandCritsscene.add(%floortile);
+
+if (%randomtileass.Animation!$="")
+{
+%floortile.Animation=%randomtileass.Animation;
+}
 
 }
 

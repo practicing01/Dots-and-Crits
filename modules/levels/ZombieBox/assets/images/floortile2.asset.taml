@@ -9,4 +9,4 @@
     CellWidth="320"
     CellHeight="320"
 	Animation="ZombieBox:anim_floortile2"
-	AssetCategory="floortile"/>
+	AssetCategory="ground"/>

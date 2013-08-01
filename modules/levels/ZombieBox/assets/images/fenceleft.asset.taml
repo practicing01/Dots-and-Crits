@@ -1,0 +1,17 @@
+<ImageAsset
+    AssetName="image_fenceleft"
+    ImageFile="fenceleft.png"
+	OptimalResolution="1280 800"
+	SceneLayer="17"
+	SceneGroup="30"
+	CollisionGroups=""
+	Class=""
+	CollisionCallback="false"
+	CreateCollisionShape="true"
+	IsSensor="false"
+	BlendColor="1 1 1 1"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="10"
+    CellHeight="446"
+	AssetCategory="wall"/>

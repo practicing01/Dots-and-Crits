@@ -27,19 +27,19 @@ DotsandCritsscene.add(%head);
 //set position
 if (%player.curdir==0)//up
 {
-%head.Position.Y-=(%playerspritesize.Y/2)+(%headsize.Y/2);
+%head.Position.Y-=(%playerspritesize.Y)+(%headsize.Y/2);
 }
 else if (%player.curdir==1)//down
 {
-%head.Position.Y+=(%playerspritesize.Y/2)+(%headsize.Y/2);
+%head.Position.Y+=(%playerspritesize.Y)+(%headsize.Y/2);
 }
 else if (%player.curdir==2)//left
 {
-%head.Position.X+=(%playerspritesize.X/2)+(%headsize.X/2);
+%head.Position.X+=(%playerspritesize.X)+(%headsize.X/2);
 }
 else if (%player.curdir==3)//right
 {
-%head.Position.X-=(%playerspritesize.X/2)+(%headsize.X/2);
+%head.Position.X-=(%playerspritesize.X)+(%headsize.X/2);
 }
 
 AssetDatabase.releaseAsset(%headass.getAssetId());
@@ -69,19 +69,19 @@ DotsandCritsscene.add(%body);
 //set position
 if (%player.curdir==0)//up
 {
-%body.Position.Y-=(%playerspritesize.Y/2)+(%bodysize.Y/2);
+%body.Position.Y-=(%playerspritesize.Y)+(%bodysize.Y/2);
 }
 else if (%player.curdir==1)//down
 {
-%body.Position.Y+=(%playerspritesize.Y/2)+(%bodysize.Y/2);
+%body.Position.Y+=(%playerspritesize.Y)+(%bodysize.Y/2);
 }
 else if (%player.curdir==2)//left
 {
-%body.Position.X+=(%playerspritesize.X/2)+(%bodysize.X/2);
+%body.Position.X+=(%playerspritesize.X)+(%bodysize.X/2);
 }
 else if (%player.curdir==3)//right
 {
-%body.Position.X-=(%playerspritesize.X/2)+(%bodysize.X/2);
+%body.Position.X-=(%playerspritesize.X)+(%bodysize.X/2);
 }
 
 AssetDatabase.releaseAsset(%bodyass.getAssetId());
@@ -111,19 +111,19 @@ DotsandCritsscene.add(%leftarm);
 //set position
 if (%player.curdir==0)//up
 {
-%leftarm.Position.Y-=(%playerspritesize.Y/2)+(%leftarmsize.Y/2);
+%leftarm.Position.Y-=(%playerspritesize.Y)+(%leftarmsize.Y/2);
 }
 else if (%player.curdir==1)//down
 {
-%leftarm.Position.Y+=(%playerspritesize.Y/2)+(%leftarmsize.Y/2);
+%leftarm.Position.Y+=(%playerspritesize.Y)+(%leftarmsize.Y/2);
 }
 else if (%player.curdir==2)//left
 {
-%leftarm.Position.X+=(%playerspritesize.X/2)+(%leftarmsize.X/2);
+%leftarm.Position.X+=(%playerspritesize.X)+(%leftarmsize.X/2);
 }
 else if (%player.curdir==3)//right
 {
-%leftarm.Position.X-=(%playerspritesize.X/2)+(%leftarmsize.X/2);
+%leftarm.Position.X-=(%playerspritesize.X)+(%leftarmsize.X/2);
 }
 
 AssetDatabase.releaseAsset(%leftarmass.getAssetId());
@@ -153,19 +153,19 @@ DotsandCritsscene.add(%leftleg);
 //set position
 if (%player.curdir==0)//up
 {
-%leftleg.Position.Y-=(%playerspritesize.Y/2)+(%leftlegsize.Y/2);
+%leftleg.Position.Y-=(%playerspritesize.Y)+(%leftlegsize.Y/2);
 }
 else if (%player.curdir==1)//down
 {
-%leftleg.Position.Y+=(%playerspritesize.Y/2)+(%leftlegsize.Y/2);
+%leftleg.Position.Y+=(%playerspritesize.Y)+(%leftlegsize.Y/2);
 }
 else if (%player.curdir==2)//left
 {
-%leftleg.Position.X+=(%playerspritesize.X/2)+(%leftlegsize.X/2);
+%leftleg.Position.X+=(%playerspritesize.X)+(%leftlegsize.X/2);
 }
 else if (%player.curdir==3)//right
 {
-%leftleg.Position.X-=(%playerspritesize.X/2)+(%leftlegsize.X/2);
+%leftleg.Position.X-=(%playerspritesize.X)+(%leftlegsize.X/2);
 }
 
 AssetDatabase.releaseAsset(%leftlegass.getAssetId());
@@ -195,19 +195,19 @@ DotsandCritsscene.add(%rightarm);
 //set position
 if (%player.curdir==0)//up
 {
-%rightarm.Position.Y-=(%playerspritesize.Y/2)+(%rightarmsize.Y/2);
+%rightarm.Position.Y-=(%playerspritesize.Y)+(%rightarmsize.Y/2);
 }
 else if (%player.curdir==1)//down
 {
-%rightarm.Position.Y+=(%playerspritesize.Y/2)+(%rightarmsize.Y/2);
+%rightarm.Position.Y+=(%playerspritesize.Y)+(%rightarmsize.Y/2);
 }
 else if (%player.curdir==2)//left
 {
-%rightarm.Position.X+=(%playerspritesize.X/2)+(%rightarmsize.X/2);
+%rightarm.Position.X+=(%playerspritesize.X)+(%rightarmsize.X/2);
 }
 else if (%player.curdir==3)//right
 {
-%rightarm.Position.X-=(%playerspritesize.X/2)+(%rightarmsize.X/2);
+%rightarm.Position.X-=(%playerspritesize.X)+(%rightarmsize.X/2);
 }
 
 AssetDatabase.releaseAsset(%rightarmass.getAssetId());
@@ -237,19 +237,19 @@ DotsandCritsscene.add(%rightleg);
 //set position
 if (%player.curdir==0)//up
 {
-%rightleg.Position.Y-=(%playerspritesize.Y/2)+(%rightlegsize.Y/2);
+%rightleg.Position.Y-=(%playerspritesize.Y)+(%rightlegsize.Y/2);
 }
 else if (%player.curdir==1)//down
 {
-%rightleg.Position.Y+=(%playerspritesize.Y/2)+(%rightlegsize.Y/2);
+%rightleg.Position.Y+=(%playerspritesize.Y)+(%rightlegsize.Y/2);
 }
 else if (%player.curdir==2)//left
 {
-%rightleg.Position.X+=(%playerspritesize.X/2)+(%rightlegsize.X/2);
+%rightleg.Position.X+=(%playerspritesize.X)+(%rightlegsize.X/2);
 }
 else if (%player.curdir==3)//right
 {
-%rightleg.Position.X-=(%playerspritesize.X/2)+(%rightlegsize.X/2);
+%rightleg.Position.X-=(%playerspritesize.X)+(%rightlegsize.X/2);
 }
 
 AssetDatabase.releaseAsset(%rightlegass.getAssetId());
@@ -279,19 +279,19 @@ DotsandCritsscene.add(%tail);
 //set position
 if (%player.curdir==0)//up
 {
-%tail.Position.Y-=(%playerspritesize.Y/2)+(%tailsize.Y/2);
+%tail.Position.Y-=(%playerspritesize.Y)+(%tailsize.Y/2);
 }
 else if (%player.curdir==1)//down
 {
-%tail.Position.Y+=(%playerspritesize.Y/2)+(%tailsize.Y/2);
+%tail.Position.Y+=(%playerspritesize.Y)+(%tailsize.Y/2);
 }
 else if (%player.curdir==2)//left
 {
-%tail.Position.X+=(%playerspritesize.X/2)+(%tailsize.X/2);
+%tail.Position.X+=(%playerspritesize.X)+(%tailsize.X/2);
 }
 else if (%player.curdir==3)//right
 {
-%tail.Position.X-=(%playerspritesize.X/2)+(%tailsize.X/2);
+%tail.Position.X-=(%playerspritesize.X)+(%tailsize.X/2);
 }
 
 AssetDatabase.releaseAsset(%tailass.getAssetId());
@@ -312,22 +312,22 @@ AssetDatabase.releaseAsset(%tailass.getAssetId());
 ///////////////////////////////////////////////////////
 
 DotsandCritsscene.createDistanceJoint(%head,%body,
-%head.getLocalPoint(%body.Position),"0 0",0.1,3,0.0,false);
+%head.getLocalPoint(%body.Position),"0 0",0.1,3,0.0,true);
 
 DotsandCritsscene.createDistanceJoint(%tail,%body,
-%tail.getLocalPoint(%body.Position),"0 0",0.1,3,0.0,false);
+%tail.getLocalPoint(%body.Position),"0 0",0.1,3,0.0,true);
 
 DotsandCritsscene.createDistanceJoint(%leftarm,%body,
-%leftarm.getLocalPoint(%body.Position),"0 0",0.1,3,0.0,false);
+%leftarm.getLocalPoint(%body.Position),"0 0",0.1,3,0.0,true);
 
 DotsandCritsscene.createDistanceJoint(%leftleg,%body,
-%leftleg.getLocalPoint(%body.Position),"0 0",0.1,3,0.0,false);
+%leftleg.getLocalPoint(%body.Position),"0 0",0.1,3,0.0,true);
 
 DotsandCritsscene.createDistanceJoint(%rightarm,%body,
-%rightarm.getLocalPoint(%body.Position),"0 0",0.1,3,0.0,false);
+%rightarm.getLocalPoint(%body.Position),"0 0",0.1,3,0.0,true);
 
 DotsandCritsscene.createDistanceJoint(%rightleg,%body,
-%rightleg.getLocalPoint(%body.Position),"0 0",0.1,3,0.0,false);
+%rightleg.getLocalPoint(%body.Position),"0 0",0.1,3,0.0,true);
 
 /*DotsandCritsscene.createRopeJoint(%head,%body,
 %head.getLocalPoint(%body.Position),"0 0",0.1,false);

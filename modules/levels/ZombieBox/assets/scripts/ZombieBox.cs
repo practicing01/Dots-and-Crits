@@ -3,6 +3,7 @@ exec("./loadplayerclass.cs");
 exec("./levelgeneration/worldlimits.cs");
 exec("./levelgeneration/spawnportals.cs");
 exec("./levelgeneration/floortiles.cs");
+exec("./levelgeneration/walls.cs");
 exec("./loadass.cs");
 exec("./unloadass.cs");
 exec("./loadlevel.cs");

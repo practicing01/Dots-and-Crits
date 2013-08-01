@@ -6,8 +6,10 @@
 <Breakpoints/>
 <Bookmarks/>
 <OpenFiles>
-<File ScrollX="0" ScrollY="42">modules\levels\ZombieBox\assets\scripts\loadlevel.cs</File>
+<File ScrollX="0" ScrollY="32">modules\levels\ZombieBox\assets\scripts\loadlevel.cs</File>
 <File ScrollX="0" ScrollY="0">modules\levels\ZombieBox\assets\scripts\ZombieBox.cs</File>
-<File ScrollX="0" ScrollY="15" Active="true">modules\levels\ZombieBox\assets\scripts\levelgeneration\floortiles.cs</File>
+<File ScrollX="0" ScrollY="26">modules\levels\ZombieBox\assets\scripts\levelgeneration\floortiles.cs</File>
+<File ScrollX="0" ScrollY="65" Active="true">modules\levels\ZombieBox\assets\scripts\levelgeneration\walls.cs</File>
+<File ScrollX="0" ScrollY="0">modules\levels\ZombieBox\assets\scripts\levelgeneration\worldlimits.cs</File>
 </OpenFiles>
 </TorsionProjectOptions>

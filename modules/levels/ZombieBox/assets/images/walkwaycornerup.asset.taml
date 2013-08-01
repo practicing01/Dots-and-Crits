@@ -1,8 +1,8 @@
 <ImageAsset
-    AssetName="image_floortile"
-    ImageFile="floortile.png"
+    AssetName="image_walkwaycornerup"
+    ImageFile="walkwaycornerup.png"
 	OptimalResolution="1280 800"
-	SceneLayer="30"
+	SceneLayer="14"
 	SceneGroup="2"
 	CollisionGroups=""
 	Class=""
@@ -11,4 +11,8 @@
 	Animation=""
 	IsSensor="false"
 	BlendColor="1 1 1 1"
-	Type="floortile"/>
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="236"
+    CellHeight="480"
+	AssetCategory="decal"/>

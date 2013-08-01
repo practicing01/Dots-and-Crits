@@ -1,0 +1,18 @@
+<ImageAsset
+    AssetName="image_trashcan"
+    ImageFile="trashcan.png"
+	OptimalResolution="1280 800"
+	SceneLayer="16"
+	SceneGroup="26"
+	CollisionGroups=""
+	Class=""
+	CollisionCallback="false"
+	CreateCollisionShape="true"
+	Animation=""
+	IsSensor="false"
+	BlendColor="1 1 1 1"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="78"
+    CellHeight="102"
+	AssetCategory="dwo"/>

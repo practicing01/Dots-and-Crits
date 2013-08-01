@@ -40,18 +40,18 @@ DotsandCritsscene.setGravity(0,$levelgravity);
 
 %this.generateworldlimits();
 %this.generatespawnportals();
+%this.generatewalltiles();
 
 //
 
 //simsets for tile types
-//types: floortile, wall, sprite, dwo, npc
+//types: ground, wall, decal, dwo, npc
 //sprites are decorative objects such as lights
-//floor tiles cover the entire map area and must be the same size
+//ground tiles cover the entire map area and must be the same size
 //walls will cover 25% of the map
-//sprites will cover 50% of the map
+//decals will cover 50% of the map
 //dwo's will cover 25% of the map
 //npc's will cover 25% of the map
-//npc's have their initialize func called after spawn
 
 %this.generatefloortiles();
 

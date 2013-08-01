@@ -1,0 +1,18 @@
+<ImageAsset
+    AssetName="image_walkwayleft"
+    ImageFile="walkwayleft.png"
+	OptimalResolution="1280 800"
+	SceneLayer="14"
+	SceneGroup="2"
+	CollisionGroups=""
+	Class=""
+	CollisionCallback="false"
+	CreateCollisionShape="false"
+	Animation=""
+	IsSensor="false"
+	BlendColor="1 1 1 1"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="202"
+    CellHeight="1020"
+	AssetCategory="decal"/>
