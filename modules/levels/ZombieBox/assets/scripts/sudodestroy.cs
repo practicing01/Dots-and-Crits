@@ -9,4 +9,6 @@ gui_ZombieBoxscore.delete();
 
 %this.unloadass();
 
+%this.p1moduleid.ScopeSet.unloadass();
+%this.p2moduleid.ScopeSet.unloadass();
 }

@@ -1,5 +1,7 @@
 function GillBalentine::loadsprite(%this)//change GillBalentine to your module's name
 {
+%this.loadass();
+
 %player=$players.getObject($player_to_load);
 
 deleteplayeranims();

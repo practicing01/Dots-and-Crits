@@ -5,9 +5,5 @@
 <LastConfig>Release</LastConfig>
 <Breakpoints/>
 <Bookmarks/>
-<OpenFiles>
-<File ScrollX="0" ScrollY="75">modules\levels\ZombieBox\assets\scripts\loadlevel.cs</File>
-<File ScrollX="0" ScrollY="0">modules\levels\ZombieBox\assets\scripts\ZombieBox.cs</File>
-<File ScrollX="0" ScrollY="60" Active="true">modules\playersprites\GillBalentine\assets\scripts\loadsprite.cs</File>
-</OpenFiles>
+<OpenFiles/>
 </TorsionProjectOptions>

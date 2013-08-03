@@ -1,5 +1,7 @@
 function FtA_P1::loadsprite(%this)//change FtA_P1 to your module's name
 {
+%this.loadass();
+
 %player=$players.getObject($player_to_load);
 
 deleteplayeranims();

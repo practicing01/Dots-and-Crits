@@ -1,5 +1,7 @@
 function Lelur::loadsprite(%this)//change Lelur to your module's name
 {
+%this.loadass();
+
 %player=$players.getObject($player_to_load);
 
 deleteplayeranims();

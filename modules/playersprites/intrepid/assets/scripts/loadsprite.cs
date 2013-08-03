@@ -1,5 +1,7 @@
 function intrepid::loadsprite(%this)
 {
+%this.loadass();
+
 %player=$players.getObject($player_to_load);
 
 deleteplayeranims();

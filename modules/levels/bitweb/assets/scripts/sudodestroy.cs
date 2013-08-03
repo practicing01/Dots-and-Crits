@@ -25,4 +25,8 @@ if (isObject(gui_bitwebscore))
 {
 gui_bitwebscore.delete();
 }
+
+%this.p1moduleid.ScopeSet.unloadass();
+%this.p2moduleid.ScopeSet.unloadass();
+
 }

@@ -1,4 +1,6 @@
 exec("./menuicon.cs");
+exec("./loadass.cs");
+exec("./unloadass.cs");
 exec("./loadsprite.cs");
 
 function FtA_P1::create(%this)//change FtA_P1 to your module's name

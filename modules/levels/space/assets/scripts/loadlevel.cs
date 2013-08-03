@@ -33,25 +33,25 @@ DotsandCritsscene.setGravity(0,$levelgravity);
 $player_to_load=0;
 if (gui_list_player1.getSelectedItem()!=-1)
 {
-%moduleid=simset_list_playersprites.getObject(gui_list_player1.getSelectedItem());
-%moduleid.ScopeSet.loadsprite();
+%this.p1moduleid=simset_list_playersprites.getObject(gui_list_player1.getSelectedItem());
+%this.p1moduleid.ScopeSet.loadsprite();
 }
 else
 {
-%moduleid=simset_list_playersprites.getObject(getRandom(0,gui_list_player1.getItemCount()-1));
-%moduleid.ScopeSet.loadsprite();
+%this.p1moduleid=simset_list_playersprites.getObject(getRandom(0,gui_list_player1.getItemCount()-1));
+%this.p1moduleid.ScopeSet.loadsprite();
 }
 
 $player_to_load=1;
 if (gui_list_player2.getSelectedItem()!=-1)
 {
-%moduleid=simset_list_playersprites.getObject(gui_list_player2.getSelectedItem());
-%moduleid.ScopeSet.loadsprite();
+%this.p2moduleid=simset_list_playersprites.getObject(gui_list_player2.getSelectedItem());
+%this.p2moduleid.ScopeSet.loadsprite();
 }
 else
 {
-%moduleid=simset_list_playersprites.getObject(getRandom(0,gui_list_player2.getItemCount()-1));
-%moduleid.ScopeSet.loadsprite();
+%this.p2moduleid=simset_list_playersprites.getObject(getRandom(0,gui_list_player2.getItemCount()-1));
+%this.p2moduleid.ScopeSet.loadsprite();
 }
 
 $levelmoduleid.ScopeSet.loadplayerclass();

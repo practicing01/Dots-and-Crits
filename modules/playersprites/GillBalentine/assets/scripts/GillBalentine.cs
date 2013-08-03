@@ -1,4 +1,6 @@
 exec("./menuicon.cs");
+exec("./loadass.cs");
+exec("./unloadass.cs");
 exec("./loadsprite.cs");
 
 function GillBalentine::create(%this)//change GillBalentine to your module's name
