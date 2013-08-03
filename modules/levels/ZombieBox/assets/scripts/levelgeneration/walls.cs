@@ -2,6 +2,20 @@
 //randomly get tiles untill accumulate total size
 //randomly place tiles
 
+function ZombieBox::pinwalltiles(%this)
+{
+
+for (%x=0;%x<DotsandCritsscene.getCount();%x++)
+{
+%obj=DotsandCritsscene.getObject(%x);
+if (%obj.SceneGroup==30)//wall
+{
+%obj.setBodyType("static");
+}
+}
+
+}
+
 function ZombieBox::generatewalltiles(%this)
 {
 
@@ -41,7 +55,7 @@ AssetDatabase.releaseAsset(%ass.getAssetId());
 
 %totalmapsize=($camsize.X*%this.mapsizescale)*($camsize.Y*%this.mapsizescale);
 
-%totalmapsize*=25;//get 25% of the mapsize
+%totalmapsize*=10;
 %totalmapsize/=100;
 
 %simset_randomtileasses=new SimSet();
@@ -84,7 +98,8 @@ Size=%tilesize;
 Image=%this.getName()@":"@%tileass.AssetName;
 SceneLayer=%tileass.SceneLayer;
 SceneGroup=%tileass.SceneGroup;
-BodyType="static";
+FixedAngle=true;
+//BodyType="static";
 };
 DotsandCritsscene.add(%walltile);
 
@@ -102,5 +117,7 @@ else
 {
 
 }
+
+schedule(1000,0,"ZombieBox::pinwalltiles",%this);
 
 }

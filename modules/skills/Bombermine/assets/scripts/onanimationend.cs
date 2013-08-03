@@ -20,8 +20,11 @@ $levelmoduleid.ScopeSet.healthdisplay(%obj.playerindex,%player.health);
 }
 else if (%obj.SceneGroup==25||%obj.SceneGroup==26)//npc's, dynamic world objects
 {
+if (%obj.health>0)
+{
 %obj.health-=10;
 %obj.updatehealth();
+}
 }
 
 }

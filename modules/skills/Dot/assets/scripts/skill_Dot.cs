@@ -48,7 +48,7 @@ bit(!%user)|bit(25)|bit(26),"");//26=world objects
 %closestpos=getWord(%objlist,1) SPC getWord(%objlist,2);
 
 //string is divided into 7-string chunks, since we got the first (0-6 pieces) we start at the second chunk (7-13)
-for (%x=7;%x<getWordCount(%objlist/7);%x++)
+for (%x=7;%x<getWordCount(%objlist);%x+=7)
 {
 
 %pos=getWord(%objlist,%x+1) SPC getWord(%objlist,%x+2);//0 piece is id, 1 and 2 are x,y collision point
@@ -90,8 +90,11 @@ $levelmoduleid.ScopeSet.healthdisplay(%customfieldobj.targethandle.playerindex,%
 }
 else if (%customfieldobj.targethandle.SceneGroup==25||%customfieldobj.targethandle.SceneGroup==26)//npc's, dynamic world objects
 {
+if (%customfieldobj.health>0)
+{
 %customfieldobj.targethandle.health-=10;
 %customfieldobj.targethandle.updatehealth();
+}
 }
 
 }

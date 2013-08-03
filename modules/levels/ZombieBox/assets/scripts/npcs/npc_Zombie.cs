@@ -7,15 +7,21 @@ if (%this.health<=0){return;}
 if (%object.class$="class_player")
 {
 %player=$players.getObject(%object.playerindex);
-%player.health-=10;
+%player.health-=100;
 $levelmoduleid.ScopeSet.healthdisplay(%object.playerindex,%player.health);
 %byte=true;
 }
 else if (%object.SceneGroup==25||%object.SceneGroup==26)//npc's, dynamic world objects
 {
-%object.health-=10;
+if (%object.class!$="class_Zombie")
+{
+if (%object.health>0)
+{
+%object.health-=100;
 %object.updatehealth();
 %byte=true;
+}
+}
 }
 
 if (%byte)
@@ -25,30 +31,30 @@ if (%byte)
 %anim=%this.getAnimation();
 if (%this.curdir==0)
 {
-if (%anim!$="ZombieBox:anim_npc_Zombie_attackup")
+if (%anim!$="ZombieBox:anim_zombie_attackup")
 {
-%this.playAnimation("ZombieBox:anim_npc_Zombie_attackup");
+%this.playAnimation("ZombieBox:anim_zombie_attackup");
 }
 }
 else if (%this.curdir==1)
 {
-if (%anim!$="ZombieBox:anim_npc_Zombie_attackdown")
+if (%anim!$="ZombieBox:anim_zombie_attackdown")
 {
-%this.playAnimation("ZombieBox:anim_npc_Zombie_attackdown");
+%this.playAnimation("ZombieBox:anim_zombie_attackdown");
 }
 }
 else if (%this.curdir==2)
 {
-if (%anim!$="ZombieBox:anim_npc_Zombie_attackleft")
+if (%anim!$="ZombieBox:anim_zombie_attackleft")
 {
-%this.playAnimation("ZombieBox:anim_npc_Zombie_attackleft");
+%this.playAnimation("ZombieBox:anim_zombie_attackleft");
 }
 }
 else if (%this.curdir==3)
 {
-if (%anim!$="ZombieBox:anim_npc_Zombie_attackright")
+if (%anim!$="ZombieBox:anim_zombie_attackright")
 {
-%this.playAnimation("ZombieBox:anim_npc_Zombie_attackright");
+%this.playAnimation("ZombieBox:anim_zombie_attackright");
 }
 }
 
@@ -63,9 +69,33 @@ if (%this.health<=0)
 %this.setCollisionCallback(false);
 cancel(%this.aischedule);
 //%this.safeDelete();
-if (%this.getAnimation()!$="ZombieBox:anim_npc_Zombie_dead")
+if (%this.curdir==0)
 {
-%this.playAnimation("ZombieBox:anim_npc_Zombie_dead");
+if (%this.getAnimation()!$="ZombieBox:anim_zombie_dieup")
+{
+%this.playAnimation("ZombieBox:anim_zombie_dieup");
+}
+}
+else if (%this.curdir==1)
+{
+if (%this.getAnimation()!$="ZombieBox:anim_zombie_diedown")
+{
+%this.playAnimation("ZombieBox:anim_zombie_diedown");
+}
+}
+else if (%this.curdir==2)
+{
+if (%this.getAnimation()!$="ZombieBox:anim_zombie_dieleft")
+{
+%this.playAnimation("ZombieBox:anim_zombie_dieleft");
+}
+}
+else if (%this.curdir==3)
+{
+if (%this.getAnimation()!$="ZombieBox:anim_zombie_dieright")
+{
+%this.playAnimation("ZombieBox:anim_zombie_dieright");
+}
 }
 }
 }
@@ -95,30 +125,30 @@ if (!isObject(%Zombie.target))
 %anim=%Zombie.getAnimation();
 if (%Zombie.curdir==0)
 {
-if (%anim!$="ZombieBox:anim_npc_Zombie_standup")
+if (%anim!$="ZombieBox:anim_zombie_standup")
 {
-%Zombie.playAnimation("ZombieBox:anim_npc_Zombie_standup");
+%Zombie.playAnimation("ZombieBox:anim_zombie_standup");
 }
 }
 else if (%Zombie.curdir==1)
 {
-if (%anim!$="ZombieBox:anim_npc_Zombie_standdown")
+if (%anim!$="ZombieBox:anim_zombie_standdown")
 {
-%Zombie.playAnimation("ZombieBox:anim_npc_Zombie_standdown");
+%Zombie.playAnimation("ZombieBox:anim_zombie_standdown");
 }
 }
 else if (%Zombie.curdir==2)
 {
-if (%anim!$="ZombieBox:anim_npc_Zombie_standleft")
+if (%anim!$="ZombieBox:anim_zombie_standleft")
 {
-%Zombie.playAnimation("ZombieBox:anim_npc_Zombie_standleft");
+%Zombie.playAnimation("ZombieBox:anim_zombie_standleft");
 }
 }
 else if (%Zombie.curdir==3)
 {
-if (%anim!$="ZombieBox:anim_npc_Zombie_standright")
+if (%anim!$="ZombieBox:anim_zombie_standright")
 {
-%Zombie.playAnimation("ZombieBox:anim_npc_Zombie_standright");
+%Zombie.playAnimation("ZombieBox:anim_zombie_standright");
 }
 }
 
@@ -141,17 +171,17 @@ if (%xdist>=%ydist)
 if (%Zombie.Position.X<=%Zombie.target.Position.X)
 {
 %Zombie.curdir=3;
-if (%Zombie.getAnimation()!$="ZombieBox:anim_npc_Zombie_runright")
+if (%Zombie.getAnimation()!$="ZombieBox:anim_zombie_runright")
 {
-%Zombie.playAnimation("ZombieBox:anim_npc_Zombie_runright");
+%Zombie.playAnimation("ZombieBox:anim_zombie_runright");
 }
 }
 else
 {
 %Zombie.curdir=2;
-if (%Zombie.getAnimation()!$="ZombieBox:anim_npc_Zombie_runleft")
+if (%Zombie.getAnimation()!$="ZombieBox:anim_zombie_runleft")
 {
-%Zombie.playAnimation("ZombieBox:anim_npc_Zombie_runleft");
+%Zombie.playAnimation("ZombieBox:anim_zombie_runleft");
 }
 }
 }
@@ -160,17 +190,17 @@ else
 if (%Zombie.Position.Y<=%Zombie.target.Position.Y)
 {
 %Zombie.curdir=0;
-if (%Zombie.getAnimation()!$="ZombieBox:anim_npc_Zombie_runup")
+if (%Zombie.getAnimation()!$="ZombieBox:anim_zombie_runup")
 {
-%Zombie.playAnimation("ZombieBox:anim_npc_Zombie_runup");
+%Zombie.playAnimation("ZombieBox:anim_zombie_runup");
 }
 }
 else
 {
 %Zombie.curdir=1;
-if (%Zombie.getAnimation()!$="ZombieBox:anim_npc_Zombie_rundown")
+if (%Zombie.getAnimation()!$="ZombieBox:anim_zombie_rundown")
 {
-%Zombie.playAnimation("ZombieBox:anim_npc_Zombie_rundown");
+%Zombie.playAnimation("ZombieBox:anim_zombie_rundown");
 }
 }
 }
@@ -188,7 +218,7 @@ function class_Zombie::initialize(%this)
 %this.health=100;
 %this.target=-1;
 %this.curdir=0;//0=up,1=down,2=left,3=right
-%this.normalspeed=5;
-%this.speed=5;
+%this.normalspeed=10;
+%this.speed=10;
 %this.aischedule=schedule(1000,0,"Zombieai",%this);
 }

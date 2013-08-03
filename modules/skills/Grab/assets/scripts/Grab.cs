@@ -92,6 +92,8 @@ function movemountedobject(%playerindex)
 
 %customfieldobj=Grab.customplayerfields.getObject(%playerindex);
 
+if (!isObject(%customfieldobj.grabbedobject)){return;}
+
 %playerspritesize=%player.sprite.getSpriteSize();
 %spritesize=%customfieldobj.grabbedobject.getSize();
 

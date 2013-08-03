@@ -10,23 +10,46 @@ Audiere_Reset(%customfieldobj.sound_m4_fire);
 Audiere_Play(%customfieldobj.sound_m4_fire,0,1.0);
 
 %objlist=DotsandCritsscene.pickRayCollision(%player.sprite.Position,%worldPosition,
-bit(1)|bit(25)|bit(26),"");//26=world objects
+bit(1)|bit(25)|bit(26)|bit(30),"");//26=world objects, 25=npc's, 30=walls
 
 if (getWordCount(%objlist))
 {
 
-%obj=getWord(%objlist,0);
+//get first objects position
+%closestid=getWord(%objlist,0);
+%closestpos=getWord(%objlist,1) SPC getWord(%objlist,2);
 
-if (%obj.class$="class_player")
+//string is divided into 7-string chunks, since we got the first (0-6 pieces) we start at the second chunk (7-13)
+for (%x=7;%x<getWordCount(%objlist);%x+=7)
 {
-%playerhit=$players.getObject(%obj.playerindex);
+
+%pos=getWord(%objlist,%x+1) SPC getWord(%objlist,%x+2);//0 piece is id, 1 and 2 are x,y collision point
+
+if (Vector2Distance(%player.sprite.Position,%pos)
+<
+Vector2Distance(%player.sprite.Position,%closestpos))
+{
+
+%closestid=getWord(%objlist,%x);
+%closestpos=%pos;
+
+}
+
+}
+
+if (%closestid.class$="class_player")
+{
+%playerhit=$players.getObject(%closestid.playerindex);
 %playerhit.health-=100;
-$levelmoduleid.ScopeSet.healthdisplay(%obj.playerindex,%playerhit.health);
+$levelmoduleid.ScopeSet.healthdisplay(%closestid.playerindex,%playerhit.health);
 }
 else
 {
-%obj.health-=100;
-%obj.updatehealth();
+if (%closestid.health>0)
+{
+%closestid.health-=100;
+%closestid.updatehealth();
+}
 }
 
 }
@@ -60,29 +83,52 @@ Audiere_Play(%customfieldobj.sound_m4_fire,0,1.0);
 if (DotsandCritswindow.Visible)
 {
 %objlist=DotsandCritsscene.pickRayCollision(%player.sprite.Position,DotsandCritswindow.getWorldPoint(%cursorpos),
-bit(0)|bit(25)|bit(26),"");//26=world objects
+bit(0)|bit(25)|bit(26)|bit(30),"");//26=world objects, 25=npc's, 30=walls
 }
 else
 {
 %objlist=DotsandCritsscene.pickRayCollision(%player.sprite.Position,scenewindow_player2.getWorldPoint(%cursorpos),
-bit(0)|bit(25)|bit(26),"");//26=world objects
+bit(0)|bit(25)|bit(26)|bit(30),"");//26=world objects, 25=npc's, 30=walls
 }
 
 if (getWordCount(%objlist))
 {
 
-%obj=getWord(%objlist,0);
+//get first objects position
+%closestid=getWord(%objlist,0);
+%closestpos=getWord(%objlist,1) SPC getWord(%objlist,2);
 
-if (%obj.class$="class_player")
+//string is divided into 7-string chunks, since we got the first (0-6 pieces) we start at the second chunk (7-13)
+for (%x=7;%x<getWordCount(%objlist);%x+=7)
 {
-%playerhit=$players.getObject(%obj.playerindex);
+
+%pos=getWord(%objlist,%x+1) SPC getWord(%objlist,%x+2);//0 piece is id, 1 and 2 are x,y collision point
+
+if (Vector2Distance(%player.sprite.Position,%pos)
+<
+Vector2Distance(%player.sprite.Position,%closestpos))
+{
+
+%closestid=getWord(%objlist,%x);
+%closestpos=%pos;
+
+}
+
+}
+
+if (%closestid.class$="class_player")
+{
+%playerhit=$players.getObject(%closestid.playerindex);
 %playerhit.health-=100;
-$levelmoduleid.ScopeSet.healthdisplay(%obj.playerindex,%playerhit.health);
+$levelmoduleid.ScopeSet.healthdisplay(%closestid.playerindex,%playerhit.health);
 }
 else
 {
-%obj.health-=100;
-%obj.updatehealth();
+if (%closestid.health>0)
+{
+%closestid.health-=100;
+%closestid.updatehealth();
+}
 }
 
 }

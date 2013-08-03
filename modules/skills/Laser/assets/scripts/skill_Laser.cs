@@ -50,14 +50,15 @@ else if (%player.curdir==3)//right
 }
 
 %objlist=DotsandCritsscene.pickRayCollision(%player.sprite.Position,%dest,
-bit(!%user)|bit(25)|bit(26),"");//26=world objects, 25=npc's
+bit(!%user)|bit(25)|bit(26)|bit(30),"");//26=world objects, 25=npc's, 30=walls
 
 //get first objects position
 %closestid=getWord(%objlist,0);
 %closestpos=getWord(%objlist,1) SPC getWord(%objlist,2);
-
+echo(%objlist);
+echo(%closestid SPC %closestpos);
 //string is divided into 7-string chunks, since we got the first (0-6 pieces) we start at the second chunk (7-13)
-for (%x=7;%x<getWordCount(%objlist/7);%x++)
+for (%x=7;%x<getWordCount(%objlist);%x+=7)
 {
 
 %pos=getWord(%objlist,%x+1) SPC getWord(%objlist,%x+2);//0 piece is id, 1 and 2 are x,y collision point
@@ -69,7 +70,7 @@ Vector2Distance(%player.sprite.Position,%closestpos))
 
 %closestid=getWord(%objlist,%x);
 %closestpos=%pos;
-
+echo(%closestid SPC %closestpos);
 }
 
 }

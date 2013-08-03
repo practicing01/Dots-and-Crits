@@ -40,7 +40,6 @@ DotsandCritsscene.setGravity(0,$levelgravity);
 
 %this.generateworldlimits();
 %this.generatespawnportals();
-%this.generatewalltiles();
 
 //
 
@@ -54,6 +53,22 @@ DotsandCritsscene.setGravity(0,$levelgravity);
 //npc's will cover 25% of the map
 
 %this.generatefloortiles();
+
+//
+
+%this.generatewalltiles();
+
+//
+
+%this.generatedecaltiles();
+
+//
+
+%this.generatedwotiles();
+
+//
+
+%this.generatenpcs();
 
 //
 

@@ -1,4 +1,4 @@
-//-------------------------- 8/1/2013 -- 11:26:37 -----
+//-------------------------- 8/3/2013 -- 02:26:23 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -77,17 +77,6 @@ created Deathball
 created catragdoll
 Activating DirectInput...
 DirectInput joystick enabled.
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-Teleport loaded
 DirectInput deactivated.
 goodbye world
 freed catragdoll

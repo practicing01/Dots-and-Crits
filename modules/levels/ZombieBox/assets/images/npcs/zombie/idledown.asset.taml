@@ -1,0 +1,18 @@
+<ImageAsset
+    AssetName="image_zombie_idledown"
+    ImageFile="idledown.png"
+	OptimalResolution="1280 800"
+	SceneLayer="16"
+	SceneGroup="25"
+	CollisionGroups="4294967295"
+	ObjectClass="class_Zombie"
+	CollisionCallback="true"
+	CreateCollisionShape="true"
+	Animation="ZombieBox:anim_zombie_standdown"
+	IsSensor="false"
+	BlendColor="1 1 1 1"
+	CellCountX="5"
+    CellCountY="5"
+    CellWidth="128"
+    CellHeight="128"
+	AssetCategory="npc"/>

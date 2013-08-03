@@ -68,8 +68,11 @@ $levelmoduleid.ScopeSet.healthdisplay(%obj.playerindex,%player.health);
 }
 else if (%obj.SceneGroup==25||%obj.SceneGroup==26)//npc's, dynamic world objects
 {
+if (%object.health>0)
+{
 %obj.health-=100;
 %obj.updatehealth();
+}
 }
 
 %this.obj2shank=0;
