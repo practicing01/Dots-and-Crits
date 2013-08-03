@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_sv_up_jump"
+    ImageFile="rollup.png"
+	CellCountX="8"
+    CellCountY="8"
+    CellWidth="128"
+    CellHeight="128"
+	OptimalResolution="1280 800"/>

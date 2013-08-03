@@ -5,6 +5,11 @@ if (!%this.Active){return;}
 %player=$players.getObject(0);
 %customfieldobj=M4Carbine.customplayerfields.getObject(0);//we know it's user 0 cus they use mouse
 
+setskillanimation(%player,2);//animtype: 0:selfcast 1:targetcast 2:melee 3:emote
+
+cancel(%player.schedule_keycleanup);
+%player.schedule_keycleanup=schedule(1000,0,"keycleanup",0);
+
 Audiere_Stop(%customfieldobj.sound_m4_fire);
 Audiere_Reset(%customfieldobj.sound_m4_fire);
 Audiere_Play(%customfieldobj.sound_m4_fire,0,1.0);
@@ -75,6 +80,11 @@ if (!%this.Active){return;}
 
 %player=$players.getObject(1);
 %customfieldobj=M4Carbine.customplayerfields.getObject(1);//we know it's user 0 cus they use mouse
+
+setskillanimation(%player,2);//animtype: 0:selfcast 1:targetcast 2:melee 3:emote
+
+cancel(%player.schedule_keycleanup);
+%player.schedule_keycleanup=schedule(1000,0,"keycleanup",0);
 
 Audiere_Stop(%customfieldobj.sound_m4_fire);
 Audiere_Reset(%customfieldobj.sound_m4_fire);

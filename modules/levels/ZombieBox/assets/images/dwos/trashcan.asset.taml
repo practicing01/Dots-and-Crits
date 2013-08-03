@@ -9,6 +9,7 @@
 	CollisionCallback="false"
 	CreateCollisionShape="true"
 	LinearDamping="1.0"
+	AngularDamping="1.0"
 	Animation=""
 	IsSensor="false"
 	BlendColor="1 1 1 1"

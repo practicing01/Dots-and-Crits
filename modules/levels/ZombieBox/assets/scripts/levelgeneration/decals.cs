@@ -37,7 +37,7 @@ AssetDatabase.releaseAsset(%ass.getAssetId());
 
 %totalmapsize=($camsize.X*%this.mapsizescale)*($camsize.Y*%this.mapsizescale);
 
-%totalmapsize*=25;
+%totalmapsize*=3;
 %totalmapsize/=100;
 
 %simset_randomtileasses=new SimSet();

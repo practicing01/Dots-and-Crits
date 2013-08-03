@@ -1,5 +1,4 @@
-function class_Zombie::onCollision(%this,%object,%collisionDetails)
-{
+function class_Zombie::onCollision(%this,%object,%collisionDetails){
 if (%this.health<=0){return;}
 
 %byte=false;
@@ -218,7 +217,7 @@ function class_Zombie::initialize(%this)
 %this.health=100;
 %this.target=-1;
 %this.curdir=0;//0=up,1=down,2=left,3=right
-%this.normalspeed=10;
-%this.speed=10;
+%this.normalspeed=50;
+%this.speed=50;
 %this.aischedule=schedule(1000,0,"Zombieai",%this);
 }

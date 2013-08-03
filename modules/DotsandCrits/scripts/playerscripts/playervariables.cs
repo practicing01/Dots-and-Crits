@@ -13,10 +13,12 @@ for (%x=0;%x<$numofplayers;%x++)
 {
 %player=new ScriptObject()
 {
+//sprite related
 sprite=0;
 menusprite=0;
 spritepath=0;
-speed=$normalplayerspeed;
+spriteid=0;//self composite sprite id
+
 anim_stand_up=0;
 anim_stand_down=0;
 anim_stand_left=0;
@@ -68,20 +70,28 @@ anim_run_left_emote=0;
 anim_run_right_emote=0;
 /////////////////////////////
 
-keysdown="0 0 0 0";
-curdir=1;//0=up 1=down 2=left 3=right
-grabbing=false;
+//skill related
+skillanimtype=0;//0=selfcast 1=targetcast 2=melee 3=emote
+health=100;
 objgrabbed=0;
+grabbing=false;
+cancast=true;
+
+//physics
+linear_damping=0;
+speed=$normalplayerspeed;
 canmove=true;
 canjump=true;
 collidingobject=0;
+keysdown="0 0 0 0";
+curdir=1;//0=up 1=down 2=left 3=right
+
+//sound
 playerfootsteps=0;
-linear_damping=0;
+
+//schedules
 schedule_jumpfall=0;
-cancast=true;
-skillanimtype=0;//0=selfcast 1=targetcast 2=melee 3=emote
-spriteid=0;//self composite sprite id
-health=100;
+schedule_keycleanup=0;
 
 mountedspriteids=0;//simset containing the other sprites in this composite
 //mountedspriteids format:

@@ -1,0 +1,14 @@
+<-- change GillBalentine to your module's name -->
+<ModuleDefinition
+	ModuleId="GillBalentine"
+	VersionId="1"
+	Description="GillBalentine"
+	Type="playersprite"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+	DestroyFunction="destroy">
+		<DeclaredAssets
+			Path="assets"
+			Extension="asset.taml"
+			Recurse="true"/>
+</ModuleDefinition>

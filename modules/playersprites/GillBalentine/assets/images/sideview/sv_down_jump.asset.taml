@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_sv_down_jump"
+    ImageFile="rolldown.png"
+	CellCountX="8"
+    CellCountY="8"
+    CellWidth="128"
+    CellHeight="128"
+	OptimalResolution="1280 800"/>

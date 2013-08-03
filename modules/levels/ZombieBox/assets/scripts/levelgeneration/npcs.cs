@@ -37,7 +37,7 @@ AssetDatabase.releaseAsset(%ass.getAssetId());
 
 %totalmapsize=($camsize.X*%this.mapsizescale)*($camsize.Y*%this.mapsizescale);
 
-%totalmapsize*=2;
+%totalmapsize*=4;
 %totalmapsize/=100;
 
 %simset_randomtileasses=new SimSet();
@@ -85,6 +85,7 @@ CollisionGroups=%tileass.CollisionGroups;
 CollisionCallback=%tileass.CollisionCallback;
 BlendColor=%tileass.BlendColor;
 FixedAngle=true;
+LinearDamping=1;
 };
 DotsandCritsscene.add(%npctile);
 
