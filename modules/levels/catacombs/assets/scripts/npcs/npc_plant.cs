@@ -70,107 +70,107 @@ if (%this.getAnimation()!$="catacombs:anim_npc_plant_dead")
 }
 }
 
-function plantai(%plant)
+function class_plant::plantai(%this)
 {//temporary ai
-if (!isObject(%plant)){return;}
+if (!isObject(%this)){return;}
 
-if (%plant.target==-1)//no target, acquire
+if (%this.target==-1)//no target, acquire
 {
 for (%x=0;%x<$numofplayers;%x++)
 {
 %player=$players.getObject(%x);
 if (!isObject(%player.sprite)){continue;}
-if (Vector2Distance(%plant.Position,%player.sprite.Position)<=Vector2Distance("0 0",ScaleVectorToCam($resolution.X/2 SPC $resolution.Y/2)))
+if (Vector2Distance(%this.Position,%player.sprite.Position)<=Vector2Distance("0 0",ScaleVectorToCam($resolution.X/2 SPC $resolution.Y/2)))
 {
-%plant.target=%player.sprite;
+%this.target=%player.sprite;
 break;
 }
 }
 }
 
-if (!isObject(%plant.target))
+if (!isObject(%this.target))
 {
-%plant.target=-1;
+%this.target=-1;
 
-%anim=%plant.getAnimation();
-if (%plant.curdir==0)
+%anim=%this.getAnimation();
+if (%this.curdir==0)
 {
 if (%anim!$="catacombs:anim_npc_plant_standup")
 {
-%plant.playAnimation("catacombs:anim_npc_plant_standup");
+%this.playAnimation("catacombs:anim_npc_plant_standup");
 }
 }
-else if (%plant.curdir==1)
+else if (%this.curdir==1)
 {
 if (%anim!$="catacombs:anim_npc_plant_standdown")
 {
-%plant.playAnimation("catacombs:anim_npc_plant_standdown");
+%this.playAnimation("catacombs:anim_npc_plant_standdown");
 }
 }
-else if (%plant.curdir==2)
+else if (%this.curdir==2)
 {
 if (%anim!$="catacombs:anim_npc_plant_standleft")
 {
-%plant.playAnimation("catacombs:anim_npc_plant_standleft");
+%this.playAnimation("catacombs:anim_npc_plant_standleft");
 }
 }
-else if (%plant.curdir==3)
+else if (%this.curdir==3)
 {
 if (%anim!$="catacombs:anim_npc_plant_standright")
 {
-%plant.playAnimation("catacombs:anim_npc_plant_standright");
+%this.playAnimation("catacombs:anim_npc_plant_standright");
 }
 }
 
 }
 else
 {
-if (Vector2Distance(%plant.Position,%plant.target.Position)>Vector2Distance("0 0",ScaleVectorToCam($resolution.X/2 SPC $resolution.Y/2)))
-{%plant.target=-1;}
+if (Vector2Distance(%this.Position,%this.target.Position)>Vector2Distance("0 0",ScaleVectorToCam($resolution.X/2 SPC $resolution.Y/2)))
+{%this.target=-1;}
 else
 {
-if (%plant.speed!=0)
+if (%this.speed!=0)
 {
-%plant.moveTo(%plant.target.Position,%plant.speed,true,false);
+%this.moveTo(%this.target.Position,%this.speed,true,false);
 }
 
-%xdist=mAbs(%plant.Position.X-%plant.target.Position.X);
-%ydist=mAbs(%plant.Position.Y-%plant.target.Position.Y);
+%xdist=mAbs(%this.Position.X-%this.target.Position.X);
+%ydist=mAbs(%this.Position.Y-%this.target.Position.Y);
 if (%xdist>=%ydist)
 {
-if (%plant.Position.X<=%plant.target.Position.X)
+if (%this.Position.X<=%this.target.Position.X)
 {
-%plant.curdir=3;
-if (%plant.getAnimation()!$="catacombs:anim_npc_plant_runright")
+%this.curdir=3;
+if (%this.getAnimation()!$="catacombs:anim_npc_plant_runright")
 {
-%plant.playAnimation("catacombs:anim_npc_plant_runright");
+%this.playAnimation("catacombs:anim_npc_plant_runright");
 }
 }
 else
 {
-%plant.curdir=2;
-if (%plant.getAnimation()!$="catacombs:anim_npc_plant_runleft")
+%this.curdir=2;
+if (%this.getAnimation()!$="catacombs:anim_npc_plant_runleft")
 {
-%plant.playAnimation("catacombs:anim_npc_plant_runleft");
+%this.playAnimation("catacombs:anim_npc_plant_runleft");
 }
 }
 }
 else
 {
-if (%plant.Position.Y<=%plant.target.Position.Y)
+if (%this.Position.Y<=%this.target.Position.Y)
 {
-%plant.curdir=0;
-if (%plant.getAnimation()!$="catacombs:anim_npc_plant_runup")
+%this.curdir=0;
+if (%this.getAnimation()!$="catacombs:anim_npc_plant_runup")
 {
-%plant.playAnimation("catacombs:anim_npc_plant_runup");
+%this.playAnimation("catacombs:anim_npc_plant_runup");
 }
 }
 else
 {
-%plant.curdir=1;
-if (%plant.getAnimation()!$="catacombs:anim_npc_plant_rundown")
+%this.curdir=1;
+if (%this.getAnimation()!$="catacombs:anim_npc_plant_rundown")
 {
-%plant.playAnimation("catacombs:anim_npc_plant_rundown");
+%this.playAnimation("catacombs:anim_npc_plant_rundown");
 }
 }
 }
@@ -178,7 +178,7 @@ if (%plant.getAnimation()!$="catacombs:anim_npc_plant_rundown")
 }
 }
 
-%plant.aischedule=schedule(1000,0,"plantai",%plant);
+%this.aischedule=schedule(1000,0,"class_plant::plantai",%this);
 }
 
 //every npc class has an initialize function
@@ -190,5 +190,5 @@ function class_plant::initialize(%this)
 %this.curdir=0;//0=up,1=down,2=left,3=right
 %this.normalspeed=5;
 %this.speed=5;
-%this.aischedule=schedule(1000,0,"plantai",%this);
+%this.aischedule=schedule(1000,0,"class_plant::plantai",%this);
 }

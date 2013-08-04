@@ -1,4 +1,4 @@
-function intrepid::setmenuiconvisible()
+function intrepid::setmenuiconvisible(%this)
 {
 if (!$player_to_load)//player 1
 {

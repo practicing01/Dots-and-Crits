@@ -164,7 +164,7 @@ schedule_decay=0;
 
 %speed=10;
 %time=((Vector2Distance(%projectile.sprite.Position,%dest)/%speed)*1000)+1000;
-%projectile.schedule_decay=schedule(%time,0,"portalprojectiledecay",%projectile.sprite);
+%projectile.schedule_decay=schedule(%time,0,"class_portalprojectile::portalprojectiledecay",%projectile.sprite);
 
 //////////////////////////////////////////////////////////////
 %customfieldobj.portaltoshoot=!%customfieldobj.portaltoshoot;
@@ -172,7 +172,7 @@ schedule_decay=0;
 
 ///////////////////////////////////////////////////////////////
 
-function class_Portalgun::joycallback(%state,%cursorpos)
+function class_Portalgun::joycallback(%this,%state,%cursorpos)
 {
 return;
 }
@@ -350,7 +350,7 @@ schedule_decay=0;
 
 %speed=10;
 %time=((Vector2Distance(%projectile.sprite.Position,%dest)/%speed)*1000)+1000;
-%projectile.schedule_decay=schedule(%time,0,"portalprojectiledecay",%projectile.sprite);
+%projectile.schedule_decay=schedule(%time,0,"class_portalprojectile::portalprojectiledecay",%projectile.sprite);
 
 //////////////////////////////////////////////////////////////
 %customfieldobj.portaltoshoot=!%customfieldobj.portaltoshoot;

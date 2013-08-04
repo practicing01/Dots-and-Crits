@@ -6,6 +6,6 @@ if (!isObject(%this))
 return;
 }
 
-Wavedecay(%this);
+%this.Wavedecay();
 
 }

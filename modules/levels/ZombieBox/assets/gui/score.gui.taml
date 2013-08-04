@@ -80,5 +80,23 @@
 		hovertime="1000"
 		groupNum="-1"
 		useMouseEvents="1" />
+		
+		<!-- live zombie count -->
+	<GuiTextCtrl 
+		Name="gui_text_livezombiecount"
+		Profile="GuiTextProfile"
+		Text="1"
+		canSaveDynamicFields="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="624 0"
+		Extent="32 32"
+		MinExtent="32 32"
+		canSave="0"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
 
 </GuiControl>

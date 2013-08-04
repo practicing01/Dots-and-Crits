@@ -26,7 +26,7 @@ GravityScale="0";
 DotsandCritsscene.add(%explosion);
 %explosion.playAnimation("SineVolley:anim_explosion");
 
-sinevolleydecay(%this);
+%this.sinevolleydecay();
 
 schedule(1000,0,"ontimerdelete",%explosion);
 

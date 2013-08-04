@@ -1,13 +1,13 @@
-function ThrowKnifedecay(%ThrowKnife)
+function class_ThrowKnife::ThrowKnifedecay(%this)
 {
-if (isObject(%ThrowKnife))
+if (isObject(%this))
 {
-%ThrowKnife.cancelMoveTo();
-%ThrowKnife.parenthandle.wavevectors.deleteObjects();
-%ThrowKnife.parenthandle.wavevectors.delete();
-cancel(%ThrowKnife.parenthandle.schedule_decay);
-%parenthandle=%ThrowKnife.parenthandle;
-%ThrowKnife.safeDelete();
+%this.cancelMoveTo();
+%this.parenthandle.wavevectors.deleteObjects();
+%this.parenthandle.wavevectors.delete();
+cancel(%this.parenthandle.schedule_decay);
+%parenthandle=%this.parenthandle;
+%this.safeDelete();
 %parenthandle.delete();
 }
 }

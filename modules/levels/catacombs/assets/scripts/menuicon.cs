@@ -1,4 +1,4 @@
-function catacombs::setmenuiconvisible()//change catacombs to your module name
+function catacombs::setmenuiconvisible(%this)//change catacombs to your module name
 {
 if (isObject($levelmenuicon))
 {

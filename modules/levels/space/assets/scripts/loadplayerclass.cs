@@ -1,4 +1,4 @@
-function space::loadplayerclass()
+function space::loadplayerclass(%this)
 {
 //the following can be level-specific for different key input behaviour
 exec("./../../../../DotsandCrits/scripts/playerscripts/loadplayerclass.cs");
@@ -60,5 +60,9 @@ else{%player2.sprite.setPosition(0,0);}
 initskills();
 
 exec("./wincondition.cs");
+
+$schedule_wincondition.schedulehandle=schedule(1000,0,"space::checkforwincondition",%this);
+
+$cancellableschedules.add($schedule_wincondition);
 
 }

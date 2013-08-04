@@ -195,7 +195,7 @@ schedule_decay=0;
 
 %speed=10;
 %time=((Vector2Distance(%ThrowKnife.sprite.Position,%dest)/%speed)*1000)+1000;
-%ThrowKnife.schedule_decay=schedule(%time,0,"ThrowKnifedecay",%ThrowKnife.sprite);
+%ThrowKnife.schedule_decay=schedule(%time,0,"class_ThrowKnife::ThrowKnifedecay",%ThrowKnife.sprite);
 
 /////////////////////////////////////////////////
 }//end for

@@ -1,4 +1,4 @@
-function gui_mainmenu::player1saveskillbar()
+function gui_mainmenu::player1saveskillbar(%this)
 {
 %f=new SaveFileDialog(gui_savefiledialog);
 %f.Title="Save Player 1 Skill Bar";
@@ -28,7 +28,7 @@ echo("filename:"@%filename);
 %f.delete();
 }
 
-function gui_mainmenu::player2saveskillbar()
+function gui_mainmenu::player2saveskillbar(%this)
 {
 %f=new SaveFileDialog(gui_savefiledialog);
 %f.Title="Save Player 2 Skill Bar";

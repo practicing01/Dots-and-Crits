@@ -44,7 +44,7 @@ DotsandCritsscene.add(%explosion);
 %explosion.playAnimation(%anim);
 %explosion.setBlendAlpha(0.25);
 
-ThrowKnifedecay(%this);
+%this.ThrowKnifedecay();
 
 schedule(1000,0,"ontimerdelete",%explosion);
 

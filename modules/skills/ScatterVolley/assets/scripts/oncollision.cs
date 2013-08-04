@@ -44,7 +44,7 @@ DotsandCritsscene.add(%explosion);
 %explosion.playAnimation(%anim);
 %explosion.setBlendAlpha(0.25);
 
-ScatterVolleydecay(%this);
+%this.ScatterVolleydecay();
 
 schedule(1000,0,"ontimerdelete",%explosion);
 

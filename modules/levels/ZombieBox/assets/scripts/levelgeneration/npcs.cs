@@ -86,6 +86,7 @@ CollisionCallback=%tileass.CollisionCallback;
 BlendColor=%tileass.BlendColor;
 FixedAngle=true;
 LinearDamping=1;
+parentzombiebox=%this;
 };
 DotsandCritsscene.add(%npctile);
 
@@ -108,6 +109,13 @@ if (%tileass.Animation!$="")
 %npctile.Animation=%tileass.Animation;
 }
 
+}
+
+%this.livezombiecount=%simset_randomtileasses.getCount();
+
+if (isObject(gui_text_livezombiecount))
+{
+gui_text_livezombiecount.setText(%this.livezombiecount);
 }
 
 }

@@ -1,4 +1,4 @@
-function deathballvalley::setmenuiconvisible()
+function deathballvalley::setmenuiconvisible(%this)
 {
 if (isObject($levelmenuicon))
 {

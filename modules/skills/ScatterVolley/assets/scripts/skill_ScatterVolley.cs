@@ -220,7 +220,7 @@ schedule_decay=0;
 
 %speed=10;
 %time=((Vector2Distance(%ScatterVolley.sprite.Position,%dest)/%speed)*1000)+1000;
-%ScatterVolley.schedule_decay=schedule(%time,0,"ScatterVolleydecay",%ScatterVolley.sprite);
+%ScatterVolley.schedule_decay=schedule(%time,0,"class_ScatterVolley::ScatterVolleydecay",%ScatterVolley.sprite);
 
 /////////////////////////////////////////////////
 }//end for

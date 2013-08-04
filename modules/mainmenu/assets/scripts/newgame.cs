@@ -1,4 +1,4 @@
-function gui_mainmenu::newgame()
+function gui_mainmenu::newgame(%this)
 {
 $cantogglepausemenu=1;
 cancelallschedules();

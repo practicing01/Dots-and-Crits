@@ -1,9 +1,9 @@
-function gui_pausemenu::exitgame()
+function gui_pausemenu::exitgame(%this)
 {
 quit();
 }
 
-function gui_pausemenu::returntomainmenu()
+function gui_pausemenu::returntomainmenu(%this)
 {
 if (ConsoleDialog.isAwake()){Canvas.popDialog(ConsoleDialog);}
 //%buttonsound=alxPlay(audio_guibuttonpress);
@@ -40,7 +40,7 @@ Canvas.pushDialog(gui_mainmenu);
 Canvas.pushDialog(gui_skillbar);
 }
 
-function gui_pausemenu::togglemusic()
+function gui_pausemenu::togglemusic(%this)
 {
 //%buttonsound=alxPlay(audio_guibuttonpress);
 if ($cantogglepausemenu)

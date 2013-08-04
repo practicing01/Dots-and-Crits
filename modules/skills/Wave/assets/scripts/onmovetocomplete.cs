@@ -52,7 +52,7 @@ return;
 
 %speed=10;
 %time=((Vector2Distance(%this.Position,%dest)/%speed)*1000)+1000;
-%this.parenthandle.schedule_decay=schedule(%time,0,"Wavedecay",%this);
+%this.parenthandle.schedule_decay=schedule(%time,0,"class_Wave::Wavedecay",%this);
 }
 }
 

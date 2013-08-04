@@ -3,6 +3,8 @@ function ZombieBox::loadlevel(%this)//change ZombieBox to your module name
 cancelallschedules();
 DotsandCritsscene.clear();
 
+%this.livezombiecount=1;
+
 if ($view==0)
 {
 %this.loadedscene=TamlRead("./../../scenes/topdown.scene.taml");

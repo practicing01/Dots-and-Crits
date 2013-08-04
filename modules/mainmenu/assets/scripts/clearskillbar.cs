@@ -1,4 +1,4 @@
-function gui_mainmenu::player1clearskillbar()
+function gui_mainmenu::player1clearskillbar(%this)
 {
 for (%x=0;%x<$player1skillbar.getCount();%x++)
 {
@@ -48,7 +48,7 @@ skillbar_p1slot7.setAnimation("DotsandCrits:anim_noskillset");
 }
 }
 
-function gui_mainmenu::player2clearskillbar()
+function gui_mainmenu::player2clearskillbar(%this)
 {
 for (%x=0;%x<$player2skillbar.getCount();%x++)
 {

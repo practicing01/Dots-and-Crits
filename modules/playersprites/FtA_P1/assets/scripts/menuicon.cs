@@ -1,4 +1,4 @@
-function FtA_P1::setmenuiconvisible()//change FtA_P1 to your module's name
+function FtA_P1::setmenuiconvisible(%this)//change FtA_P1 to your module's name
 {
 if (!$player_to_load)//player 1
 {

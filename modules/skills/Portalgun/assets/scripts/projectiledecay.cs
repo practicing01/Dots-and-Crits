@@ -1,10 +1,10 @@
-function portalprojectiledecay(%projectile)
+function class_portalprojectile::portalprojectiledecay(%this)
 {
-%customfieldobj=Portalgun.customplayerfields.getObject(%projectile.parentplayer);
+%customfieldobj=Portalgun.customplayerfields.getObject(%this.parentplayer);
 %vecobj=0;
 
 //create portals
-if (!%projectile.portaltype)
+if (!%this.portaltype)
 {
 
 if (isObject(%customfieldobj.portalinobj))
@@ -18,31 +18,31 @@ if (isObject(%customfieldobj.portalinobj))
 
 %customfieldobj.portalinobj=new Sprite()
 {
-Position=%projectile.Position;
+Position=%this.Position;
 Size=ScaleAssSizeVectorToCam(%ass);
 Image=%img;
 GravityScale="0";
 BodyType="static";
-topos=%projectile.Position;
+topos=%this.Position;
 SceneGroup=27;//portals
 class="class_portalgunportal";
-parentplayer=%projectile.parentplayer;
+parentplayer=%this.parentplayer;
 CollisionCallback="true";
 };
 
-if (%projectile.curdir==0)
+if (%this.curdir==0)
 {
 %customfieldobj.portalinobj.curdir=1;
 }
-else if (%projectile.curdir==1)
+else if (%this.curdir==1)
 {
 %customfieldobj.portalinobj.curdir=0;
 }
-else if (%projectile.curdir==2)
+else if (%this.curdir==2)
 {
 %customfieldobj.portalinobj.curdir=3;
 }
-else if (%projectile.curdir==3)
+else if (%this.curdir==3)
 {
 %customfieldobj.portalinobj.curdir=2;
 }
@@ -55,7 +55,7 @@ DotsandCritsscene.add(%customfieldobj.portalinobj);
 
 %customfieldobj.portalinobj.playAnimation(%anim);
 
-%customfieldobj.portalinobj.setAngle((%projectile.Angle+180)%360);
+%customfieldobj.portalinobj.setAngle((%this.Angle+180)%360);
 
 /*%vecobj=Portalgun.vectortable.getObject(%customfieldobj.portalinobj.Angle);
 
@@ -76,31 +76,31 @@ if (isObject(%customfieldobj.portaloutobj))
 
 %customfieldobj.portaloutobj=new Sprite()
 {
-Position=%projectile.Position;
+Position=%this.Position;
 Size=ScaleAssSizeVectorToCam(%ass);
 Image=%img;
 GravityScale="0";
 BodyType="static";
-topos=%projectile.Position;
+topos=%this.Position;
 SceneGroup=27;//portals
 class="class_portalgunportal";
-parentplayer=%projectile.parentplayer;
+parentplayer=%this.parentplayer;
 CollisionCallback="true";
 };
 
-if (%projectile.curdir==0)
+if (%this.curdir==0)
 {
 %customfieldobj.portaloutobj.curdir=1;
 }
-else if (%projectile.curdir==1)
+else if (%this.curdir==1)
 {
 %customfieldobj.portaloutobj.curdir=0;
 }
-else if (%projectile.curdir==2)
+else if (%this.curdir==2)
 {
 %customfieldobj.portaloutobj.curdir=3;
 }
-else if (%projectile.curdir==3)
+else if (%this.curdir==3)
 {
 %customfieldobj.portaloutobj.curdir=2;
 }
@@ -113,7 +113,7 @@ DotsandCritsscene.add(%customfieldobj.portaloutobj);
 
 %customfieldobj.portaloutobj.playAnimation(%anim);
 
-%customfieldobj.portaloutobj.setAngle((%projectile.Angle+180)%360);
+%customfieldobj.portaloutobj.setAngle((%this.Angle+180)%360);
 
 /*%vecobj=Portalgun.vectortable.getObject(%customfieldobj.portaloutobj.Angle);
 
@@ -135,14 +135,14 @@ if (isObject(%customfieldobj.portalinobj)&&isObject(%customfieldobj.portaloutobj
 %customfieldobj.portaloutobj.topos.Y+=%vecobj.y;*/
 }
 
-if (isObject(%projectile))
+if (isObject(%this))
 {
-%projectile.cancelMoveTo();
-%projectile.parenthandle.wavevectors.deleteObjects();
-%projectile.parenthandle.wavevectors.delete();
-cancel(%projectile.parenthandle.schedule_decay);
-%parenthandle=%projectile.parenthandle;
-%projectile.safeDelete();
+%this.cancelMoveTo();
+%this.parenthandle.wavevectors.deleteObjects();
+%this.parenthandle.wavevectors.delete();
+cancel(%this.parenthandle.schedule_decay);
+%parenthandle=%this.parenthandle;
+%this.safeDelete();
 %parenthandle.delete();
 }
 }

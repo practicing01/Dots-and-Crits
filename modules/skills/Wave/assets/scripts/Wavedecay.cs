@@ -1,13 +1,13 @@
-function Wavedecay(%Wave)
+function class_Wave::Wavedecay(%this)
 {
-if (isObject(%Wave))
+if (isObject(%this))
 {
-%Wave.cancelMoveTo();
-%Wave.parenthandle.wavevectors.deleteObjects();
-%Wave.parenthandle.wavevectors.delete();
-cancel(%Wave.parenthandle.schedule_decay);
-%parenthandle=%Wave.parenthandle;
-%Wave.safeDelete();
+%this.cancelMoveTo();
+%this.parenthandle.wavevectors.deleteObjects();
+%this.parenthandle.wavevectors.delete();
+cancel(%this.parenthandle.schedule_decay);
+%parenthandle=%this.parenthandle;
+%this.safeDelete();
 %parenthandle.delete();
 }
 }

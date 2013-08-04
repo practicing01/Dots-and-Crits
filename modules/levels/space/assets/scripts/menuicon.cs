@@ -1,4 +1,4 @@
-function space::setmenuiconvisible()
+function space::setmenuiconvisible(%this)
 {
 if (isObject($levelmenuicon))
 {

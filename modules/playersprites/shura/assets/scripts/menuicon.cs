@@ -1,4 +1,4 @@
-function shura::setmenuiconvisible()
+function shura::setmenuiconvisible(%this)
 {
 if (!$player_to_load)//player 1
 {

@@ -7,7 +7,7 @@ cancel(%this.parenthandle.schedule_decay);
 %this.parenthandle.current_destination_vector++;
 if (%this.parenthandle.current_destination_vector>=%this.parenthandle.wavevectors.getCount())
 {
-portalprojectiledecay(%this);
+%this.portalprojectiledecay();
 return;
 }
 %dest="0 0";
@@ -17,7 +17,7 @@ return;
 
 %speed=10;
 %time=((Vector2Distance(%this.Position,%dest)/%speed)*1000)+1000;
-%this.parenthandle.schedule_decay=schedule(%time,0,"portalprojectiledecay",%this);
+%this.parenthandle.schedule_decay=schedule(%time,0,"class_portalprojectile::portalprojectiledecay",%this);
 }
 }
 

@@ -1,4 +1,4 @@
-function GillBalentine::setmenuiconvisible()//change GillBalentine to your module's name
+function GillBalentine::setmenuiconvisible(%this)//change GillBalentine to your module's name
 {
 if (!$player_to_load)//player 1
 {

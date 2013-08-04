@@ -1,4 +1,4 @@
-function gui_mainmenu::player1loadskillbar()
+function gui_mainmenu::player1loadskillbar(%this)
 {
 %f=new OpenFileDialog(gui_openfiledialog);
 %f.Title="Load Player 1 Skill Bar";
@@ -73,7 +73,7 @@ echo("filename:"@%filename);
 %f.delete();
 }
 
-function gui_mainmenu::player2loadskillbar()
+function gui_mainmenu::player2loadskillbar(%this)
 {
 %f=new OpenFileDialog(gui_openfiledialog);
 %f.Title="Load Player 2 Skill Bar";

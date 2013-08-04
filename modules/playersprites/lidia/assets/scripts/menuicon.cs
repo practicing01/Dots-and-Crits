@@ -1,4 +1,4 @@
-function lidia::setmenuiconvisible()
+function lidia::setmenuiconvisible(%this)
 {
 if (!$player_to_load)//player 1
 {

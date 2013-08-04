@@ -22,5 +22,5 @@ ThrowKnife.skill_ThrowKnife(%schedulehandle_ThrowKnife,%user,0);
 }
 
 }
-
+//bad hack to use a global for the handle, need to figure out a fix
 GlobalActionMap.bindCmd(keyboard,"f","bitweb::throwknife($bitwebhandle,0);","");

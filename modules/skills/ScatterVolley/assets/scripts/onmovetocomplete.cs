@@ -38,7 +38,7 @@ DotsandCritsscene.add(%explosion);
 
 schedule(1000,0,"ontimerdelete",%explosion);
 
-ScatterVolleydecay(%this);
+%this.ScatterVolleydecay();
 return;
 }
 %dest="0 0";
@@ -52,7 +52,7 @@ return;
 
 %speed=10;
 %time=((Vector2Distance(%this.Position,%dest)/%speed)*1000)+1000;
-%this.parenthandle.schedule_decay=schedule(%time,0,"ScatterVolleydecay",%this);
+%this.parenthandle.schedule_decay=schedule(%time,0,"class_ScatterVolley::ScatterVolleydecay",%this);
 }
 }
 

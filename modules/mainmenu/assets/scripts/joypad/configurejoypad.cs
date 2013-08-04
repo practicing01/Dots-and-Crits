@@ -25,7 +25,7 @@ gui_joypadconfig.delete();
 }
 DotsandCrits.add(TamlRead("./joypadconfig.gui.taml"));
 
-function gui_mainmenu::configurejoypad()
+function gui_mainmenu::configurejoypad(%this)
 {
 echo("configure joypad");
 resetjoypad();

@@ -1,4 +1,4 @@
-function gui_mainmenu::selectplayer1slot0()
+function gui_mainmenu::selectplayer1slot0(%this)
 {
 if (gui_list_player1skills.getSelectedItem()!=-1)
 {
@@ -9,7 +9,7 @@ if (gui_list_player1skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer1slot1()
+function gui_mainmenu::selectplayer1slot1(%this)
 {
 if (gui_list_player1skills.getSelectedItem()!=-1)
 {
@@ -20,7 +20,7 @@ if (gui_list_player1skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer1slot2()
+function gui_mainmenu::selectplayer1slot2(%this)
 {
 if (gui_list_player1skills.getSelectedItem()!=-1)
 {
@@ -31,7 +31,7 @@ if (gui_list_player1skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer1slot3()
+function gui_mainmenu::selectplayer1slot3(%this)
 {
 if (gui_list_player1skills.getSelectedItem()!=-1)
 {
@@ -42,7 +42,7 @@ if (gui_list_player1skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer1slot4()
+function gui_mainmenu::selectplayer1slot4(%this)
 {
 if (gui_list_player1skills.getSelectedItem()!=-1)
 {
@@ -53,7 +53,7 @@ if (gui_list_player1skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer1slot5()
+function gui_mainmenu::selectplayer1slot5(%this)
 {
 if (gui_list_player1skills.getSelectedItem()!=-1)
 {
@@ -64,7 +64,7 @@ if (gui_list_player1skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer1slot6()
+function gui_mainmenu::selectplayer1slot6(%this)
 {
 if (gui_list_player1skills.getSelectedItem()!=-1)
 {
@@ -75,7 +75,7 @@ if (gui_list_player1skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer1slot7()
+function gui_mainmenu::selectplayer1slot7(%this)
 {
 if (gui_list_player1skills.getSelectedItem()!=-1)
 {
@@ -86,7 +86,7 @@ if (gui_list_player1skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer2slot0()
+function gui_mainmenu::selectplayer2slot0(%this)
 {
 if (gui_list_player2skills.getSelectedItem()!=-1)
 {
@@ -97,7 +97,7 @@ if (gui_list_player2skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer2slot1()
+function gui_mainmenu::selectplayer2slot1(%this)
 {
 if (gui_list_player2skills.getSelectedItem()!=-1)
 {
@@ -108,7 +108,7 @@ if (gui_list_player2skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer2slot2()
+function gui_mainmenu::selectplayer2slot2(%this)
 {
 if (gui_list_player2skills.getSelectedItem()!=-1)
 {
@@ -119,7 +119,7 @@ if (gui_list_player2skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer2slot3()
+function gui_mainmenu::selectplayer2slot3(%this)
 {
 if (gui_list_player2skills.getSelectedItem()!=-1)
 {
@@ -130,7 +130,7 @@ if (gui_list_player2skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer2slot4()
+function gui_mainmenu::selectplayer2slot4(%this)
 {
 if (gui_list_player2skills.getSelectedItem()!=-1)
 {
@@ -141,7 +141,7 @@ if (gui_list_player2skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer2slot5()
+function gui_mainmenu::selectplayer2slot5(%this)
 {
 if (gui_list_player2skills.getSelectedItem()!=-1)
 {
@@ -152,7 +152,7 @@ if (gui_list_player2skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer2slot6()
+function gui_mainmenu::selectplayer2slot6(%this)
 {
 if (gui_list_player2skills.getSelectedItem()!=-1)
 {
@@ -163,7 +163,7 @@ if (gui_list_player2skills.getSelectedItem()!=-1)
 }
 }
 
-function gui_mainmenu::selectplayer2slot7()
+function gui_mainmenu::selectplayer2slot7(%this)
 {
 if (gui_list_player2skills.getSelectedItem()!=-1)
 {

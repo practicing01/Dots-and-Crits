@@ -1,4 +1,4 @@
-function Lelur::setmenuiconvisible()//change Lelur to your module's name
+function Lelur::setmenuiconvisible(%this)//change Lelur to your module's name
 {
 if (!$player_to_load)//player 1
 {

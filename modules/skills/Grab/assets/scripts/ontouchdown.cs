@@ -34,7 +34,7 @@ else if (%player.curdir==3)//right
 
 ///////////////////////////////////////////////////////////////
 
-function class_grabmousecaptureobj::joycallback(%state,%cursorpos)
+function class_grabmousecaptureobj::joycallback(%this,%state,%cursorpos)
 {
 return;
 }

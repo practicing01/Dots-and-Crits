@@ -26,7 +26,7 @@ GravityScale="0";
 DotsandCritsscene.add(%explosion);
 %explosion.playAnimation("Volley:anim_explosion");
 
-volleydecay(%this);
+%this.volleydecay();
 
 schedule(1000,0,"ontimerdelete",%explosion);
 

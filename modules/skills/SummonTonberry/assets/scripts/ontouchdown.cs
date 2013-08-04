@@ -14,7 +14,7 @@ shankbutt(%this,1);
 
 ///////////////////////////////////////////////////////////////
 
-function class_tonberry::joycallback(%state,%cursorpos)
+function class_tonberry::joycallback(%this,%state,%cursorpos)
 {
 return;
 }

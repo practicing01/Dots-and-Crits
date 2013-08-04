@@ -41,7 +41,7 @@ simset_list_npcs.add(%moduleid);
 gui_list_npc.addItem(%moduleid.description);
 }
 
-function gui_pausemenu::dwoselect()
+function gui_pausemenu::dwoselect(%this)
 {
 
 //call the selected dwo's load function
@@ -53,7 +53,7 @@ if (gui_list_dwo.getSelectedItem()!=-1)
 
 }
 
-function gui_pausemenu::npcselect()
+function gui_pausemenu::npcselect(%this)
 {
 
 //call the selected npc's load function

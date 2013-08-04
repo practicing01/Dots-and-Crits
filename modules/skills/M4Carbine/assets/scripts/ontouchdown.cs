@@ -63,7 +63,7 @@ if (%closestid.health>0)
 
 ///////////////////////////////////////////////////////////////
 
-function class_M4Carbine::joycallback(%state,%cursorpos)
+function class_M4Carbine::joycallback(%this,%state,%cursorpos)
 {
 return;
 }

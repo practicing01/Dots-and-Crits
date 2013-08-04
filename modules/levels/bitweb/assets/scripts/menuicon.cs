@@ -1,4 +1,4 @@
-function bitweb::setmenuiconvisible()
+function bitweb::setmenuiconvisible(%this)
 {
 if (isObject($levelmenuicon))
 {

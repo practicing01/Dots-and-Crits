@@ -68,6 +68,14 @@ if (%this.health<=0)
 %this.setCollisionCallback(false);
 cancel(%this.aischedule);
 //%this.safeDelete();
+
+%this.parentzombiebox.livezombiecount--;
+
+if (isObject(gui_text_livezombiecount))
+{
+gui_text_livezombiecount.setText(%this.parentzombiebox.livezombiecount);
+}
+
 if (%this.curdir==0)
 {
 if (%this.getAnimation()!$="ZombieBox:anim_zombie_dieup")
@@ -99,107 +107,107 @@ if (%this.getAnimation()!$="ZombieBox:anim_zombie_dieright")
 }
 }
 
-function Zombieai(%Zombie)
+function class_Zombie::Zombieai(%this)
 {//temporary ai
-if (!isObject(%Zombie)){return;}
+if (!isObject(%this)){return;}
 
-if (%Zombie.target==-1)//no target, acquire
+if (%this.target==-1)//no target, acquire
 {
 for (%x=0;%x<$numofplayers;%x++)
 {
 %player=$players.getObject(%x);
 if (!isObject(%player.sprite)){continue;}
-if (Vector2Distance(%Zombie.Position,%player.sprite.Position)<=Vector2Distance("0 0",ScaleVectorToCam($resolution.X/2 SPC $resolution.Y/2)))
+if (Vector2Distance(%this.Position,%player.sprite.Position)<=Vector2Distance("0 0",ScaleVectorToCam($resolution.X/2 SPC $resolution.Y/2)))
 {
-%Zombie.target=%player.sprite;
+%this.target=%player.sprite;
 break;
 }
 }
 }
 
-if (!isObject(%Zombie.target))
+if (!isObject(%this.target))
 {
-%Zombie.target=-1;
+%this.target=-1;
 
-%anim=%Zombie.getAnimation();
-if (%Zombie.curdir==0)
+%anim=%this.getAnimation();
+if (%this.curdir==0)
 {
 if (%anim!$="ZombieBox:anim_zombie_standup")
 {
-%Zombie.playAnimation("ZombieBox:anim_zombie_standup");
+%this.playAnimation("ZombieBox:anim_zombie_standup");
 }
 }
-else if (%Zombie.curdir==1)
+else if (%this.curdir==1)
 {
 if (%anim!$="ZombieBox:anim_zombie_standdown")
 {
-%Zombie.playAnimation("ZombieBox:anim_zombie_standdown");
+%this.playAnimation("ZombieBox:anim_zombie_standdown");
 }
 }
-else if (%Zombie.curdir==2)
+else if (%this.curdir==2)
 {
 if (%anim!$="ZombieBox:anim_zombie_standleft")
 {
-%Zombie.playAnimation("ZombieBox:anim_zombie_standleft");
+%this.playAnimation("ZombieBox:anim_zombie_standleft");
 }
 }
-else if (%Zombie.curdir==3)
+else if (%this.curdir==3)
 {
 if (%anim!$="ZombieBox:anim_zombie_standright")
 {
-%Zombie.playAnimation("ZombieBox:anim_zombie_standright");
+%this.playAnimation("ZombieBox:anim_zombie_standright");
 }
 }
 
 }
 else
 {
-if (Vector2Distance(%Zombie.Position,%Zombie.target.Position)>Vector2Distance("0 0",ScaleVectorToCam($resolution.X/2 SPC $resolution.Y/2)))
-{%Zombie.target=-1;}
+if (Vector2Distance(%this.Position,%this.target.Position)>Vector2Distance("0 0",ScaleVectorToCam($resolution.X/2 SPC $resolution.Y/2)))
+{%this.target=-1;}
 else
 {
-if (%Zombie.speed!=0)
+if (%this.speed!=0)
 {
-%Zombie.moveTo(%Zombie.target.Position,%Zombie.speed,true,false);
+%this.moveTo(%this.target.Position,%this.speed,true,false);
 }
 
-%xdist=mAbs(%Zombie.Position.X-%Zombie.target.Position.X);
-%ydist=mAbs(%Zombie.Position.Y-%Zombie.target.Position.Y);
+%xdist=mAbs(%this.Position.X-%this.target.Position.X);
+%ydist=mAbs(%this.Position.Y-%this.target.Position.Y);
 if (%xdist>=%ydist)
 {
-if (%Zombie.Position.X<=%Zombie.target.Position.X)
+if (%this.Position.X<=%this.target.Position.X)
 {
-%Zombie.curdir=3;
-if (%Zombie.getAnimation()!$="ZombieBox:anim_zombie_runright")
+%this.curdir=3;
+if (%this.getAnimation()!$="ZombieBox:anim_zombie_runright")
 {
-%Zombie.playAnimation("ZombieBox:anim_zombie_runright");
+%this.playAnimation("ZombieBox:anim_zombie_runright");
 }
 }
 else
 {
-%Zombie.curdir=2;
-if (%Zombie.getAnimation()!$="ZombieBox:anim_zombie_runleft")
+%this.curdir=2;
+if (%this.getAnimation()!$="ZombieBox:anim_zombie_runleft")
 {
-%Zombie.playAnimation("ZombieBox:anim_zombie_runleft");
+%this.playAnimation("ZombieBox:anim_zombie_runleft");
 }
 }
 }
 else
 {
-if (%Zombie.Position.Y<=%Zombie.target.Position.Y)
+if (%this.Position.Y<=%this.target.Position.Y)
 {
-%Zombie.curdir=0;
-if (%Zombie.getAnimation()!$="ZombieBox:anim_zombie_runup")
+%this.curdir=0;
+if (%this.getAnimation()!$="ZombieBox:anim_zombie_runup")
 {
-%Zombie.playAnimation("ZombieBox:anim_zombie_runup");
+%this.playAnimation("ZombieBox:anim_zombie_runup");
 }
 }
 else
 {
-%Zombie.curdir=1;
-if (%Zombie.getAnimation()!$="ZombieBox:anim_zombie_rundown")
+%this.curdir=1;
+if (%this.getAnimation()!$="ZombieBox:anim_zombie_rundown")
 {
-%Zombie.playAnimation("ZombieBox:anim_zombie_rundown");
+%this.playAnimation("ZombieBox:anim_zombie_rundown");
 }
 }
 }
@@ -207,7 +215,7 @@ if (%Zombie.getAnimation()!$="ZombieBox:anim_zombie_rundown")
 }
 }
 
-%Zombie.aischedule=schedule(1000,0,"Zombieai",%Zombie);
+%this.aischedule=schedule(1000,0,"class_Zombie::Zombieai",%this);
 }
 
 //every npc class has an initialize function
@@ -219,5 +227,5 @@ function class_Zombie::initialize(%this)
 %this.curdir=0;//0=up,1=down,2=left,3=right
 %this.normalspeed=50;
 %this.speed=50;
-%this.aischedule=schedule(1000,0,"Zombieai",%this);
+%this.aischedule=schedule(1000,0,"class_Zombie::Zombieai",%this);
 }

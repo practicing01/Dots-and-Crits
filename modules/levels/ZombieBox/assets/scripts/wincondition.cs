@@ -29,7 +29,7 @@ echo("player 2 scored!");
 %player1.health=100;
 $schedule_wincondition.player2score++;
 gui_text_player2score.setText($schedule_wincondition.player2score);
-ZombieBox.healthdisplay(0,%player1.health);
+%this.healthdisplay(0,%player1.health);
 }
 
 if ($schedule_wincondition.player1score>=10)
@@ -47,7 +47,7 @@ echo("player 1 scored!");
 %player2.health=100;
 $schedule_wincondition.player1score++;
 gui_text_player1score.setText($schedule_wincondition.player1score);
-ZombieBox.healthdisplay(1,%player2.health);
+%this.healthdisplay(1,%player2.health);
 }
 }
 
@@ -60,9 +60,13 @@ return;
 
 }
 
-$schedule_wincondition.schedulehandle=schedule(1000,0,"ZombieBox::checkforwincondition");
+if (%this.livezombiecount<=0)
+{
+
+gui_pausemenu.returntomainmenu();
+return;
+
 }
 
-$schedule_wincondition.schedulehandle=schedule(1000,0,"ZombieBox::checkforwincondition");
-
-$cancellableschedules.add($schedule_wincondition);
+$schedule_wincondition.schedulehandle=schedule(1000,0,"ZombieBox::checkforwincondition",%this);
+}

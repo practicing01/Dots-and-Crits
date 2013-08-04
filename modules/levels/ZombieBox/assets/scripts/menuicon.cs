@@ -1,6 +1,6 @@
 //schedule an animation.  cancel the schedule on loadlevel()
 
-function ZombieBox::setmenuiconvisible()//change ZombieBox to your module name
+function ZombieBox::setmenuiconvisible(%this)//change ZombieBox to your module name
 {
 if (isObject($levelmenuicon))
 {
