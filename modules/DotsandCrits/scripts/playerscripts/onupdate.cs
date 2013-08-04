@@ -31,6 +31,15 @@ restartmove(%player);
 
 }//end not colliding
 }
+else
+{
+
+if (%player.sprite.LinearVelocity.X<%player.speed||%player.sprite.LinearVelocity.Y<%player.speed)
+{
+restartmove(%player);
+}
+
+}
 
 //$processplayerschedule=schedule(250,0,"processplayercollision");
 
