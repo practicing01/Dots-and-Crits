@@ -1,4 +1,4 @@
-//-------------------------- 8/4/2013 -- 01:25:33 -----
+//-------------------------- 8/4/2013 -- 06:39:17 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -88,13 +88,8 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-M4Carbine loaded
-player 2 scored!
-DirectInput deactivated.
-Activating DirectInput...
-DirectInput deactivated.
-Activating DirectInput...
-unloaded M4Carbine
+loaded ThrowKnife ThrowKnifes
+unloaded ThrowKnife
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
@@ -105,19 +100,8 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-M4Carbine loaded
-player 1 scored!
-player 1 scored!
-player 1 scored!
-player 1 scored!
-player 1 scored!
-player 1 scored!
-player 1 scored!
-player 1 scored!
-player 1 scored!
-player 1 scored!
-player 1 won!
-unloaded M4Carbine
+loaded ThrowKnife ThrowKnifes
+unloaded ThrowKnife
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
@@ -128,12 +112,8 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-M4Carbine loaded
-player 2 scored!
-player 2 scored!
-player 1 scored!
-player 2 scored!
-player 2 scored!
+loaded ThrowKnife ThrowKnifes
+unloaded ThrowKnife
 DirectInput deactivated.
 goodbye world
 freed catragdoll

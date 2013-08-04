@@ -49,6 +49,22 @@ else
 %this.p2moduleid.ScopeSet.loadsprite();
 }
 
+%player1=$players.getObject(0);
+%player2=$players.getObject(1);
+
+//game-specific resizing of player sprites so custom sprites can be used
+%size=((24*$resolution.X)/1280) SPC ((24*$resolution.Y)/800);
+%size.X=(%size.X*$camsize.X)/$resolution.X;
+%size.Y=(%size.Y*$camsize.Y)/$resolution.Y;
+
+%player1.sprite.setSpriteSize(%size);
+%player1.sprite.clearCollisionShapes();
+%player1.sprite.createPolygonBoxCollisionShape(%size);
+
+%player2.sprite.setSpriteSize(%size);
+%player2.sprite.clearCollisionShapes();
+%player2.sprite.createPolygonBoxCollisionShape(%size);
+
 $levelmoduleid.ScopeSet.loadplayerclass();
 
 if (!$singleplayer)
@@ -65,8 +81,6 @@ else
 cancel($schedule_centralizecamera.schedulehandle);
 cancel($schedule_checkforsplit.schedulehandle);
 
-%player1=$players.getObject(0);
-
 $playerssplit=false;
 repositionskillbar();
 if (isObject(scenewindow_player1))
@@ -79,7 +93,6 @@ scenewindow_player2.setVisible(false);
 }
 DotsandCritswindow.setVisible(true);
 
-%player2=$players.getObject(1);
 if (isObject(%player2))
 {
 %player2.sprite.safeDelete();
