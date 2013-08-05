@@ -9,7 +9,7 @@ if (%player.cancast&&!%barslot.skillstate)
 %barslot.skillstate=1;//set to cooldown  //need to setup a function to display timer and remove cd
 %player.skillanimtype=0;
 Cloak.setskillbaricon(%barslot);
-/*%schedulehandle_Cloak=new SimObject()//since cloak toggles itself and isn't timed, don't need a schedule
+/*%schedulehandle_Cloak=new ScriptObject()//since cloak toggles itself and isn't timed, don't need a schedule
 {
 schedulehandle="0";
 };

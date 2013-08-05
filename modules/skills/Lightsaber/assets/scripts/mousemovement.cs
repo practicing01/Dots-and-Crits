@@ -1,62 +1,62 @@
 function class_Lightsaber::onTouchDown(%this,%touchID,%worldPosition,%mouseClicks)
 {
 if (!%this.Active){return;}
-%this.parentsimobject.mouseprevpos=%worldPosition;
+%this.parentScriptObject.mouseprevpos=%worldPosition;
 }
 
 function class_Lightsaber::onTouchUp(%this,%touchID,%worldPosition,%mouseClicks)
 {
 if (!%this.Active){return;}
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.shoulderrevolutejoint,false);
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.elbowrevolutejoint,false);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.shoulderrevolutejoint,false);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.elbowrevolutejoint,false);
 }
 
 function class_Lightsaber::onTouchDragged(%this,%touchID,%worldPosition,%mouseClicks)
 {
 if (!%this.Active){return;}
 
-if (%this.parentsimobject.dragiteration<3){%this.parentsimobject.dragiteration++;return;}
-else{%this.parentsimobject.dragiteration=0;}
+if (%this.parentScriptObject.dragiteration<3){%this.parentScriptObject.dragiteration++;return;}
+else{%this.parentScriptObject.dragiteration=0;}
 
-%xdist=mAbs(%this.parentsimobject.mouseprevpos.X-%worldPosition.X);
-%ydist=mAbs(%this.parentsimobject.mouseprevpos.Y-%worldPosition.Y);
+%xdist=mAbs(%this.parentScriptObject.mouseprevpos.X-%worldPosition.X);
+%ydist=mAbs(%this.parentScriptObject.mouseprevpos.Y-%worldPosition.Y);
 
 if (%xdist>%ydist)
 {
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.elbowrevolutejoint,false);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.elbowrevolutejoint,false);
 
-if (%worldPosition.X<%this.parentsimobject.mouseprevpos.X)
+if (%worldPosition.X<%this.parentScriptObject.mouseprevpos.X)
 {
 
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.shoulderrevolutejoint,true,10000,100000);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.shoulderrevolutejoint,true,10000,100000);
 
 }
-else if (%worldPosition.X>%this.parentsimobject.mouseprevpos.X)
+else if (%worldPosition.X>%this.parentScriptObject.mouseprevpos.X)
 {
 
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.shoulderrevolutejoint,true,-10000,100000);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.shoulderrevolutejoint,true,-10000,100000);
 
 }
 
 }
 else
 {
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.shoulderrevolutejoint,false);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.shoulderrevolutejoint,false);
 
-if (%worldPosition.Y<%this.parentsimobject.mouseprevpos.Y)
+if (%worldPosition.Y<%this.parentScriptObject.mouseprevpos.Y)
 {
 
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.elbowrevolutejoint,true,-1000,10000);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.elbowrevolutejoint,true,-1000,10000);
 
 }
-else if (%worldPosition.Y>%this.parentsimobject.mouseprevpos.Y)
+else if (%worldPosition.Y>%this.parentScriptObject.mouseprevpos.Y)
 {
 
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.elbowrevolutejoint,true,1000,10000);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.elbowrevolutejoint,true,1000,10000);
 
 }
 
 }
 
-%this.parentsimobject.mouseprevpos=%worldPosition;
+%this.parentScriptObject.mouseprevpos=%worldPosition;
 }

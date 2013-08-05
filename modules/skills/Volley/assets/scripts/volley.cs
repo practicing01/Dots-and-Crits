@@ -47,7 +47,7 @@ for (%x=0;%x<=360;%x++)
 %dest.Y=%yval+%pos.Y;
 
 %dest=ScaleVectorToCam(%dest);
-%vector=new SimObject()
+%vector=new ScriptObject()
 {
 x=%dest.X;
 y=%dest.Y;

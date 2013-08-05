@@ -20,9 +20,9 @@ Lightsaber.Lightsaberass=AssetDatabase.acquireAsset("Lightsaber:image_Lightsaber
 
 Lightsaber.customplayerfields=new SimSet();
 
-for (%x=0;%x<$numofplayers;%x++)//one simobject per player, containing all custom fields for this skill
+for (%x=0;%x<$numofplayers;%x++)//one ScriptObject per player, containing all custom fields for this skill
 {
-%fields=new SimObject()
+%fields=new ScriptObject()
 {
 Lightsaberon=false;
 Lightsabersprite=0;
@@ -97,7 +97,7 @@ DefaultDensity=0.1;
 //DefaultRestitution=1;
 Visible="false";
 Active="false";
-parentsimobject=%fields;
+parentScriptObject=%fields;
 LinearDamping=10;
 };
 

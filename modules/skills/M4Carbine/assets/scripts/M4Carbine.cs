@@ -14,13 +14,18 @@ function M4Carbine::onlevelload(%this)
 {
 echo("M4Carbine loaded");
 
+%player1=$players.getObject(0);
+%player2=$players.getObject(1);
+if (%player1.ammo<10){%player1.ammo=10;}else if (%player1.ammo>10){%player1.ammo+=10;}
+if (%player2.ammo<10){%player2.ammo=10;}else if (%player2.ammo>10){%player2.ammo+=10;}
+
 M4Carbine.M4Carbineass=AssetDatabase.acquireAsset("M4Carbine:image_M4Carbine");
 
 M4Carbine.customplayerfields=new SimSet();
 
-for (%x=0;%x<$numofplayers;%x++)//one simobject per player, containing all custom fields for this skill
+for (%x=0;%x<$numofplayers;%x++)//one ScriptObject per player, containing all custom fields for this skill
 {
-%fields=new SimObject()
+%fields=new ScriptObject()
 {
 mousecaptureobj=0;
 sound_m4_fire=0;

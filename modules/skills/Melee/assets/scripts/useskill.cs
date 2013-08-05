@@ -9,7 +9,7 @@ if (%player.cancast&&!%barslot.skillstate)
 %barslot.skillstate=1;//set to cooldown  //need to setup a function to display timer and remove cd
 %player.skillanimtype=2;//melee :)
 Melee.setskillbaricon(%barslot);
-%schedulehandle_Melee=new SimObject()
+%schedulehandle_Melee=new ScriptObject()
 {
 schedulehandle="0";
 };

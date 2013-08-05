@@ -1,5 +1,6 @@
 function ZombieBox::generatedwotiles(%this)
 {
+exec("./../dwos/m4carbineammo.cs");
 
 if (!$view)//need to seperate tiles into topdown & side
 {

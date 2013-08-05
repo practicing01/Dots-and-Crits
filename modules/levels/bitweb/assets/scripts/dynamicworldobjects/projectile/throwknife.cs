@@ -11,7 +11,7 @@ Audiere_Play(%this.sound_gunshot,0,1.0);
 
 %player.sprite.ammo--;
 
-%schedulehandle_ThrowKnife=new SimObject()
+%schedulehandle_ThrowKnife=new ScriptObject()
 {
 schedulehandle="0";
 };

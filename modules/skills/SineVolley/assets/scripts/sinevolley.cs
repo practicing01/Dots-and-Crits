@@ -69,7 +69,7 @@ for (%t=0;%t<=1.0;%t+=%tstep)
 %yval=%cy+%t*%dy+%ny*%a;
 %tmpvec="0 0";%tmpvec.X=%xval;%tmpvec.Y=%yval;
 %tmpvec=ScaleVectorToCam(%tmpvec);
-%vector=new SimObject()
+%vector=new ScriptObject()
 {
 x=%tmpvec.X;
 y=%tmpvec.Y;

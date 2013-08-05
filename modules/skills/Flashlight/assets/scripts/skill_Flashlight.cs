@@ -43,7 +43,7 @@ return;
 %player.sprite.SetSpriteDepth(0);
 %player.sprite.selectSpriteId(%player.spriteid);//important so anim-setting functions can work
 
-%idobj=new SimObject()
+%idobj=new ScriptObject()
 {
 spriteid=%spriteid;
 rotates=true;

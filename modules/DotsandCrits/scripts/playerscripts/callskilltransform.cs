@@ -14,7 +14,7 @@ if (%skill.moduleid)
 
 if (%moduleidlist.getCount()==0)
 {
-%moduleid=new SimObject()
+%moduleid=new ScriptObject()
 {
 moduleid=%skill.moduleid;
 };
@@ -30,7 +30,7 @@ break;
 }
 else if (%y==%moduleidlist.getCount()-1)
 {
-%moduleid=new SimObject()
+%moduleid=new ScriptObject()
 {
 moduleid=%skill.moduleid;
 };
@@ -58,7 +58,7 @@ if (%skill.moduleid)
 
 if (%moduleidlist.getCount()==0)
 {
-%moduleid=new SimObject()
+%moduleid=new ScriptObject()
 {
 moduleid=%skill.moduleid;
 };
@@ -74,7 +74,7 @@ break;
 }
 else if (%y==%moduleidlist.getCount()-1)
 {
-%moduleid=new SimObject()
+%moduleid=new ScriptObject()
 {
 moduleid=%skill.moduleid;
 };

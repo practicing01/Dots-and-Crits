@@ -130,6 +130,7 @@ DotsandCritswindow.setVisible(true);
 DotsandCritswindow.mount(%player1.sprite,"0 0",0,true,false);
 
 %player2=$players.getObject(1);
+
 if (isObject(%player2.sprite))
 {
 %player2.sprite.safeDelete();

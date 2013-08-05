@@ -51,7 +51,7 @@ else
 %customfieldobj.dummyobj.Active=true;
 %customfieldobj.dummyobj.Visible=true;
 
-%customfieldobj.Lightsabersprite.parentsimobject.mouseprevpos=DotsandCritswindow.getMousePosition();
+%customfieldobj.Lightsabersprite.parentScriptObject.mouseprevpos=DotsandCritswindow.getMousePosition();
 
 %spritesize=%player.sprite.getSpriteSize();
 

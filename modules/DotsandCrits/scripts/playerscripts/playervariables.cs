@@ -28,7 +28,7 @@ anim_run_down=0;
 anim_run_left=0;
 anim_run_right=0;
 
-//simsets containing simobjects with the anim frames
+//simsets containing ScriptObject with the anim frames
 anim_stand_up_selfcast=0;
 anim_stand_down_selfcast=0;
 anim_stand_left_selfcast=0;
@@ -76,6 +76,7 @@ health=100;
 objgrabbed=0;
 grabbing=false;
 cancast=true;
+ammo=10;//universal ammo :v
 
 //physics
 linear_damping=0;

@@ -26,9 +26,9 @@ Portalgun.projectileoutass=AssetDatabase.acquireAsset("Portalgun:image_projectil
 
 Portalgun.customplayerfields=new SimSet();
 
-for (%x=0;%x<$numofplayers;%x++)//one simobject per player, containing all custom fields for this skill
+for (%x=0;%x<$numofplayers;%x++)//one ScriptObject per player, containing all custom fields for this skill
 {
-%fields=new SimObject()
+%fields=new ScriptObject()
 {
 portaltoshoot=0;//0 shoots the in portal, 1 shoots the out portal.  they cycle.  have to use this cus
 //phone doesn't have lmb/rmb
@@ -104,7 +104,7 @@ for (%x=0;%x<=360;%x++)
 %dest.Y=%yval+%pos.Y;
 
 %dest=ScaleVectorToCam(%dest);
-%vector=new SimObject()
+%vector=new ScriptObject()
 {
 x=%dest.X;
 y=%dest.Y;

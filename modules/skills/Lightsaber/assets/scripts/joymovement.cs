@@ -5,32 +5,32 @@ if (!%this.Active){return;}
 if (%state.X==0)
 {
 
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.shoulderrevolutejoint,false);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.shoulderrevolutejoint,false);
 
 }
 
 if (%state.Y==0)
 {
 
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.elbowrevolutejoint,false);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.elbowrevolutejoint,false);
 
 }
 
 if (%state.X!=0)
 {
 
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.elbowrevolutejoint,false);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.elbowrevolutejoint,false);
 
-if (%cursorpos.X<%this.parentsimobject.mouseprevpos.X)
+if (%cursorpos.X<%this.parentScriptObject.mouseprevpos.X)
 {
 
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.shoulderrevolutejoint,true,10000,100000);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.shoulderrevolutejoint,true,10000,100000);
 
 }
-else if (%cursorpos.X>%this.parentsimobject.mouseprevpos.X)
+else if (%cursorpos.X>%this.parentScriptObject.mouseprevpos.X)
 {
 
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.shoulderrevolutejoint,true,-10000,100000);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.shoulderrevolutejoint,true,-10000,100000);
 
 }
 
@@ -39,23 +39,23 @@ DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.shoulderrevolutejo
 if (%state.Y!=0)
 {
 
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.shoulderrevolutejoint,false);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.shoulderrevolutejoint,false);
 
-if (%cursorpos.Y<%this.parentsimobject.mouseprevpos.Y)
+if (%cursorpos.Y<%this.parentScriptObject.mouseprevpos.Y)
 {
 
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.elbowrevolutejoint,true,-1000,10000);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.elbowrevolutejoint,true,-1000,10000);
 
 }
-else if (%cursorpos.Y>%this.parentsimobject.mouseprevpos.Y)
+else if (%cursorpos.Y>%this.parentScriptObject.mouseprevpos.Y)
 {
 
-DotsandCritsscene.setRevoluteJointMotor(%this.parentsimobject.elbowrevolutejoint,true,1000,10000);
+DotsandCritsscene.setRevoluteJointMotor(%this.parentScriptObject.elbowrevolutejoint,true,1000,10000);
 
 }
 
 }
 
-%this.parentsimobject.mouseprevpos=%cursorpos;
+%this.parentScriptObject.mouseprevpos=%cursorpos;
 
 }

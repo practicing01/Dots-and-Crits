@@ -3,7 +3,7 @@ function space::ai(%this)
 {
 exec("./../../../../DotsandCrits/scripts/ai/ai.cs");
 
-%schedulehandle_ai=new SimObject()
+%schedulehandle_ai=new ScriptObject()
 {
 schedulehandle="0";
 };

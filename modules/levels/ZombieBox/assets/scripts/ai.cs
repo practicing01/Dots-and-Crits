@@ -4,7 +4,7 @@ function ZombieBox::ai(%this)//change ZombieBox to your module name
 {
 exec("./../../../../DotsandCrits/scripts/ai/ai.cs");
 
-%schedulehandle_ai=new SimObject()
+%schedulehandle_ai=new ScriptObject()
 {
 schedulehandle="0";
 };

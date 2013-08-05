@@ -131,7 +131,7 @@ else if (%player.curdir==3)//right
 ///////////////////////////////
 
 %dest=ScaleVectorToCam(%dest);
-%vector=new SimObject()
+%vector=new ScriptObject()
 {
 x=%dest.X;
 y=%dest.Y;
@@ -141,7 +141,7 @@ y=%dest.Y;
 /////////////////////////////////////////////////////////////////////////////
 
 //create projectile object that holds all the info and add it to the projectile list
-%projectile=new SimObject()
+%projectile=new ScriptObject()
 {
 //sprite (holds animation, position, collision shape, class)
 sprite=%projectilesprite;
@@ -317,7 +317,7 @@ else if (%player.curdir==3)//right
 ///////////////////////////////
 
 %dest=ScaleVectorToCam(%dest);
-%vector=new SimObject()
+%vector=new ScriptObject()
 {
 x=%dest.X;
 y=%dest.Y;
@@ -327,7 +327,7 @@ y=%dest.Y;
 /////////////////////////////////////////////////////////////////////////////
 
 //create projectile object that holds all the info and add it to the projectile list
-%projectile=new SimObject()
+%projectile=new ScriptObject()
 {
 //sprite (holds animation, position, collision shape, class)
 sprite=%projectilesprite;

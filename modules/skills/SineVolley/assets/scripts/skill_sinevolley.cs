@@ -14,7 +14,7 @@ setskillanimation(%player,%player.skillanimtype);//animtype: 0:selfcast 1:target
 //the sprite doesn't have to attach to the character, it can be a regular sprite that stays at the casting spot
 %spriteid=%player.sprite.addSprite();
 
-%idobj=new SimObject()
+%idobj=new ScriptObject()
 {
 spriteid=%spriteid;
 rotates=true;
@@ -186,7 +186,7 @@ for (%t=0;%t<=1.0;%t+=%tstep)
 %yval=%cy+%t*%dy+%ny*%a;
 %tmpvec="0 0";%tmpvec.X=%xval;%tmpvec.Y=%yval;
 %tmpvec=ScaleVectorToCam(%tmpvec);
-%vector=new SimObject()
+%vector=new ScriptObject()
 {
 x=%tmpvec.X;
 y=%tmpvec.Y;
@@ -205,7 +205,7 @@ for (%y=0;%y<%vecsetobj.getCount();%y++)
 %dest.X+=%projectilesprite.Position.X;
 %dest.Y+=%projectilesprite.Position.Y;
 
-%vector=new SimObject()
+%vector=new ScriptObject()
 {
 x=%dest.X;
 y=%dest.Y;
@@ -215,7 +215,7 @@ y=%dest.Y;
 }
 /////////////////////////////////////////////////////////////////////////////
 //create projectile object that holds all the info and add it to the projectile list
-%projectile=new SimObject()
+%projectile=new ScriptObject()
 {
 sprite=%projectilesprite;
 //list of points to move to

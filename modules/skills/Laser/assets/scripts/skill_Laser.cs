@@ -55,8 +55,7 @@ bit(!%user)|bit(25)|bit(26)|bit(30),"");//26=world objects, 25=npc's, 30=walls
 //get first objects position
 %closestid=getWord(%objlist,0);
 %closestpos=getWord(%objlist,1) SPC getWord(%objlist,2);
-echo(%objlist);
-echo(%closestid SPC %closestpos);
+
 //string is divided into 7-string chunks, since we got the first (0-6 pieces) we start at the second chunk (7-13)
 for (%x=7;%x<getWordCount(%objlist);%x+=7)
 {
@@ -89,7 +88,7 @@ return;
 //the sprite doesn't have to attach to the character, it can be a regular sprite that stays at the casting spot
 %spriteid=%player.sprite.addSprite();
 
-%idobj=new SimObject()
+%idobj=new ScriptObject()
 {
 spriteid=%spriteid;
 rotates=true;

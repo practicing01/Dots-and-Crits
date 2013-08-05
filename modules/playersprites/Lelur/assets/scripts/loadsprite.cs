@@ -101,7 +101,7 @@ AssetDatabase.releaseAsset(%ass.getAssetId());
 %player.sprite.setUpdateCallback(true);
 
 ///////////////////////////////////////////////////////
-//create animation simobjects to hold animation references:
+//create animation ScriptObjects to hold animation references:
 
 //when a skill is called, it can choose which animation to run
 //if the animation index or name doesn't exist, the skill should choose a random anim
@@ -378,7 +378,7 @@ AssetDatabase.releaseAsset(%ass.getAssetId());
 ///////////////////////////////////////////////////////
 //when a skill is called, it can choose which animation to run
 //if the animation index doesn't exist, the skill should choose a random anim
-//create animation simobjects to hold animation references
+//create animation ScriptObjects to hold animation references
 
 //need an object for each animation, add each object to the anim set
 %animobj=new ScriptObject()

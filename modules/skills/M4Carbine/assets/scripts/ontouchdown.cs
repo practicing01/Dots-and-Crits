@@ -5,6 +5,8 @@ if (!%this.Active){return;}
 %player=$players.getObject(0);
 %customfieldobj=M4Carbine.customplayerfields.getObject(0);//we know it's user 0 cus they use mouse
 
+if (%player.ammo>0){%player.ammo--;}else{return;}
+
 setskillanimation(%player,2);//animtype: 0:selfcast 1:targetcast 2:melee 3:emote
 
 cancel(%player.schedule_keycleanup);
@@ -45,14 +47,28 @@ Vector2Distance(%player.sprite.Position,%closestpos))
 if (%closestid.class$="class_player")
 {
 %playerhit=$players.getObject(%closestid.playerindex);
+if (getRandom(0,9)==2)
+{
 %playerhit.health-=100;
+}
+else
+{
+%playerhit.health-=34;
+}
 $levelmoduleid.ScopeSet.healthdisplay(%closestid.playerindex,%playerhit.health);
 }
 else
 {
 if (%closestid.health>0)
 {
+if (getRandom(0,9)==2)
+{
 %closestid.health-=100;
+}
+else
+{
+%closestid.health-=34;
+}
 %closestid.updatehealth();
 }
 }
@@ -81,10 +97,12 @@ if (!%this.Active){return;}
 %player=$players.getObject(1);
 %customfieldobj=M4Carbine.customplayerfields.getObject(1);//we know it's user 0 cus they use mouse
 
+if (%player.ammo>0){%player.ammo--;}else{return;}
+
 setskillanimation(%player,2);//animtype: 0:selfcast 1:targetcast 2:melee 3:emote
 
 cancel(%player.schedule_keycleanup);
-%player.schedule_keycleanup=schedule(1000,0,"keycleanup",0);
+%player.schedule_keycleanup=schedule(1000,0,"keycleanup",1);
 
 Audiere_Stop(%customfieldobj.sound_m4_fire);
 Audiere_Reset(%customfieldobj.sound_m4_fire);
@@ -97,6 +115,14 @@ bit(0)|bit(25)|bit(26)|bit(30),"");//26=world objects, 25=npc's, 30=walls
 }
 else
 {
+if (!$splitplane)
+{
+%cursorpos.X-=$resolution.X/2;
+}
+else
+{
+%cursorpos.Y-=$resolution.Y/2;
+}echo(%cursorpos);
 %objlist=DotsandCritsscene.pickRayCollision(%player.sprite.Position,scenewindow_player2.getWorldPoint(%cursorpos),
 bit(0)|bit(25)|bit(26)|bit(30),"");//26=world objects, 25=npc's, 30=walls
 }
@@ -129,14 +155,28 @@ Vector2Distance(%player.sprite.Position,%closestpos))
 if (%closestid.class$="class_player")
 {
 %playerhit=$players.getObject(%closestid.playerindex);
+if (getRandom(0,9)==2)
+{
 %playerhit.health-=100;
+}
+else
+{
+%playerhit.health-=34;
+}
 $levelmoduleid.ScopeSet.healthdisplay(%closestid.playerindex,%playerhit.health);
 }
 else
 {
 if (%closestid.health>0)
 {
+if (getRandom(0,9)==2)
+{
 %closestid.health-=100;
+}
+else
+{
+%closestid.health-=34;
+}
 %closestid.updatehealth();
 }
 }

@@ -14,7 +14,7 @@ setskillanimation(%player,%player.skillanimtype);//animtype: 0:selfcast 1:target
 //the sprite doesn't have to attach to the character, it can be a regular sprite that stays at the casting spot
 %spriteid=%player.sprite.addSprite();
 
-%idobj=new SimObject()
+%idobj=new ScriptObject()
 {
 spriteid=%spriteid;
 rotates=true;
@@ -168,7 +168,7 @@ else if (%player.curdir==3)//right
 ///////////////////////////////
 
 %dest=ScaleVectorToCam(%dest);
-%vector=new SimObject()
+%vector=new ScriptObject()
 {
 x=%dest.X;
 y=%dest.Y;
@@ -177,7 +177,7 @@ y=%dest.Y;
 
 /////////////////////////////////////////////////////////////////////////////
 //create Wave object that holds all the info and add it to the Wave list
-%Wave=new SimObject()
+%Wave=new ScriptObject()
 {
 //sprite (holds animation, position, collision shape, class)
 sprite=%Wavesprite;

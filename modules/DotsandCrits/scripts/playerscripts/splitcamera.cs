@@ -66,7 +66,7 @@ cancel($schedule_checkforsplit.schedulehandle);
 $schedule_checkforsplit.delete();
 }
 
-$schedule_checkforsplit=new SimObject()
+$schedule_checkforsplit=new ScriptObject()
 {
 schedulehandle="0";
 };
@@ -77,7 +77,7 @@ cancel($schedule_centralizecamera.schedulehandle);
 $schedule_centralizecamera.delete();
 }
 
-$schedule_centralizecamera=new SimObject()
+$schedule_centralizecamera=new ScriptObject()
 {
 schedulehandle="0";
 };

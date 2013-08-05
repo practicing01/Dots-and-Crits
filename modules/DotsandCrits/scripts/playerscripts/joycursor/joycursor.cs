@@ -30,14 +30,14 @@ xmoveschedule=0;
 ymoveschedule=0;
 };
 
-%scheduleobj=new SimObject()
+%scheduleobj=new ScriptObject()
 {
 schedulehandle="0";
 };
 $joyobject.xmoveschedule=%scheduleobj;
 $cancellableschedules.add($joyobject.xmoveschedule);
 
-%scheduleobj=new SimObject()
+%scheduleobj=new ScriptObject()
 {
 schedulehandle="0";
 };

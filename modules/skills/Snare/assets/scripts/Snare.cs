@@ -15,9 +15,9 @@ echo("Snare loaded");
 
 Snare.customplayerfields=new SimSet();
 
-for (%x=0;%x<$numofplayers;%x++)//one simobject per player, containing all custom fields for this skill
+for (%x=0;%x<$numofplayers;%x++)//one ScriptObject per player, containing all custom fields for this skill
 {
-%fields=new SimObject()
+%fields=new ScriptObject()
 {
 targethandle=-1;
 };

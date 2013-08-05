@@ -3,7 +3,7 @@ if (isObject($schedule_wincondition))
 $schedule_wincondition.delete();
 }
 
-$schedule_wincondition=new SimObject()
+$schedule_wincondition=new ScriptObject()
 {
 player1score="0";
 player2score="0";
