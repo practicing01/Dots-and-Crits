@@ -122,7 +122,7 @@ if (!$splitplane)
 else
 {
 %cursorpos.Y-=$resolution.Y/2;
-}echo(%cursorpos);
+}
 %objlist=DotsandCritsscene.pickRayCollision(%player.sprite.Position,scenewindow_player2.getWorldPoint(%cursorpos),
 bit(0)|bit(25)|bit(26)|bit(30),"");//26=world objects, 25=npc's, 30=walls
 }
