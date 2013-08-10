@@ -15,7 +15,7 @@ exec("./reattachgui.cs");
 
 function SummonTonberry::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("SummonTonberry ahead in the direction you're facing.");
+%skilllist.setText("Tonberry can be instructed to shank, move, follow and snare.");
 SummonTonberry.setskillbaricon(%slot);
 }
 

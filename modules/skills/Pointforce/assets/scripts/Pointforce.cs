@@ -5,7 +5,7 @@ exec("./ai.cs");
 
 function Pointforce::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Pointforce ahead in the direction you're facing.");
+%skilllist.setText("Objects are attracted to the force's center");
 Pointforce.setskillbaricon(%slot);
 }
 

@@ -6,7 +6,7 @@ exec("./ontouchdown.cs");
 
 function M4Carbine::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("M4Carbine to surprise or defend.");
+%skilllist.setText("Shoot with a chance to crit.");
 M4Carbine.setskillbaricon(%slot);
 }
 

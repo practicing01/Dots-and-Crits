@@ -5,7 +5,7 @@ exec("./ai.cs");
 
 function Speedboof::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Speedboof ahead in the direction you're facing.");
+%skilllist.setText("Increase your velocity.");
 Speedboof.setskillbaricon(%slot);
 }
 

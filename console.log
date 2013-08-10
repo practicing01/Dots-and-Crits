@@ -1,4 +1,4 @@
-//-------------------------- 8/5/2013 -- 11:14:01 -----
+//-------------------------- 8/10/2013 -- 12:16:15 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -90,47 +90,8 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-M4Carbine loaded
-player 1 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 won!
-unloaded M4Carbine
-DirectInput deactivated.
-Activating DirectInput...
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-M4Carbine loaded
-player 1 scored!
-player 1 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 scored!
-player 2 won!
-unloaded M4Carbine
+Flashlight loaded
+Deathball loaded
 DirectInput deactivated.
 goodbye world
 freed catragdoll

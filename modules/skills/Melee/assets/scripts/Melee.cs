@@ -5,7 +5,7 @@ exec("./ai.cs");
 
 function Melee::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Melee ahead in the direction you're facing.");
+%skilllist.setText("Damage enemies nearby.");
 Melee.setskillbaricon(%slot);
 }
 

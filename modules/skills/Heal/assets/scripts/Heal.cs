@@ -5,7 +5,7 @@ exec("./ai.cs");
 
 function Heal::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Heal ahead in the direction you're facing.");
+%skilllist.setText("Heal over time.");
 Heal.setskillbaricon(%slot);
 }
 

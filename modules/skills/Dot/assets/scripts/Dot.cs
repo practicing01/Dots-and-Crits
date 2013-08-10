@@ -5,7 +5,7 @@ exec("./ai.cs");
 
 function Dot::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Dot ahead in the direction you're facing.");
+%skilllist.setText("Deal damage over time to a target.");
 Dot.setskillbaricon(%slot);
 }
 

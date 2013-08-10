@@ -9,7 +9,7 @@ exec("./ai.cs");
 
 function Wave::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Shell the target with a Wave of radiation.");
+%skilllist.setText("Send forth a wave that pushes and damages objects.");
 Wave.setskillbaricon(%slot);
 }
 

@@ -6,7 +6,7 @@ exec("./oncollision.cs");
 
 function Shield::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Shield ahead in the direction you're facing.");
+%skilllist.setText("Temporary protection.");
 Shield.setskillbaricon(%slot);
 }
 

@@ -5,7 +5,7 @@ exec("./ai.cs");
 
 function Snare::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Snare ahead in the direction you're facing.");
+%skilllist.setText("Impair targets velocity.");
 Snare.setskillbaricon(%slot);
 }
 

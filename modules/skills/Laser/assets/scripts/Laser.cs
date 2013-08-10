@@ -6,7 +6,7 @@ exec("./ai.cs");
 
 function Laser::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Shell the target with a Laser of radiation.");
+%skilllist.setText("Laser beam that damages.");
 Laser.setskillbaricon(%slot);
 }
 

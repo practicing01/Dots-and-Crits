@@ -6,7 +6,7 @@ exec("./ontouchdown.cs");
 
 function Grab::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Grab ahead in the direction you're facing.");
+%skilllist.setText("Grab and place or throw objects.");
 Grab.setskillbaricon(%slot);
 }
 

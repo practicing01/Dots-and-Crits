@@ -5,7 +5,7 @@ exec("./ai.cs");
 
 function Flashlight::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Flashlight to surprise or defend.");
+%skilllist.setText("Illuminate darkened areas.");
 Flashlight.setskillbaricon(%slot);
 }
 

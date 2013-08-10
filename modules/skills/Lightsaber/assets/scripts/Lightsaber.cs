@@ -8,7 +8,7 @@ exec("./joymovement.cs");
 
 function Lightsaber::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Lightsaber ahead in the direction you're facing.");
+%skilllist.setText("A weapon for a more civilized time.");
 Lightsaber.setskillbaricon(%slot);
 }
 

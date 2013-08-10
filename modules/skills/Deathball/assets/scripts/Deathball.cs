@@ -6,7 +6,7 @@ exec("./ai.cs");
 
 function Deathball::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Deathball ahead in the direction you're facing.");
+%skilllist.setText("Summon a ball of death.");
 Deathball.setskillbaricon(%slot);
 }
 

@@ -8,7 +8,7 @@ exec("./ai.cs");
 
 function ThrowKnife::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Shell the target with a ThrowKnife of radiation.");
+%skilllist.setText("Throw a knife that deals damage.");
 ThrowKnife.setskillbaricon(%slot);
 }
 

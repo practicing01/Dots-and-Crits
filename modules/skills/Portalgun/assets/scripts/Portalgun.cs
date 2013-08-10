@@ -10,7 +10,7 @@ exec("./portaloncollision.cs");
 
 function Portalgun::displayskilldescription(%this,%skilllist,%slot)
 {
-%skilllist.setText("Portalgun to surprise or defend.");
+%skilllist.setText("Set portals.");
 Portalgun.setskillbaricon(%slot);
 }
 
