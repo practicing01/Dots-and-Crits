@@ -5,5 +5,7 @@
 <LastConfig>Release</LastConfig>
 <Breakpoints/>
 <Bookmarks/>
-<OpenFiles/>
+<OpenFiles>
+<File ScrollX="0" ScrollY="31" Active="true">modules\skills\Scale\assets\scripts\skill_Scale.cs</File>
+</OpenFiles>
 </TorsionProjectOptions>
