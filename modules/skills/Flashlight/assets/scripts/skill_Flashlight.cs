@@ -41,6 +41,11 @@ return;
 %localpos.Y-=%spritesize.Y/2;
 %player.sprite.setSpriteLocalPosition(%localpos);
 %player.sprite.SetSpriteDepth(0);
+
+%player.sprite.setSpriteSrcBlendFactor("SRC_ALPHA");
+%player.sprite.setSpriteDstBlendFactor("DST_ALPHA");
+%player.sprite.setSpriteBlendMode(true);
+
 %player.sprite.selectSpriteId(%player.spriteid);//important so anim-setting functions can work
 
 %idobj=new ScriptObject()
