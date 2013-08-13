@@ -1,4 +1,4 @@
-//-------------------------- 8/12/2013 -- 12:04:06 -----
+//-------------------------- 8/13/2013 -- 11:26:11 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -77,6 +77,7 @@ created Wave
 created Grab
 created Deathball
 created catragdoll
+created booghost
 Activating DirectInput...
 DirectInput joystick enabled.
 mapped button0 to skill 0 & 4
@@ -89,37 +90,52 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-Flashlight loaded
-unloaded Flashlight
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-M4Carbine loaded
-Flashlight loaded
-Lightsaber loaded
-DInputDevice::processAsync -- joystick0 input device's event buffer overflowed!
-unloaded M4Carbine
-unloaded Flashlight
-unloaded Lightsaber
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-M4Carbine loaded
-Flashlight loaded
-Lightsaber loaded
-unloaded M4Carbine
-unloaded Flashlight
+DirectInput deactivated.
+goodbye world
+freed booghost
+freed catragdoll
+deleted Deathball
+deleted Grab
+deleted Wave
+deleted Dot
+deleted Speedboof
+deleted Flashlight
+deleted Melee
+deleted Snare
+deleted SummonTonberry
+deleted Shield
+deleted M4Carbine
+deleted Volley
+deleted ScatterVolley
+deleted SineVolley
+deleted Bombermine
+deleted Projectile
+deleted ThrowKnife
+deleted Heal
+deleted Lightsaber
+deleted Cloak
+deleted Teleport
+deleted Laser
+deleted Pointforce
+deleted Portalgun
+deleted Scale
+freed intrepid
+freed shura
+freed GillBalentine
+freed Lelur
+freed lidia
+freed FtA_P1
+space destroy() called
+DotsandCrits: Created scene but no window available.
+ZombieBox destroy() called
+DotsandCrits: Created scene but no window available.
+catacombs destroy() called
+DotsandCrits: Created scene but no window available.
+bitweb destroy() called
+DotsandCrits: Created scene but no window available.
+deathballvalley destroy() called
+DotsandCrits: Created scene but no window available.
+Shutting down the OpenGL display device...
+Making the GL rendering context not current...
+Deleting the GL rendering context...
+Releasing the device context...
