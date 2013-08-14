@@ -106,6 +106,10 @@ DotsandCritswindow.setCameraPosition(0,0);
 
 ///////////////////////////////////////////////////////////////////////////
 
+Canvas.popDialog(gui_skillbar);
+
+///////////////////////////////////////////////////////////////////////////
+
 if (isObject(gui_bitwebscore))
 {
 gui_bitwebscore.delete();
@@ -130,9 +134,14 @@ $cancellableschedules.add(%this.schedule_shuffle);
 
 %this.loadaudioass();
 
+/*
 Audiere_Stop(%this.sound_levelmusic);
 Audiere_Reset(%this.sound_levelmusic);
 Audiere_Play(%this.sound_levelmusic,1,1.0);
+*/
+
+alxStop(%this.sound_levelmusic);
+%this.sound_levelmusic=alxPlay("bitweb:audio_levelmusic");
 
 ///////////////////////////////////////////////////////////////////////////
 

@@ -57,11 +57,15 @@ else
 $joycallbackobjlist.add(%fields.mousecaptureobj);
 }
 
-%fields.sound_m4_fire=new audiere_soundhandle();
+/*%fields.sound_m4_fire=new audiere_soundhandle();
 Audiere_OpenSound(%fields.sound_m4_fire,expandPath("./../audio/m4_fire.ogg"));
 
 %fields.sound_m4_reload=new audiere_soundhandle();
 Audiere_OpenSound(%fields.sound_m4_reload,expandPath("./../audio/m4_reload.ogg"));
+*/
+
+fields.sound_m4_fire=0;
+fields.sound_m4_reload=0;
 
 }
 
@@ -87,8 +91,12 @@ for (%x=0;%x<$numofplayers;%x++)
 {
 %customfieldobj=M4Carbine.customplayerfields.getObject(%x);
 
-Audiere_Stop(%customfieldobj.sound_m4_fire);
+/*Audiere_Stop(%customfieldobj.sound_m4_fire);
 Audiere_Stop(%customfieldobj.sound_m4_reload);
+*/
+
+alxStop(%customfieldobj.sound_m4_fire);
+alxStop(%customfieldobj.sound_m4_reload);
 
 %customfieldobj.mousecaptureobj.safeDelete();
 

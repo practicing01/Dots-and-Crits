@@ -2,6 +2,9 @@
 
 function ZombieBox::sudodestroy(%this)
 {
+
+alxStopAll();
+
 if (isObject(gui_ZombieBoxscore))
 {
 gui_ZombieBoxscore.delete();

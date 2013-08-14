@@ -18,6 +18,7 @@ schedule_moveto=0;
 FixedAngle=true;
 ismoving=false;
 CollisionCallback=true;
+health=100;
 };
 
 %spider.playAnimation("bitweb:anim_spider_stand_down");

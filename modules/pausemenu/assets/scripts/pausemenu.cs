@@ -6,17 +6,17 @@ quit();
 function gui_pausemenu::returntomainmenu(%this)
 {
 if (ConsoleDialog.isAwake()){Canvas.popDialog(ConsoleDialog);}
+alxStopAll();
 //%buttonsound=alxPlay(audio_guibuttonpress);
 cancelallschedules();
 //alxStop($levelmusic);
-alxStopAll();
 Canvas.popDialog(gui_pausemenu);
 Canvas.popDialog(gui_skillbar);
 unloadskills();
 $levelmoduleid.ScopeSet.sudodestroy();
 DotsandCritsscene.clear();
 
-AssetDatabase.purgeAssets();
+//AssetDatabase.purgeAssets();//crash bug?
 
 //set camera position to 0 0
 if (isObject(scenewindow_player1))

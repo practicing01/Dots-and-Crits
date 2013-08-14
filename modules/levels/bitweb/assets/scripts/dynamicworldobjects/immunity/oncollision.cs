@@ -13,8 +13,13 @@ cancel(%object.immunityfadeschedule);
 
 %object.immunityfadeschedule=schedule(20000,0,"class_immunity::fadeimmunity",%this,%object);
 
+/*
 Audiere_Reset(%this.parentbitweb.sound_acquireimmunity);
 Audiere_Play(%this.parentbitweb.sound_acquireimmunity,0,1.0);
+*/
+
+alxStop(%this.parentbitweb.sound_acquireimmunity);
+%this.parentbitweb.sound_acquireimmunity=alxPlay("bitweb:audio_acquireimmunity");
 
 //schedule(0,0,"class_immunity::clearcolshapes",%this);
 }

@@ -2,6 +2,9 @@
 
 function catacombs::sudodestroy(%this)
 {
+
+alxStopAll();
+
 if (isObject(gui_catacombsscore))
 {
 gui_catacombsscore.delete();

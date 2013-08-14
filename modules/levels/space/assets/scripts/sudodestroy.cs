@@ -1,5 +1,8 @@
 function space::sudodestroy(%this)
 {
+
+alxStopAll();
+
 if (isObject(gui_spacescore))
 {
 gui_spacescore.delete();

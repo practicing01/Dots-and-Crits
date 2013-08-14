@@ -282,8 +282,12 @@ else
 
 //////////////////////////////
 
-Audiere_Stop(%this.sound_gatemovement);
+/*Audiere_Stop(%this.sound_gatemovement);
 Audiere_Reset(%this.sound_gatemovement);
 Audiere_Play(%this.sound_gatemovement,0,1.0);
+*/
+
+alxStop(%this.sound_gatemovement);
+%this.sound_gatemovement=alxPlay("bitweb:audio_gatemovement");
 
 }

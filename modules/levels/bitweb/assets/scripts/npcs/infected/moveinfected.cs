@@ -323,8 +323,12 @@ break;
 
 }
 
-Audiere_Reset(%this.sound_infectedfootsteps);
+/*Audiere_Reset(%this.sound_infectedfootsteps);
 Audiere_Play(%this.sound_infectedfootsteps,0,1.0);
+*/
+
+alxStop(%this.sound_infectedfootsteps);
+%this.sound_infectedfootsteps=alxPlay("bitweb:audio_infectedfootsteps");
 
 %this.schedule_moveinfected.schedulehandle=schedule(5000,0,"bitweb::moveinfected",%this);
 }

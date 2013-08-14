@@ -1,5 +1,8 @@
 function deathballvalley::sudodestroy(%this)
 {
+
+alxStopAll();
+
 if (isObject(gui_deathballvalleyscore))
 {
 gui_deathballvalleyscore.delete();

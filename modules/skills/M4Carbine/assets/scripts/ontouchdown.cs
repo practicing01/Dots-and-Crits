@@ -12,9 +12,13 @@ setskillanimation(%player,2);//animtype: 0:selfcast 1:targetcast 2:melee 3:emote
 cancel(%player.schedule_keycleanup);
 %player.schedule_keycleanup=schedule(1000,0,"keycleanup",0);
 
-Audiere_Stop(%customfieldobj.sound_m4_fire);
+/*Audiere_Stop(%customfieldobj.sound_m4_fire);
 Audiere_Reset(%customfieldobj.sound_m4_fire);
 Audiere_Play(%customfieldobj.sound_m4_fire,0,1.0);
+*/
+
+alxStop(%customfieldobj.sound_m4_fire);
+%customfieldobj.sound_m4_fire=alxPlay("M4Carbine:audio_m4_fire");
 
 %objlist=DotsandCritsscene.pickRayCollision(%player.sprite.Position,%worldPosition,
 bit(1)|bit(25)|bit(26)|bit(30),"");//26=world objects, 25=npc's, 30=walls
@@ -104,9 +108,13 @@ setskillanimation(%player,2);//animtype: 0:selfcast 1:targetcast 2:melee 3:emote
 cancel(%player.schedule_keycleanup);
 %player.schedule_keycleanup=schedule(1000,0,"keycleanup",1);
 
-Audiere_Stop(%customfieldobj.sound_m4_fire);
+/*Audiere_Stop(%customfieldobj.sound_m4_fire);
 Audiere_Reset(%customfieldobj.sound_m4_fire);
 Audiere_Play(%customfieldobj.sound_m4_fire,0,1.0);
+*/
+
+alxStop(%customfieldobj.sound_m4_fire);
+%customfieldobj.sound_m4_fire=alxPlay("M4Carbine:audio_m4_fire");
 
 if (DotsandCritswindow.Visible)
 {

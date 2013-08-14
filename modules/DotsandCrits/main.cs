@@ -26,7 +26,7 @@ Canvas.UseBackgroundColor=true;
 exec("./gui/guiProfiles.cs");
 
 initializeOpenAL();
-InitAudiere();
+//InitAudiere();
 
 exec("./scripts/variables.cs");
 exec("./scripts/initfunctions.cs");

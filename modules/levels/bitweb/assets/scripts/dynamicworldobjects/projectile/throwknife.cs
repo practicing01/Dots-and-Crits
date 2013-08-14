@@ -6,8 +6,12 @@ function bitweb::throwknife(%this,%user)
 if (isObject(%player.sprite)&&%player.sprite.ammo>0)
 {
 
-Audiere_Reset(%this.sound_gunshot);
+/*Audiere_Reset(%this.sound_gunshot);
 Audiere_Play(%this.sound_gunshot,0,1.0);
+*/
+
+alxStop(%this.sound_gunshot);
+%this.sound_gunshot=alxPlay("bitweb:audio_gunshot");
 
 %player.sprite.ammo--;
 

@@ -18,6 +18,7 @@ schedule_moveto=0;
 FixedAngle=true;
 ismoving=false;
 CollisionCallback=true;
+health=100;
 };
 
 %infected.playAnimation("bitweb:anim_infected_stand_down");

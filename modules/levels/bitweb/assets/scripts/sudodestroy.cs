@@ -1,6 +1,8 @@
 function bitweb::sudodestroy(%this)
 {
 
+alxStopAll();
+
 %this.unloadgates();
 
 %this.unloadaudioass();
@@ -28,5 +30,7 @@ gui_bitwebscore.delete();
 
 %this.p1moduleid.ScopeSet.unloadass();
 %this.p2moduleid.ScopeSet.unloadass();
+
+Canvas.pushDialog(gui_skillbar);
 
 }
