@@ -9,6 +9,7 @@ if (ConsoleDialog.isAwake()){Canvas.popDialog(ConsoleDialog);}
 //%buttonsound=alxPlay(audio_guibuttonpress);
 cancelallschedules();
 //alxStop($levelmusic);
+alxStopAll();
 Canvas.popDialog(gui_pausemenu);
 Canvas.popDialog(gui_skillbar);
 unloadskills();

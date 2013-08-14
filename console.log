@@ -1,4 +1,4 @@
-//-------------------------- 8/13/2013 -- 11:26:11 -----
+//-------------------------- 8/14/2013 -- 01:34:44 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -72,6 +72,7 @@ created Snare
 created Melee
 created Flashlight
 created Speedboof
+created Lightsaber2
 created Dot
 created Wave
 created Grab
@@ -90,6 +91,7 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
+M4Carbine loaded
 DirectInput deactivated.
 goodbye world
 freed booghost
@@ -98,6 +100,7 @@ deleted Deathball
 deleted Grab
 deleted Wave
 deleted Dot
+deleted Lightsaber2
 deleted Speedboof
 deleted Flashlight
 deleted Melee

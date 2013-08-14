@@ -64,5 +64,6 @@ ModuleDatabase.LoadExplicit("splashes");
 
 function DotsandCrits::destroy(%this)
 {
+alxStopAll();
 destroyDotsandCritswindow();
 }
