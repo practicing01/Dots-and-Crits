@@ -10,7 +10,7 @@
 <Configs>
 <Config>
 <Name>Release</Name>
-<Executable>Torque2D.exe</Executable>
+<Executable>DotsandCrits.exe</Executable>
 <Arguments/>
 <HasExports>true</HasExports>
 <Precompile>false</Precompile>
