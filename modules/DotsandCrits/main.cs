@@ -61,7 +61,6 @@ $camsize=DotsandCritswindow.getCameraSize();
 %localtime=getLocalTime();
 %localtime=stripChars(%localtime,":/");
 %localtime=getWord(%localtime,0)+getWord(%localtime,1);
-echo(%localtime);
 setRandomSeed(%localtime);
 
 ModuleDatabase.LoadExplicit("splashes");

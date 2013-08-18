@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_topdownstanddown"
+    Image="@asset=Kosmos:image_topdown"
+    AnimationFrames="1"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

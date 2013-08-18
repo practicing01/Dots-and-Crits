@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="image_topdown"
+    ImageFile="topdown.png"
+	CellCountX="4"
+    CellCountY="5"
+    CellWidth="24"
+    CellHeight="42"
+	OptimalResolution="1280 800"/>

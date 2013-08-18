@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_sideviewrundown"
+    Image="@asset=Kosmos:image_sideview"
+    AnimationFrames="8 9 10 11"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="Kosmos"
+	VersionId="1"
+	Description="Kosmos"
+	Type="playersprite"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+	DestroyFunction="destroy">
+		<DeclaredAssets
+			Path="assets"
+			Extension="asset.taml"
+			Recurse="true"/>
+</ModuleDefinition>
