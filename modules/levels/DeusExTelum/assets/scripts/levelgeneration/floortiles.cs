@@ -1,4 +1,4 @@
-function ZombieBox::generatefloortiles(%this)
+function DeusExTelum::generatefloortiles(%this)
 {
 
 if (!$view)//need to seperate tiles into topdown & side
@@ -85,22 +85,6 @@ if (%randomtileass.Animation!$="")
 {
 %floorcomposite.setSpriteAnimation(%randomtileass.Animation);
 }
-
-/*%floortile=new Sprite()
-{
-Position=%x SPC %y;
-Size=%tilesize;
-Image=%this.getName()@":"@%randomtileass.AssetName;
-SceneLayer=%randomtileass.SceneLayer;
-SceneGroup=%randomtileass.SceneGroup;
-BodyType="static";
-};
-DotsandCritsscene.add(%floortile);
-
-if (%randomtileass.Animation!$="")
-{
-%floortile.Animation=%randomtileass.Animation;
-}*/
 
 }
 

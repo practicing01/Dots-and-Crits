@@ -1,9 +1,9 @@
-function ZombieBox::loadlevel(%this)//change ZombieBox to your module name
+function DeusExTelum::loadlevel(%this)//change DeusExTelum to your module name
 {
 cancelallschedules();
 DotsandCritsscene.clear();
 
-%this.livezombiecount=1;
+%this.livemechcount=1;
 
 if ($view==0)
 {
@@ -22,12 +22,12 @@ echo("couldn't read taml");
 %this.loadedscene.setName("");
 setCustomScene(%this.loadedscene);
 
-if (isObject(gui_ZombieBoxscore))
+if (isObject(gui_DeusExTelumscore))
 {
-gui_ZombieBoxscore.delete();
+gui_DeusExTelumscore.delete();
 }
 DotsandCrits.add(TamlRead("./../gui/score.gui.taml"));
-Canvas.pushDialog(gui_ZombieBoxscore);
+Canvas.pushDialog(gui_DeusExTelumscore);
 
 if ($view==0)
 {
@@ -80,7 +80,7 @@ DotsandCritsscene.setGravity(0,$levelgravity);
 %this.generatenpcs();
 
 //
-
+echo($totalobjects);
 $player_to_load=0;
 if (gui_list_player1.getSelectedItem()!=-1)
 {

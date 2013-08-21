@@ -1,4 +1,4 @@
-//-------------------------- 8/18/2013 -- 02:50:55 -----
+//-------------------------- 8/21/2013 -- 08:32:56 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -42,6 +42,7 @@ OpenAL Driver Init
 OpenAL Driver Init Success
 created deathballvalley
 created bitweb
+created DeusExTelum
 created catacombs
 created ZombieBox
 created space
@@ -82,6 +83,7 @@ created catragdoll
 created booghost
 Activating DirectInput...
 DirectInput joystick enabled.
+
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
@@ -92,30 +94,7 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-Portalgun loaded
-unloaded Portalgun
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-Scale loaded
-Melee loaded
+DirectInput deactivated.
 goodbye world
 freed booghost
 freed catragdoll
@@ -157,6 +136,8 @@ DotsandCrits: Created scene but no window available.
 ZombieBox destroy() called
 DotsandCrits: Created scene but no window available.
 catacombs destroy() called
+DotsandCrits: Created scene but no window available.
+DeusExTelum destroy() called
 DotsandCrits: Created scene but no window available.
 bitweb destroy() called
 DotsandCrits: Created scene but no window available.

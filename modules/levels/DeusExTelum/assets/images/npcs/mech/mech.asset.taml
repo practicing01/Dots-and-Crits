@@ -1,0 +1,18 @@
+<ImageAsset
+    AssetName="image_mech"
+    ImageFile="mech.png"
+	CellCountX="11"
+    CellCountY="5"
+    CellWidth="76"
+    CellHeight="70"
+	OptimalResolution="1280 800"
+	SceneLayer="16"
+	SceneGroup="25"
+	CollisionGroups="4294967295"
+	ObjectClass="class_mech"
+	CollisionCallback="true"
+	CreateCollisionShape="true"
+	Animation="DeusExTelum:anim_mech_rundown"
+	IsSensor="false"
+	BlendColor="1 1 1 1"
+	AssetCategory="npc"/>

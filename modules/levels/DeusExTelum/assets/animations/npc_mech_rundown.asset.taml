@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_mech_rundown"
+    Image="@asset=DeusExTelum:image_mech"
+    AnimationFrames="11 12 13 14 15 16 17 18 19 20 21"
+    AnimationCycle="true"
+	AnimationTime="1.0" />

@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="DeusExTelum"
+	VersionId="1"
+	Description="DeusExTelum"
+	Type="level"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+	DestroyFunction="destroy">
+		<DeclaredAssets
+			Path="assets"
+			Extension="asset.taml"
+			Recurse="true"/>
+</ModuleDefinition>

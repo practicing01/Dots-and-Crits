@@ -1,0 +1,12 @@
+<ImageAsset
+    AssetName="image_floortile"
+    ImageFile="floor.png"
+	OptimalResolution="1280 800"
+	SceneLayer="30"
+	SceneGroup="2"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="48"
+    CellHeight="48"
+	Animation="DeusExTelum:anim_floortile"
+	AssetCategory="ground"/>
