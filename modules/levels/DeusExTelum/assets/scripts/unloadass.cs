@@ -42,5 +42,8 @@ AssetDatabase.releaseAsset(%ass.getAssetId());
 }
 
 AssetDatabase.releaseAsset(%this.ass_mech.getAssetId());
+AssetDatabase.releaseAsset(%this.ass_microwaveparticle.getAssetId());
+AssetDatabase.releaseAsset(%this.ass_gammaparticle.getAssetId());
+AssetDatabase.releaseAsset(%this.ass_visibleparticle.getAssetId());
 
 }

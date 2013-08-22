@@ -6,8 +6,11 @@
 <Breakpoints/>
 <Bookmarks/>
 <OpenFiles>
-<File ScrollX="0" ScrollY="78">modules\levels\DeusExTelum\assets\scripts\loadlevel.cs</File>
+<File ScrollX="0" ScrollY="28">modules\levels\DeusExTelum\assets\scripts\loadlevel.cs</File>
 <File ScrollX="0" ScrollY="87">modules\levels\DeusExTelum\assets\scripts\npcs\npc_mech.cs</File>
-<File ScrollX="0" ScrollY="0" Active="true">modules\levels\DeusExTelum\assets\scripts\radiation\microwave\radiate.cs</File>
+<File ScrollX="0" ScrollY="309" Active="true">modules\levels\DeusExTelum\assets\scripts\radiation\microwave\radiate.cs</File>
+<File ScrollX="0" ScrollY="0">modules\levels\DeusExTelum\assets\scripts\radiation\microwave\decay.cs</File>
+<File ScrollX="0" ScrollY="9">modules\levels\DeusExTelum\assets\scripts\radiation\microwave\oncollision.cs</File>
+<File ScrollX="0" ScrollY="22">modules\levels\DeusExTelum\assets\scripts\levelgeneration\npcs.cs</File>
 </OpenFiles>
 </TorsionProjectOptions>

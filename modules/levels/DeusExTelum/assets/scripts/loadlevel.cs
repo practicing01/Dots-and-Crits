@@ -43,7 +43,17 @@ DotsandCritsscene.setGravity(0,$levelgravity);
 
 //procedural generation
 
-%this.mapsizescale=10;
+%this.mapsizescale=4;
+
+%this.worldlimits=($camsize.X*%this.mapsizescale)/2 SPC ($camsize.Y*%this.mapsizescale)/2;
+
+%this.worldlimitsreduced=%this.worldlimits;
+
+%this.worldlimitsreduced.X*=15;
+%this.worldlimitsreduced.X/=100;
+
+%this.worldlimitsreduced.Y*=15;
+%this.worldlimitsreduced.Y/=100;
 
 //
 
@@ -73,14 +83,14 @@ DotsandCritsscene.setGravity(0,$levelgravity);
 
 //
 
-%this.generatedwotiles();
+//%this.generatedwotiles();
 
 //
 
 %this.generatenpcs();
 
 //
-echo($totalobjects);
+
 $player_to_load=0;
 if (gui_list_player1.getSelectedItem()!=-1)
 {

@@ -65,7 +65,7 @@ function class_mech::mechai(%this)
 {
 if (!isObject(%this)){return;}
 
-
+%this.parentDeusExTelum.radiatemicrowaves(%this);
 
 %this.aischedule=schedule(1000,0,"class_mech::mechai",%this);
 }

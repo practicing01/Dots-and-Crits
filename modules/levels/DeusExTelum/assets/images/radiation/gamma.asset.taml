@@ -3,6 +3,6 @@
     ImageFile="gamma.png"
 	CellCountX="1"
     CellCountY="1"
-    CellWidth="64"
-    CellHeight="64"
+    CellWidth="18"
+    CellHeight="18"
 	OptimalResolution="1280 800"/>

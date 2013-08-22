@@ -35,7 +35,7 @@ gui_text_player2score.setText($schedule_wincondition.player2score);
 if ($schedule_wincondition.player1score>=10)
 {
 echo("player 1 won!");
-gui_pausemenu.returntomainmenu();
+schedule(0,0,"gui_pausemenu::returntomainmenu");
 return;
 }
 
@@ -54,7 +54,7 @@ gui_text_player1score.setText($schedule_wincondition.player1score);
 if ($schedule_wincondition.player2score>=10)
 {
 echo("player 2 won!");
-gui_pausemenu.returntomainmenu();
+schedule(0,0,"gui_pausemenu::returntomainmenu");
 return;
 }
 
@@ -63,7 +63,7 @@ return;
 if (%this.livezombiecount<=0)
 {
 
-gui_pausemenu.returntomainmenu();
+schedule(0,0,"gui_pausemenu::returntomainmenu");
 return;
 
 }
