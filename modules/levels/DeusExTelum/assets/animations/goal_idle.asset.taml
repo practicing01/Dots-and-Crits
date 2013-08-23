@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_goal_idle"
+    Image="@asset=DeusExTelum:image_goal"
+    AnimationFrames="0 1 2 3 4"
+    AnimationCycle="true"
+	AnimationTime="1.0" />

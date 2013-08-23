@@ -34,6 +34,7 @@ if (%object.health>0&&%object.class$="class_mech")
 {
 if (/*%this.handle_emitter==%object&&*/%this.hitplayer==true)
 {
+echo("spotted by radar");
 schedule(0,0,"gui_pausemenu::returntomainmenu");
 }
 }

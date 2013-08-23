@@ -19,7 +19,7 @@ curdir="0 1";
 hitplayer=false;
 };
 
-%sprite_particle.Position.Y+=(%emitter.Size.Y/2)+(%sprite_particle.Size.Y/2);//up
+%sprite_particle.Position.Y+=(%this.halfmicrowaveemittersize.Y)+(%this.halfmicrowaveparticlesize.Y);//up
 
 %sprite_particle.setCollisionGroups(0,1,25,26);//0=player 1, 1=player 2, 25=npcs, 26=world objects
 
@@ -37,11 +37,11 @@ DotsandCritsscene.add(%sprite_particle);
 
 //%dest.Y-=mAbs(%this.worldlimitsreduced.Y-%dest.Y);
 
-%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000)+1000;
+%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000);
 schedule(%time,0,"class_microwaveparticle::decay",%sprite_particle);
 
 ////////////////////////////////////////////////////////////
-/*
+
 %sprite_particle=new Sprite()
 {
 Position=%emitter.Position;
@@ -58,9 +58,9 @@ curdir="1 1";
 hitplayer=false;
 };
 
-%sprite_particle.Position.X+=(%emitter.Size.X/2)+(%sprite_particle.Size.X/2);//right
+%sprite_particle.Position.X+=(%this.halfmicrowaveemittersize.X)+(%this.halfmicrowaveparticlesize.X);//right
 
-%sprite_particle.Position.Y+=(%emitter.Size.Y/2)+(%sprite_particle.Size.Y/2);//up
+%sprite_particle.Position.Y+=(%this.halfmicrowaveemittersize.Y)+(%this.halfmicrowaveparticlesize.Y);//up
 
 %sprite_particle.setCollisionGroups(0,1,25,26);//0=player 1, 1=player 2, 25=npcs, 26=world objects
 
@@ -82,9 +82,9 @@ DotsandCritsscene.add(%sprite_particle);
 
 //%dest.Y-=mAbs(%this.worldlimitsreduced.Y-%dest.Y);
 
-%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000)+1000;
+%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000);
 schedule(%time,0,"class_microwaveparticle::decay",%sprite_particle);
-*/
+
 ////////////////////////////////////////////////////////////
 
 %sprite_particle=new Sprite()
@@ -103,7 +103,7 @@ curdir="1 0";
 hitplayer=false;
 };
 
-%sprite_particle.Position.X+=(%emitter.Size.X/2)+(%sprite_particle.Size.X/2);//right
+%sprite_particle.Position.X+=(%this.halfmicrowaveemittersize.X)+(%this.halfmicrowaveparticlesize.X);//right
 
 %sprite_particle.setCollisionGroups(0,1,25,26);//0=player 1, 1=player 2, 25=npcs, 26=world objects
 
@@ -121,11 +121,11 @@ DotsandCritsscene.add(%sprite_particle);
 
 //%dest.X-=mAbs(%this.worldlimitsreduced.X-%dest.X);
 
-%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000)+1000;
+%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000);
 schedule(%time,0,"class_microwaveparticle::decay",%sprite_particle);
 
 ////////////////////////////////////////////////////////////
-/*
+
 %sprite_particle=new Sprite()
 {
 Position=%emitter.Position;
@@ -142,9 +142,9 @@ curdir="1 -1";
 hitplayer=false;
 };
 
-%sprite_particle.Position.X+=(%emitter.Size.X/2)+(%sprite_particle.Size.X/2);//right
+%sprite_particle.Position.X+=(%this.halfmicrowaveemittersize.X)+(%this.halfmicrowaveparticlesize.X);//right
 
-%sprite_particle.Position.Y-=(%emitter.Size.Y/2)+(%sprite_particle.Size.Y/2);//down
+%sprite_particle.Position.Y-=(%this.halfmicrowaveemittersize.Y)+(%this.halfmicrowaveparticlesize.Y);//down
 
 %sprite_particle.setCollisionGroups(0,1,25,26);//0=player 1, 1=player 2, 25=npcs, 26=world objects
 
@@ -166,9 +166,9 @@ DotsandCritsscene.add(%sprite_particle);
 
 //%dest.Y+=mAbs(%this.worldlimitsreduced.Y-%dest.Y);
 
-%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000)+1000;
+%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000);
 schedule(%time,0,"class_microwaveparticle::decay",%sprite_particle);
-*/
+
 ////////////////////////////////////////////////////////////
 
 %sprite_particle=new Sprite()
@@ -187,7 +187,7 @@ curdir="0 -1";
 hitplayer=false;
 };
 
-%sprite_particle.Position.Y-=(%emitter.Size.Y/2)+(%sprite_particle.Size.Y/2);//down
+%sprite_particle.Position.Y-=(%this.halfmicrowaveemittersize.Y)+(%this.halfmicrowaveparticlesize.Y);//down
 
 %sprite_particle.setCollisionGroups(0,1,25,26);//0=player 1, 1=player 2, 25=npcs, 26=world objects
 
@@ -205,11 +205,11 @@ DotsandCritsscene.add(%sprite_particle);
 
 //%dest.Y+=mAbs(%this.worldlimitsreduced.Y-%dest.Y);
 
-%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000)+1000;
+%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000);
 schedule(%time,0,"class_microwaveparticle::decay",%sprite_particle);
 
 ////////////////////////////////////////////////////////////
-/*
+
 %sprite_particle=new Sprite()
 {
 Position=%emitter.Position;
@@ -226,9 +226,9 @@ curdir="-1 -1";
 hitplayer=false;
 };
 
-%sprite_particle.Position.X-=(%emitter.Size.X/2)+(%sprite_particle.Size.X/2);//left
+%sprite_particle.Position.X-=(%this.halfmicrowaveemittersize.X)+(%this.halfmicrowaveparticlesize.X);//left
 
-%sprite_particle.Position.Y-=(%emitter.Size.Y/2)+(%sprite_particle.Size.Y/2);//down
+%sprite_particle.Position.Y-=(%this.halfmicrowaveemittersize.Y)+(%this.halfmicrowaveparticlesize.Y);//down
 
 %sprite_particle.setCollisionGroups(0,1,25,26);//0=player 1, 1=player 2, 25=npcs, 26=world objects
 
@@ -250,9 +250,9 @@ DotsandCritsscene.add(%sprite_particle);
 
 //%dest.Y+=mAbs(%this.worldlimitsreduced.Y-%dest.Y);
 
-%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000)+1000;
+%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000);
 schedule(%time,0,"class_microwaveparticle::decay",%sprite_particle);
-*/
+
 ////////////////////////////////////////////////////////////
 
 %sprite_particle=new Sprite()
@@ -271,7 +271,7 @@ curdir="-1 0";
 hitplayer=false;
 };
 
-%sprite_particle.Position.X-=(%emitter.Size.X/2)+(%sprite_particle.Size.X/2);//left
+%sprite_particle.Position.X-=(%this.halfmicrowaveemittersize.X)+(%this.halfmicrowaveparticlesize.X);//left
 
 %sprite_particle.setCollisionGroups(0,1,25,26);//0=player 1, 1=player 2, 25=npcs, 26=world objects
 
@@ -289,11 +289,11 @@ DotsandCritsscene.add(%sprite_particle);
 
 //%dest.X+=mAbs(%this.worldlimitsreduced.X-%dest.X);
 
-%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000)+1000;
+%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000);
 schedule(%time,0,"class_microwaveparticle::decay",%sprite_particle);
 
 ////////////////////////////////////////////////////////////
-/*
+
 %sprite_particle=new Sprite()
 {
 Position=%emitter.Position;
@@ -310,9 +310,9 @@ curdir="-1 1";
 hitplayer=false;
 };
 
-%sprite_particle.Position.X-=(%emitter.Size.X/2)+(%sprite_particle.Size.X/2);//left
+%sprite_particle.Position.X-=(%this.halfmicrowaveemittersize.X)+(%this.halfmicrowaveparticlesize.X);//left
 
-%sprite_particle.Position.Y+=(%emitter.Size.Y/2)+(%sprite_particle.Size.Y/2);//up
+%sprite_particle.Position.Y+=(%this.halfmicrowaveemittersize.Y)+(%this.halfmicrowaveparticlesize.Y);//up
 
 %sprite_particle.setCollisionGroups(0,1,25,26);//0=player 1, 1=player 2, 25=npcs, 26=world objects
 
@@ -334,9 +334,9 @@ DotsandCritsscene.add(%sprite_particle);
 
 //%dest.Y-=mAbs(%this.worldlimitsreduced.Y-%dest.Y);
 
-%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000)+1000;
+%time=((Vector2Distance(%sprite_particle.Position,%dest)/%speed)*1000);
 schedule(%time,0,"class_microwaveparticle::decay",%sprite_particle);
-*/
+
 ////////////////////////////////////////////////////////////
 
 }

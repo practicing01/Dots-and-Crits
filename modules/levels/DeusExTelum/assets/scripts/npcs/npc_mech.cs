@@ -65,7 +65,24 @@ function class_mech::mechai(%this)
 {
 if (!isObject(%this)){return;}
 
+%player1=$players.getObject(0);
+%player2=$players.getObject(1);
+
+if (isObject(%player1.sprite))//only radiate if player nearby- needed to reduce lag
+{
+if (Vector2Distance(%this.Position,%player1.sprite.Position)<=Vector2Distance("0 0",ScaleVectorToCam($resolution.X/2 SPC $resolution.Y/2)))
+{
 %this.parentDeusExTelum.radiatemicrowaves(%this);
+}
+}
+
+if (isObject(%player2.sprite))
+{
+if (Vector2Distance(%this.Position,%player2.sprite.Position)<=Vector2Distance("0 0",ScaleVectorToCam($resolution.X/2 SPC $resolution.Y/2)))
+{
+%this.parentDeusExTelum.radiatemicrowaves(%this);
+}
+}
 
 %this.aischedule=schedule(1000,0,"class_mech::mechai",%this);
 }

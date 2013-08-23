@@ -2,7 +2,7 @@
     AssetName="image_walkwaycornerleft"
     ImageFile="walkwaycornerleft.png"
 	OptimalResolution="1280 800"
-	SceneLayer="14"
+	SceneLayer="13"
 	SceneGroup="2"
 	CollisionGroups=""
 	ObjectClass=""

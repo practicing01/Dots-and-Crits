@@ -41,21 +41,27 @@ DotsandCritsscene.setGravity(0,$levelgravity);
 
 %this.loadass();
 
-//procedural generation
+//feeble attempt at optimization
 
-%this.mapsizescale=4;
+%this.mapsizescale=5;
 
 %this.worldlimits=($camsize.X*%this.mapsizescale)/2 SPC ($camsize.Y*%this.mapsizescale)/2;
 
 %this.worldlimitsreduced=%this.worldlimits;
 
-%this.worldlimitsreduced.X*=15;
+%this.worldlimitsreduced.X*=20;
 %this.worldlimitsreduced.X/=100;
 
-%this.worldlimitsreduced.Y*=15;
+%this.worldlimitsreduced.Y*=20;
 %this.worldlimitsreduced.Y/=100;
 
-//
+%microwaveemittersize=ScaleAssSizeVectorToCam(%this.ass_mech);
+%this.halfmicrowaveemittersize=%microwaveemittersize.X/2 SPC %microwaveemittersize.Y/2;
+
+%microwaveparticlesize=ScaleAssSizeVectorToCam(%this.ass_microwaveparticle);
+%this.halfmicrowaveparticlesize=%microwaveparticlesize.X/2 SPC %microwaveparticlesize.Y/2;
+
+//procedural generation
 
 %this.generateworldlimits();
 %this.generatespawnportals();
@@ -88,6 +94,10 @@ DotsandCritsscene.setGravity(0,$levelgravity);
 //
 
 %this.generatenpcs();
+
+//
+
+%this.spawngoal();
 
 //
 
@@ -165,5 +175,14 @@ if (%obj.SceneGroup==25)//npc
 %obj.initialize();
 }
 }
+
+%schedulehandle_playeremitvisible=new ScriptObject()
+{
+schedulehandle="0";
+};
+
+%schedulehandle_playeremitvisible.schedulehandle=schedule(1000,0,"DeusExTelum::playeremitvisible",%this,%schedulehandle_playeremitvisible);
+
+$cancellableschedules.add(%schedulehandle_playeremitvisible);
 
 }
