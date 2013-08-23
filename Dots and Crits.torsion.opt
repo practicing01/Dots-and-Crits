@@ -5,5 +5,8 @@
 <LastConfig>Release</LastConfig>
 <Breakpoints/>
 <Bookmarks/>
-<OpenFiles/>
+<OpenFiles>
+<File ScrollX="0" ScrollY="33">modules\levels\DeusExTelum\assets\scripts\loadlevel.cs</File>
+<File ScrollX="0" ScrollY="45" Active="true">modules\levels\DeusExTelum\assets\scripts\levelgeneration\walls.cs</File>
+</OpenFiles>
 </TorsionProjectOptions>

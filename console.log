@@ -1,4 +1,4 @@
-//-------------------------- 8/23/2013 -- 12:01:04 -----
+//-------------------------- 8/23/2013 -- 12:11:56 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -86,30 +86,6 @@ created catragdoll
 created booghost
 Activating DirectInput...
 DirectInput joystick enabled.
-DirectInput deactivated.
-Activating DirectInput...
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-spotted by radar
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-spotted by mech!
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
@@ -121,6 +97,17 @@ mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
 reached goal!
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped button11 to stick click
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+spotted by mech!
 DirectInput deactivated.
 goodbye world
 freed booghost
