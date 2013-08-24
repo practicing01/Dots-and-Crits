@@ -381,5 +381,5 @@ if (isObject(%player2.sprite))
 %this.radiatevisiblewaves(%player2.sprite);
 }
 
-%schedulehandle.schedulehandle=schedule(1000,0,"DeusExTelum::playeremitvisible",%this,%schedulehandle);
+%schedulehandle.schedulehandle=schedule(2000,0,"DeusExTelum::playeremitvisible",%this,%schedulehandle);
 }

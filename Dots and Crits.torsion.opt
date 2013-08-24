@@ -6,7 +6,7 @@
 <Breakpoints/>
 <Bookmarks/>
 <OpenFiles>
-<File ScrollX="0" ScrollY="33">modules\levels\DeusExTelum\assets\scripts\loadlevel.cs</File>
-<File ScrollX="0" ScrollY="45" Active="true">modules\levels\DeusExTelum\assets\scripts\levelgeneration\walls.cs</File>
+<File ScrollX="0" ScrollY="67">modules\levels\DeusExTelum\assets\scripts\npcs\npc_mech.cs</File>
+<File ScrollX="0" ScrollY="351" Active="true">modules\levels\DeusExTelum\assets\scripts\radiation\visible\radiate.cs</File>
 </OpenFiles>
 </TorsionProjectOptions>

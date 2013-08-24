@@ -84,7 +84,7 @@ if (Vector2Distance(%this.Position,%player2.sprite.Position)<=Vector2Distance("0
 }
 }
 
-%this.aischedule=schedule(1000,0,"class_mech::mechai",%this);
+%this.aischedule=schedule(5000,0,"class_mech::mechai",%this);
 }
 
 //every npc class has an initialize function
