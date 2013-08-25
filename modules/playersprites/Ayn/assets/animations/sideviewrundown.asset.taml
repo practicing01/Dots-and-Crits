@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_sideviewrundown"
+    Image="@asset=Ayn:image_sideview"
+    AnimationFrames="15 16 17 18 19 20 21 22 23 24 25 26 27 28 29"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

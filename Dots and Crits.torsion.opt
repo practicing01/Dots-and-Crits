@@ -5,8 +5,5 @@
 <LastConfig>Release</LastConfig>
 <Breakpoints/>
 <Bookmarks/>
-<OpenFiles>
-<File ScrollX="0" ScrollY="67">modules\levels\DeusExTelum\assets\scripts\npcs\npc_mech.cs</File>
-<File ScrollX="0" ScrollY="351" Active="true">modules\levels\DeusExTelum\assets\scripts\radiation\visible\radiate.cs</File>
-</OpenFiles>
+<OpenFiles/>
 </TorsionProjectOptions>

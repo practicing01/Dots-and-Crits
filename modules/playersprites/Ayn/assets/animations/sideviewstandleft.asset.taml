@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_sideviewstandleft"
+    Image="@asset=Ayn:image_sideview"
+    AnimationFrames="62"
+    AnimationCycle="true"
+	AnimationTime="0.5" />

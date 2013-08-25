@@ -1,4 +1,4 @@
-//-------------------------- 8/24/2013 -- 00:51:48 -----
+//-------------------------- 8/25/2013 -- 03:33:12 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -50,6 +50,7 @@ created catacombs
 created ZombieBox
 created space
 created FtA_P1
+created Ayn
 created Kosmos
 created lidia
 created Lelur
@@ -99,23 +100,6 @@ mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
 spotted by mech!
-spotted by mech!
-modules/levels/DeusExTelum/assets/scripts/unloadass.cs (45): Unable to find object: '1502' attempting to call function 'getAssetId'
-Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/levels/DeusExTelum/assets/scripts/unloadass.cs (46): Unable to find object: '1503' attempting to call function 'getAssetId'
-Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/levels/DeusExTelum/assets/scripts/unloadass.cs (47): Unable to find object: '1504' attempting to call function 'getAssetId'
-Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/levels/DeusExTelum/assets/scripts/unloadass.cs (48): Unable to find object: '1505' attempting to call function 'getAssetId'
-Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/playersprites/Kosmos/assets/scripts/unloadass.cs (4): Unable to find object: '4725' attempting to call function 'getAssetId'
-Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/playersprites/Kosmos/assets/scripts/unloadass.cs (5): Unable to find object: '4726' attempting to call function 'getAssetId'
-Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/playersprites/shura/assets/scripts/unloadass.cs (4): Unable to find object: '4766' attempting to call function 'getAssetId'
-Asset Manager: Failed to release asset Id '' as it does not exist.
-modules/playersprites/shura/assets/scripts/unloadass.cs (5): Unable to find object: '4767' attempting to call function 'getAssetId'
-Asset Manager: Failed to release asset Id '' as it does not exist.
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
@@ -126,7 +110,8 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-spotted by mech!
+DirectInput deactivated.
+Activating DirectInput...
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
@@ -137,7 +122,6 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-spotted by mech!
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
@@ -148,7 +132,35 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
+Scale loaded
+spotted by mech!
+unloaded Scale
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped button11 to stick click
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+Scale loaded
 reached goal!
+unloaded Scale
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped button11 to stick click
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+Scale loaded
+spotted by mech!
+unloaded Scale
 DirectInput deactivated.
 goodbye world
 freed booghost
@@ -185,6 +197,7 @@ freed GillBalentine
 freed Lelur
 freed lidia
 freed Kosmos
+freed Ayn
 freed FtA_P1
 space destroy() called
 DotsandCrits: Created scene but no window available.

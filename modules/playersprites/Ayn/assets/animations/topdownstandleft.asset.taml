@@ -1,0 +1,6 @@
+<AnimationAsset
+    AssetName="anim_topdownstandleft"
+    Image="@asset=Ayn:image_topdown"
+    AnimationFrames="62"
+    AnimationCycle="true"
+	AnimationTime="0.5" />
