@@ -1,4 +1,4 @@
-//-------------------------- 8/25/2013 -- 03:33:12 -----
+//-------------------------- 8/25/2013 -- 04:12:03 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -87,41 +87,6 @@ created catragdoll
 created booghost
 Activating DirectInput...
 DirectInput joystick enabled.
-DirectInput deactivated.
-Activating DirectInput...
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-spotted by mech!
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-DirectInput deactivated.
-Activating DirectInput...
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
@@ -146,7 +111,7 @@ mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
 Scale loaded
-reached goal!
+spotted by radar
 unloaded Scale
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
@@ -159,6 +124,36 @@ mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
 Scale loaded
+DirectInput deactivated.
+Activating DirectInput...
+spotted by mech!
+unloaded Scale
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped button11 to stick click
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+Scale loaded
+spotted by mech!
+unloaded Scale
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped button11 to stick click
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+Scale loaded
+DirectInput deactivated.
+Activating DirectInput...
 spotted by mech!
 unloaded Scale
 DirectInput deactivated.

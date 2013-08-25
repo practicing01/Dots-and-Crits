@@ -193,7 +193,7 @@ AssetDatabase.releaseAsset(%ass.getAssetId());
 %animobj=new ScriptObject()
 {
 anim="Ayn:anim_sideviewstanddown";
-animname="anim_topdownstanddown";
+animname="anim_sideviewstanddown";
 };
 %player.anim_stand_up_selfcast.add(%animobj);
 
