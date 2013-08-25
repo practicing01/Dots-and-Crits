@@ -44,7 +44,9 @@ AssetDatabase.releaseAsset(%ass.getAssetId());
 
 %totaltilesize=0;
 
-while (1)
+if (!%this.simset_ass_decaltiles.getCount()){return;}
+
+while (1)//naughty, dangerous loop :>
 {
 
 %randomtileass=%this.simset_ass_decaltiles.getObject(getRandom(0,%this.simset_ass_decaltiles.getCount()-1));

@@ -1,4 +1,4 @@
-//-------------------------- 8/25/2013 -- 04:12:03 -----
+//-------------------------- 8/25/2013 -- 09:09:23 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -97,9 +97,52 @@ mapped upov to moveup()
 mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
-Scale loaded
 spotted by mech!
-unloaded Scale
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped button11 to stick click
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+DirectInput deactivated.
+Activating DirectInput...
+spotted by mech!
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped button11 to stick click
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+spotted by mech!
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped button11 to stick click
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+spotted by mech!
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped button11 to stick click
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
@@ -111,8 +154,136 @@ mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
 Scale loaded
+Speedboof loaded
+spotted by mech!
+unloaded Scale
+unloaded Speedboof
+mapped button0 to skill 0 & 4
+mapped button1 to skill 3 & 7
+mapped button2 to skill 1 & 5
+mapped button3 to skill 2 & 6
+mapped button4 to toggle skill bar nibble
+mapped button11 to stick click
+mapped upov to moveup()
+mapped dpov to movedown()
+mapped lpov to moveleft()
+mapped rpov to moveright()
+Scale loaded
+Speedboof loaded
+spotted by radar
 spotted by radar
 unloaded Scale
+unloaded Speedboof
+unloaded Scale
+unloaded Speedboof
+modules/levels/DeusExTelum/assets/scripts/unloadass.cs (45): Unable to find object: '23416' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/levels/DeusExTelum/assets/scripts/unloadass.cs (46): Unable to find object: '23417' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/levels/DeusExTelum/assets/scripts/unloadass.cs (47): Unable to find object: '23418' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/levels/DeusExTelum/assets/scripts/unloadass.cs (48): Unable to find object: '23419' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/Ayn/assets/scripts/unloadass.cs (4): Unable to find object: '26621' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/Ayn/assets/scripts/unloadass.cs (5): Unable to find object: '26622' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (4): Unable to find object: '26662' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (5): Unable to find object: '26663' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (6): Unable to find object: '26664' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (7): Unable to find object: '26665' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (8): Unable to find object: '26666' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (9): Unable to find object: '26667' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (10): Unable to find object: '26668' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (11): Unable to find object: '26669' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (12): Unable to find object: '26670' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (13): Unable to find object: '26671' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (14): Unable to find object: '26672' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (15): Unable to find object: '26673' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (16): Unable to find object: '26674' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (17): Unable to find object: '26675' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (18): Unable to find object: '26676' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (19): Unable to find object: '26677' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (20): Unable to find object: '26678' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (21): Unable to find object: '26679' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (22): Unable to find object: '26680' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (23): Unable to find object: '26681' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (24): Unable to find object: '26682' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (25): Unable to find object: '26683' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (26): Unable to find object: '26684' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (27): Unable to find object: '26685' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (29): Unable to find object: '26686' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (30): Unable to find object: '26687' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (31): Unable to find object: '26688' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (32): Unable to find object: '26689' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (33): Unable to find object: '26690' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (34): Unable to find object: '26691' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (35): Unable to find object: '26692' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (36): Unable to find object: '26693' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (37): Unable to find object: '26694' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (38): Unable to find object: '26695' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (39): Unable to find object: '26696' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (40): Unable to find object: '26697' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (41): Unable to find object: '26698' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (42): Unable to find object: '26699' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (43): Unable to find object: '26700' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (44): Unable to find object: '26701' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (45): Unable to find object: '26702' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (46): Unable to find object: '26703' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (47): Unable to find object: '26704' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (48): Unable to find object: '26705' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (49): Unable to find object: '26706' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (50): Unable to find object: '26707' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (51): Unable to find object: '26708' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
+modules/playersprites/GillBalentine/assets/scripts/unloadass.cs (52): Unable to find object: '26709' attempting to call function 'getAssetId'
+Asset Manager: Failed to release asset Id '' as it does not exist.
 mapped button0 to skill 0 & 4
 mapped button1 to skill 3 & 7
 mapped button2 to skill 1 & 5
@@ -124,38 +295,7 @@ mapped dpov to movedown()
 mapped lpov to moveleft()
 mapped rpov to moveright()
 Scale loaded
-DirectInput deactivated.
-Activating DirectInput...
-spotted by mech!
-unloaded Scale
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-Scale loaded
-spotted by mech!
-unloaded Scale
-mapped button0 to skill 0 & 4
-mapped button1 to skill 3 & 7
-mapped button2 to skill 1 & 5
-mapped button3 to skill 2 & 6
-mapped button4 to toggle skill bar nibble
-mapped button11 to stick click
-mapped upov to moveup()
-mapped dpov to movedown()
-mapped lpov to moveleft()
-mapped rpov to moveright()
-Scale loaded
-DirectInput deactivated.
-Activating DirectInput...
-spotted by mech!
-unloaded Scale
+Speedboof loaded
 DirectInput deactivated.
 goodbye world
 freed booghost
