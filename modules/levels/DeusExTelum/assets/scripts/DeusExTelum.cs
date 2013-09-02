@@ -17,6 +17,7 @@ exec("./ai.cs");
 exec("./npcs.cs");
 exec("./radiation/radiation.cs");
 exec("./goal/goal.cs");
+exec("./radar/radar.cs");
 
 function DeusExTelum::create(%this)//change DeusExTelum to your module name
 {

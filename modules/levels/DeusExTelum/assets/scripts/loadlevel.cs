@@ -185,4 +185,6 @@ schedulehandle="0";
 
 $cancellableschedules.add(%schedulehandle_playeremitvisible);
 
+%this.load_radar();
+
 }

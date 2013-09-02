@@ -120,6 +120,6 @@ else
 
 }
 
-schedule(1000,0,"DeusExTelum::pinwalltiles",%this);
+schedule(2000,0,"DeusExTelum::pinwalltiles",%this);
 
 }

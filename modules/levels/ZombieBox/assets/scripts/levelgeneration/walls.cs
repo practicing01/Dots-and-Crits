@@ -118,6 +118,6 @@ else
 
 }
 
-schedule(1000,0,"ZombieBox::pinwalltiles",%this);
+schedule(2000,0,"ZombieBox::pinwalltiles",%this);
 
 }

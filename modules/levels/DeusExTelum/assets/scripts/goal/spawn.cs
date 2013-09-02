@@ -20,6 +20,8 @@ DotsandCritsscene.add(%goal);
 
 %goal.createPolygonBoxCollisionShape(%goal.Size);
 
+%this.handle_goal=%goal;
+
 }
 else
 {
