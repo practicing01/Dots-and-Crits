@@ -1,4 +1,4 @@
-function class_goal::onCollision(%this,%object,%collisionDetails)
+function class_deusextelum_goal::onCollision(%this,%object,%collisionDetails)
 {
 
 if (%object.class$="class_player")

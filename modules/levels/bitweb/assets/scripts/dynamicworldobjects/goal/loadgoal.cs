@@ -12,7 +12,7 @@ SceneLayer=16;
 GravityScale=0;
 SceneGroup=3;
 BodyType="static";
-class="class_goal";
+class="class_bitweb_goal";
 parentbitweb=%this;
 CollisionCallback=true;
 };

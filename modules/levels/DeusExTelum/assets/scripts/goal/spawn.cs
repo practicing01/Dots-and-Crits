@@ -6,7 +6,7 @@ if (!$view)
 
 %goal=new Sprite()
 {
-class="class_goal";
+class="class_deusextelum_goal";
 Size=ScaleAssSizeVectorToCam(%this.ass_goal);
 Position=getRandom(-(($camsize.X/2)*%this.mapsizescale),(($camsize.X/2)*%this.mapsizescale))
 SPC getRandom(-(($camsize.Y/2)*%this.mapsizescale),(($camsize.Y/2)*%this.mapsizescale));

@@ -1,4 +1,4 @@
-function class_goal::onCollision(%this,%object,%collisionDetails)
+function class_bitweb_goal::onCollision(%this,%object,%collisionDetails)
 {
 
 if (%this.parentbitweb.score>%this.parentbitweb.topscore)

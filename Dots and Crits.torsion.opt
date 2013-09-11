@@ -5,5 +5,8 @@
 <LastConfig>Release</LastConfig>
 <Breakpoints/>
 <Bookmarks/>
-<OpenFiles/>
+<OpenFiles>
+<File ScrollX="0" ScrollY="147" Active="true">modules\levels\bitweb\assets\scripts\loadlevel.cs</File>
+<File ScrollX="0" ScrollY="0">modules\levels\bitweb\assets\scripts\dynamicworldobjects\goal\oncollision.cs</File>
+</OpenFiles>
 </TorsionProjectOptions>
